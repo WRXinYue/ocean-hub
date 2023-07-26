@@ -5,7 +5,7 @@ import PageNav from '@theme/PageNav.vue'
 
 <template>
   <main class="page">
-		<MkDots :class="$style.headerDots"/>
+    <MkDots :class="$style.headerDots" />
 
     <div class="theme-default-content">
       <Content />
@@ -15,10 +15,10 @@ import PageNav from '@theme/PageNav.vue'
 
     <PageNav />
 
-		<MkRelatedPages/>
+    <MkRelatedPages />
 
-		<MkDots :class="$style.footerDots"/>
-		<div :class="$style.footer">Copyright &copy; 2022 syuilo and other contributors</div>
+    <MkDots :class="$style.footerDots" />
+    <div :class="$style.footer">Copyright &copy; 2022 syuilo and other contributors</div>
   </main>
 </template>
 
@@ -110,25 +110,25 @@ import PageNav from '@theme/PageNav.vue'
 
 <style lang="scss" module>
 .footer {
-	text-align: center;
+  text-align: center;
 }
 
 .headerDots {
-	display: block;
-	margin: 2em auto 0 auto;
-	width: 100%;
-	max-width: min(var(--content-width), calc(100% - 4rem));
-	height: 40px;
-	opacity: 1;
-	color: var(--c-brand);
+  display: block;
+  margin: 2em auto 0 auto;
+  width: 100%;
+  max-width: min(var(--content-width), calc(100% - 4rem));
+  height: 40px;
+  opacity: 1;
+  color: var(--c-brand);
 }
 
 .footerDots {
-	display: block;
-	margin: 2em auto;
-	width: 100%;
-	max-width: min(var(--content-width), calc(100% - 4rem));
-	height: 70px;
-	opacity: 0.2;
+  display: block;
+  margin: 2em auto;
+  width: 100%;
+  max-width: min(var(--content-width), calc(100% - 4rem));
+  height: 70px;
+  opacity: 0.2;
 }
 </style>

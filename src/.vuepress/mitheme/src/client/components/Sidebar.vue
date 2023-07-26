@@ -55,10 +55,7 @@ import SidebarItems from '@theme/SidebarItems.vue'
     .navbar-items {
       display: block;
 
-      .navbar-dropdown-wrapper
-        .navbar-dropdown
-        .navbar-dropdown-item
-        a.router-link-active::after {
+      .navbar-dropdown-wrapper .navbar-dropdown .navbar-dropdown-item a.router-link-active::after {
         top: calc(50% - 3px);
       }
     }

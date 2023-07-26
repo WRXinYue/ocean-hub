@@ -1,5 +1,5 @@
 {
-  "name": "misskey-hub",
+  "name": "ocean-hub",
   "version": "0.0.0",
   "scripts": {
     "dev": "vuepress dev src",
@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/misskey-dev/misskey-hub.git"
+    "url": "git+https://github.com/WRXinYue/ocean-hub.git"
   },
   "devDependencies": {
     "@types/three": "^0.143.0",

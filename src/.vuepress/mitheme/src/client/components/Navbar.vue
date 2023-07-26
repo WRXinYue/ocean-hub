@@ -23,46 +23,40 @@ const linksWrapperStyle = computed(() => {
   }
 })
 
-let ro: ResizeObserver;
+let ro: ResizeObserver
 
 // avoid overlapping of long title and long navbar links
 onMounted(() => {
   // TODO: migrate to css var
   // refer to _variables.scss
   const MOBILE_DESKTOP_BREAKPOINT = 719
-  const navbarHorizontalPadding =
-    getCssValue(navbar.value, 'paddingLeft') +
-    getCssValue(navbar.value, 'paddingRight')
+  const navbarHorizontalPadding = getCssValue(navbar.value, 'paddingLeft') + getCssValue(navbar.value, 'paddingRight')
   const handleLinksWrapWidth = (): void => {
     if (window.innerWidth <= MOBILE_DESKTOP_BREAKPOINT) {
       linksWrapperMaxWidth.value = 0
     } else {
       linksWrapperMaxWidth.value =
-        navbar.value!.offsetWidth -
-        navbarHorizontalPadding -
-        (navbarBrand.value?.offsetWidth || 0)
+        navbar.value!.offsetWidth - navbarHorizontalPadding - (navbarBrand.value?.offsetWidth || 0)
     }
   }
   handleLinksWrapWidth()
   window.addEventListener('resize', handleLinksWrapWidth, false)
   window.addEventListener('orientationchange', handleLinksWrapWidth, false)
 
-	ro = new ResizeObserver((entries, observer) => {
-		document.documentElement.style.setProperty('--globalHeaderHeight', navbar.value.offsetHeight + 'px');
-	});
+  ro = new ResizeObserver((entries, observer) => {
+    document.documentElement.style.setProperty('--globalHeaderHeight', navbar.value.offsetHeight + 'px')
+  })
 
-	ro.observe(navbar.value);
+  ro.observe(navbar.value)
 })
 
 onBeforeUnmount(() => {
-	ro.disconnect();
+  ro.disconnect()
 })
 
 function getCssValue(el: HTMLElement | null, property: string): number {
   // NOTE: Known bug, will return 'auto' if style value is 'auto'
-  const val = el?.ownerDocument?.defaultView?.getComputedStyle(el, null)?.[
-    property
-  ]
+  const val = el?.ownerDocument?.defaultView?.getComputedStyle(el, null)?.[property]
   const num = Number.parseInt(val, 10)
   return Number.isNaN(num) ? 0 : num
 }
@@ -90,9 +84,7 @@ function getCssValue(el: HTMLElement | null, property: string): number {
 @import '../styles/_variables';
 
 .navbar {
-  --navbar-line-height: calc(
-    3.6em - 2 * var(--navbar-padding-v)
-  );
+  --navbar-line-height: calc(3.6em - 2 * var(--navbar-padding-v));
 
   position: fixed;
   z-index: 20;
@@ -103,8 +95,8 @@ function getCssValue(el: HTMLElement | null, property: string): number {
   transition: background-color var(--t-color), border-color var(--t-color);
   padding: var(--navbar-padding-v) var(--navbar-padding-h);
   line-height: var(--navbar-line-height);
-	background-color: var(--c-bg-navbar);
-	backdrop-filter: blur(14px);
+  background-color: var(--c-bg-navbar);
+  backdrop-filter: blur(14px);
 
   .logo {
     height: var(--navbar-line-height);

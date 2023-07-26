@@ -10,12 +10,7 @@ const unsetHeight = (items): void => {
 </script>
 
 <template>
-  <Transition
-    name="dropdown"
-    @enter="setHeight"
-    @after-enter="unsetHeight"
-    @before-leave="setHeight"
-  >
+  <Transition name="dropdown" @enter="setHeight" @after-enter="unsetHeight" @before-leave="setHeight">
     <slot />
   </Transition>
 </template>

@@ -16,17 +16,13 @@ onMounted(() => {
       if (!sidebar) return
 
       // get the active sidebar item DOM, whose href equals to the current route
-      const activeSidebarItem = document.querySelector(
-        `.sidebar a.sidebar-item[href="${route.path}${hash}"]`
-      )
+      const activeSidebarItem = document.querySelector(`.sidebar a.sidebar-item[href="${route.path}${hash}"]`)
       if (!activeSidebarItem) return
 
       // get the top and height of the sidebar
-      const { top: sidebarTop, height: sidebarHeight } =
-        sidebar.getBoundingClientRect()
+      const { top: sidebarTop, height: sidebarHeight } = sidebar.getBoundingClientRect()
       // get the top and height of the active sidebar item
-      const { top: activeSidebarItemTop, height: activeSidebarItemHeight } =
-        activeSidebarItem.getBoundingClientRect()
+      const { top: activeSidebarItemTop, height: activeSidebarItemHeight } = activeSidebarItem.getBoundingClientRect()
 
       // when the active sidebar item overflows the top edge of sidebar
       if (activeSidebarItemTop < sidebarTop) {
@@ -34,24 +30,17 @@ onMounted(() => {
         activeSidebarItem.scrollIntoView(true)
       }
       // when the active sidebar item overflows the bottom edge of sidebar
-      else if (
-        activeSidebarItemTop + activeSidebarItemHeight >
-        sidebarTop + sidebarHeight
-      ) {
+      else if (activeSidebarItemTop + activeSidebarItemHeight > sidebarTop + sidebarHeight) {
         // scroll to the bottom edge of sidebar
         activeSidebarItem.scrollIntoView(false)
       }
-    }
+    },
   )
 })
 </script>
 
 <template>
   <ul v-if="sidebarItems.length" class="sidebar-items">
-    <SidebarItem
-      v-for="item in sidebarItems"
-      :key="`${item.text}${item.link}`"
-      :item="item"
-    />
+    <SidebarItem v-for="item in sidebarItems" :key="`${item.text}${item.link}`" :item="item" />
   </ul>
 </template>

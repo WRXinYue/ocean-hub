@@ -31,9 +31,7 @@ const { item } = toRefs(props)
 // if the link has http protocol
 const hasHttpProtocol = computed(() => isLinkHttp(item.value.link))
 // if the link has non-http protocol
-const hasNonHttpProtocol = computed(
-  () => isLinkMailto(item.value.link) || isLinkTel(item.value.link)
-)
+const hasNonHttpProtocol = computed(() => isLinkMailto(item.value.link) || isLinkTel(item.value.link))
 // resolve the `target` attr
 const linkTarget = computed(() => {
   if (hasNonHttpProtocol.value) return undefined
@@ -44,10 +42,7 @@ const linkTarget = computed(() => {
 // if the `target` attr is '_blank'
 const isBlankTarget = computed(() => linkTarget.value === '_blank')
 // is `<RouterLink>` or not
-const isRouterLink = computed(
-  () =>
-    !hasHttpProtocol.value && !hasNonHttpProtocol.value && !isBlankTarget.value
-)
+const isRouterLink = computed(() => !hasHttpProtocol.value && !hasNonHttpProtocol.value && !isBlankTarget.value)
 // resolve the `rel` attr
 const linkRel = computed(() => {
   if (hasNonHttpProtocol.value) return undefined
@@ -96,8 +91,8 @@ const isActive = computed(() => {
   >
     <slot name="before" />
     <template v-if="item.icon">
-      <component :is="item.icon" class="tabler-icon _icon_middle" />
-    </template>{{ item.text }}<slot name="after" />
+      <component :is="item.icon" class="tabler-icon _icon_middle" /> </template
+    >{{ item.text }}<slot name="after" />
   </RouterLink>
   <a
     v-else
@@ -110,9 +105,13 @@ const isActive = computed(() => {
   >
     <slot name="before" />
     <template v-if="item.icon">
-      <component :is="item.icon" class="tabler-icon _icon_middle" />
-    </template>{{ item.text }}
-    <IconExternalLink v-if="isBlankTarget && !item.noExternalIcon" class="tabler-icon _icon_middle" :class="$style.icon" />
+      <component :is="item.icon" class="tabler-icon _icon_middle" /> </template
+    >{{ item.text }}
+    <IconExternalLink
+      v-if="isBlankTarget && !item.noExternalIcon"
+      class="tabler-icon _icon_middle"
+      :class="$style.icon"
+    />
     <slot name="after" />
   </a>
 </template>

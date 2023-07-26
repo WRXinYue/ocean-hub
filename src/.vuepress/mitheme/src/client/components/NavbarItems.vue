@@ -9,7 +9,13 @@ import { useRouter } from 'vue-router'
 import type { NavbarGroup, NavbarItem, ResolvedNavbarItem } from '../../shared'
 import { useNavLink, useThemeLocaleData } from '../composables'
 import { resolveRepoType } from '../utils'
-import { IconLanguageHiragana, IconBrandGithub, IconBrandGitlab, IconBrandBitbucket, IconBrandGit } from '@tabler/icons-vue'
+import {
+  IconLanguageHiragana,
+  IconBrandGithub,
+  IconBrandGitlab,
+  IconBrandBitbucket,
+  IconBrandGit,
+} from '@tabler/icons-vue'
 
 /**
  * Get navbar config of select language dropdown
@@ -32,15 +38,11 @@ const useNavbarSelectLanguage = (): ComputedRef<ResolvedNavbarItem[]> => {
 
     const languageDropdown: ResolvedNavbarItem = {
       icon: IconLanguageHiragana,
-      ariaLabel:
-        themeLocale.value.selectLanguageAriaLabel ??
-        'unknown language',
+      ariaLabel: themeLocale.value.selectLanguageAriaLabel ?? 'unknown language',
       children: localePaths.map((targetLocalePath) => {
         // target locale config of this language link
-        const targetSiteLocale =
-          siteLocale.value.locales?.[targetLocalePath] ?? {}
-        const targetThemeLocale =
-          themeLocale.value.locales?.[targetLocalePath] ?? {}
+        const targetSiteLocale = siteLocale.value.locales?.[targetLocalePath] ?? {}
+        const targetThemeLocale = themeLocale.value.locales?.[targetLocalePath] ?? {}
         const targetLang = `${targetSiteLocale.lang}`
 
         const text = targetThemeLocale.selectLanguageName ?? targetLang
@@ -54,13 +56,8 @@ const useNavbarSelectLanguage = (): ComputedRef<ResolvedNavbarItem[]> => {
           // if the target language is not current language
           // try to link to the corresponding page of current page
           // or fallback to homepage
-          const targetLocalePage = currentPath.replace(
-            routeLocale.value,
-            targetLocalePath
-          )
-          if (
-            router.getRoutes().some((item) => item.path === targetLocalePage)
-          ) {
+          const targetLocalePage = currentPath.replace(routeLocale.value, targetLocalePath)
+          if (router.getRoutes().some((item) => item.path === targetLocalePage)) {
             // try to keep current hash across languages
             link = `${targetLocalePage}${currentHash}`
           } else {
@@ -86,9 +83,7 @@ const useNavbarRepo = (): ComputedRef<ResolvedNavbarItem[]> => {
   const themeLocale = useThemeLocaleData()
 
   const repo = computed(() => themeLocale.value.repo)
-  const repoType = computed(() =>
-    repo.value ? resolveRepoType(repo.value) : null
-  )
+  const repoType = computed(() => (repo.value ? resolveRepoType(repo.value) : null))
 
   const repoLink = computed(() => {
     if (repo.value && !isLinkHttp(repo.value)) {
@@ -151,9 +146,7 @@ const useNavbarRepo = (): ComputedRef<ResolvedNavbarItem[]> => {
   })
 }
 
-const resolveNavbarItem = (
-  item: NavbarItem | NavbarGroup | string
-): ResolvedNavbarItem => {
+const resolveNavbarItem = (item: NavbarItem | NavbarGroup | string): ResolvedNavbarItem => {
   if (isString(item)) {
     return useNavLink(item)
   }
@@ -174,11 +167,7 @@ const useNavbarConfig = (): ComputedRef<ResolvedNavbarItem[]> => {
 const navbarConfig = useNavbarConfig()
 const navbarSelectLanguage = useNavbarSelectLanguage()
 const navbarRepo = useNavbarRepo()
-const navbarLinks = computed(() => [
-  ...navbarConfig.value,
-  ...navbarSelectLanguage.value,
-  ...navbarRepo.value,
-])
+const navbarLinks = computed(() => [...navbarConfig.value, ...navbarSelectLanguage.value, ...navbarRepo.value])
 </script>
 
 <template>

@@ -3,11 +3,7 @@ import AutoLink from '@theme/AutoLink.vue'
 import { usePageData, usePageFrontmatter } from '@vuepress/client'
 import { computed } from 'vue'
 import type { ComputedRef } from 'vue'
-import type {
-  MiThemeNormalPageFrontmatter,
-  DefaultThemePageData,
-  NavLink,
-} from '../../shared'
+import type { MiThemeNormalPageFrontmatter, DefaultThemePageData, NavLink } from '../../shared'
 import { useThemeLocaleData } from '../composables'
 import { resolveEditLink } from '../utils'
 
@@ -17,19 +13,12 @@ const useEditNavLink = (): ComputedRef<null | NavLink> => {
   const frontmatter = usePageFrontmatter<MiThemeNormalPageFrontmatter>()
 
   return computed(() => {
-    const showEditLink =
-      frontmatter.value.editLink ?? themeLocale.value.editLink ?? true
+    const showEditLink = frontmatter.value.editLink ?? themeLocale.value.editLink ?? true
     if (!showEditLink) {
       return null
     }
 
-    const {
-      repo,
-      docsRepo = repo,
-      docsBranch = 'main',
-      docsDir = '',
-      editLinkText,
-    } = themeLocale.value
+    const { repo, docsRepo = repo, docsBranch = 'main', docsDir = '', editLinkText } = themeLocale.value
 
     if (!docsRepo) return null
 
@@ -38,8 +27,7 @@ const useEditNavLink = (): ComputedRef<null | NavLink> => {
       docsBranch,
       docsDir,
       filePathRelative: frontmatter.value.filePath ?? page.value.filePathRelative,
-      editLinkPattern:
-        frontmatter.value.editLinkPattern ?? themeLocale.value.editLinkPattern,
+      editLinkPattern: frontmatter.value.editLinkPattern ?? themeLocale.value.editLinkPattern,
     })
 
     if (!editLink) return null
@@ -57,8 +45,7 @@ const useLastUpdated = (): ComputedRef<null | string> => {
   const frontmatter = usePageFrontmatter<MiThemeNormalPageFrontmatter>()
 
   return computed(() => {
-    const showLastUpdated =
-      frontmatter.value.lastUpdated ?? themeLocale.value.lastUpdated ?? true
+    const showLastUpdated = frontmatter.value.lastUpdated ?? themeLocale.value.lastUpdated ?? true
 
     if (!showLastUpdated) return null
 
@@ -70,16 +57,13 @@ const useLastUpdated = (): ComputedRef<null | string> => {
   })
 }
 
-const useContributors = (): ComputedRef<
-  null | Required<DefaultThemePageData['git']>['contributors']
-> => {
+const useContributors = (): ComputedRef<null | Required<DefaultThemePageData['git']>['contributors']> => {
   const themeLocale = useThemeLocaleData()
   const page = usePageData<DefaultThemePageData>()
   const frontmatter = usePageFrontmatter<MiThemeNormalPageFrontmatter>()
 
   return computed(() => {
-    const showContributors =
-      frontmatter.value.contributors ?? themeLocale.value.contributors ?? true
+    const showContributors = frontmatter.value.contributors ?? themeLocale.value.contributors ?? true
 
     if (!showContributors) return null
 
@@ -106,10 +90,7 @@ const contributors = useContributors()
       </ClientOnly>
     </div>
 
-    <div
-      v-if="contributors && contributors.length"
-      class="meta-item contributors"
-    >
+    <div v-if="contributors && contributors.length" class="meta-item contributors">
       <span class="meta-item-label">{{ themeLocale.contributorsText }}: </span>
       <span class="meta-item-info">
         <template v-for="(contributor, index) in contributors" :key="index">

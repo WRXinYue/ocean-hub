@@ -12,56 +12,54 @@ const props = defineProps<{
 
 const { item } = toRefs(props)
 
-const dropdownAriaLabel = computed(
-  () => item.value.ariaLabel || item.value.text
-)
+const dropdownAriaLabel = computed(() => item.value.ariaLabel || item.value.text)
 
 const open = ref(false)
-const dropdownEl = ref<HTMLUListElement>();
-const rootEl = ref<HTMLDivElement>();
+const dropdownEl = ref<HTMLUListElement>()
+const rootEl = ref<HTMLDivElement>()
 const route = useRoute()
 
 const onHover = async () => {
-  await nextTick();
+  await nextTick()
 
-  if (!rootEl.value || !dropdownEl.value) return;
+  if (!rootEl.value || !dropdownEl.value) return
 
-  const rootBR = rootEl.value.getBoundingClientRect();
+  const rootBR = rootEl.value.getBoundingClientRect()
 
-  let left = rootBR.left;
-  const top = rootBR.top + rootEl.value.offsetHeight;
+  let left = rootBR.left
+  const top = rootBR.top + rootEl.value.offsetHeight
 
-  let width = dropdownEl.value.scrollWidth;
+  let width = dropdownEl.value.scrollWidth
 
   if (width > window.innerWidth) {
-    width = window.innerWidth;
-    left = 0;
+    width = window.innerWidth
+    left = 0
   } else {
     if (left + width - window.scrollX > window.innerWidth) {
-      left = window.innerWidth - width + window.scrollX;
+      left = window.innerWidth - width + window.scrollX
     }
 
     if (left < 0) {
-      left = 0;
+      left = 0
     }
   }
 
-  dropdownEl.value.style.top = `${top}px`;
-  dropdownEl.value.style.left = `${left}px`;
+  dropdownEl.value.style.top = `${top}px`
+  dropdownEl.value.style.left = `${left}px`
 
-  if (width) dropdownEl.value.style.width = `${width}px`;
-  else dropdownEl.value.style.width = '';
-};
+  if (width) dropdownEl.value.style.width = `${width}px`
+  else dropdownEl.value.style.width = ''
+}
 
-watch(open, value => {
-  if (value) onHover();
-});
+watch(open, (value) => {
+  if (value) onHover()
+})
 
 watch(
   () => route.path,
   () => {
     open.value = false
-  }
+  },
 )
 
 /**
@@ -81,12 +79,17 @@ const handleDropdown = (e): void => {
   }
 }
 
-const isLastItemOfArray = (item: unknown, arr: unknown[]): boolean =>
-  arr[arr.length - 1] === item
+const isLastItemOfArray = (item: unknown, arr: unknown[]): boolean => arr[arr.length - 1] === item
 </script>
 
 <template>
-  <div class="navbar-dropdown-wrapper" ref="rootEl" :class="{ open }" @touchstart.self="onHover" @mouseover.self="onHover">
+  <div
+    class="navbar-dropdown-wrapper"
+    ref="rootEl"
+    :class="{ open }"
+    @touchstart.self="onHover"
+    @mouseover.self="onHover"
+  >
     <button
       class="navbar-dropdown-title"
       type="button"
@@ -95,20 +98,15 @@ const isLastItemOfArray = (item: unknown, arr: unknown[]): boolean =>
       @touchstart="onHover"
       @mouseover="onHover"
     >
-      <template v-if="item.icon" >
+      <template v-if="item.icon">
         <component :is="item.icon" class="tabler-icon _icon_middle" />
       </template>
       <span class="title">{{ item.text }}</span>
       <span class="arrow down" />
     </button>
 
-    <button
-      class="navbar-dropdown-title-mobile"
-      type="button"
-      :aria-label="dropdownAriaLabel"
-      @click="open = !open"
-    >
-      <template v-if="item.icon" >
+    <button class="navbar-dropdown-title-mobile" type="button" :aria-label="dropdownAriaLabel" @click="open = !open">
+      <template v-if="item.icon">
         <component :is="item.icon" class="tabler-icon _icon_middle" />
       </template>
       <span class="title">{{ item.text }}</span>
@@ -117,32 +115,20 @@ const isLastItemOfArray = (item: unknown, arr: unknown[]): boolean =>
 
     <DropdownTransition>
       <ul v-show="open" class="navbar-dropdown" ref="dropdownEl">
-        <li
-          v-for="child in item.children"
-          :key="child.text"
-          class="navbar-dropdown-item"
-        >
+        <li v-for="child in item.children" :key="child.text" class="navbar-dropdown-item">
           <template v-if="child.children">
             <h4 class="navbar-dropdown-subtitle">
               <AutoLink
                 v-if="child.link"
                 :item="child"
-                @focusout="
-                  isLastItemOfArray(child, item.children) &&
-                    child.children.length === 0 &&
-                    (open = false)
-                "
+                @focusout="isLastItemOfArray(child, item.children) && child.children.length === 0 && (open = false)"
               />
 
               <span v-else>{{ child.text }}</span>
             </h4>
 
             <ul class="navbar-dropdown-subitem-wrapper">
-              <li
-                v-for="grandchild in child.children"
-                :key="grandchild.link"
-                class="navbar-dropdown-subitem"
-              >
+              <li v-for="grandchild in child.children" :key="grandchild.link" class="navbar-dropdown-subitem">
                 <AutoLink
                   :item="grandchild"
                   @focusout="
@@ -156,12 +142,7 @@ const isLastItemOfArray = (item: unknown, arr: unknown[]): boolean =>
           </template>
 
           <template v-else>
-            <AutoLink
-              :item="child"
-              @focusout="
-                isLastItemOfArray(child, item.children) && (open = false)
-              "
-            />
+            <AutoLink :item="child" @focusout="isLastItemOfArray(child, item.children) && (open = false)" />
           </template>
         </li>
       </ul>
@@ -222,10 +203,10 @@ const isLastItemOfArray = (item: unknown, arr: unknown[]): boolean =>
   .navbar-dropdown {
     cursor: auto;
     list-style: none;
-		background-color: var(--c-bg-navbar-dropdown);
-		border: none;
-		border-radius: 8px;
-		box-shadow: 0px 4px 32px var(--c-bg-navbar-dropdown-shadow);
+    background-color: var(--c-bg-navbar-dropdown);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 32px var(--c-bg-navbar-dropdown-shadow);
 
     .navbar-dropdown-item {
       color: inherit;

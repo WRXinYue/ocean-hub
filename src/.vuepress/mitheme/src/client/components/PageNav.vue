@@ -4,19 +4,13 @@ import { usePageFrontmatter } from '@vuepress/client'
 import { isPlainObject, isString } from '@vuepress/shared'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import type {
-  MiThemeNormalPageFrontmatter,
-  NavLink,
-  ResolvedSidebarItem,
-} from '../../shared'
+import type { MiThemeNormalPageFrontmatter, NavLink, ResolvedSidebarItem } from '../../shared'
 import { useNavLink, useSidebarItems } from '../composables'
 
 /**
  * Resolve `prev` or `next` config from frontmatter
  */
-const resolveFromFrontmatterConfig = (
-  conf: unknown
-): null | false | NavLink => {
+const resolveFromFrontmatterConfig = (conf: unknown): null | false | NavLink => {
   if (conf === false) {
     return null
   }
@@ -38,7 +32,7 @@ const resolveFromFrontmatterConfig = (
 const resolveFromSidebarItems = (
   sidebarItems: ResolvedSidebarItem[],
   currentPath: string,
-  offset: number
+  offset: number,
 ): null | NavLink => {
   const index = sidebarItems.findIndex((item) => item.link === currentPath)
   if (index !== -1) {
@@ -51,11 +45,7 @@ const resolveFromSidebarItems = (
 
   for (const item of sidebarItems) {
     if (item.children) {
-      const childResult = resolveFromSidebarItems(
-        item.children,
-        currentPath,
-        offset
-      )
+      const childResult = resolveFromSidebarItems(item.children, currentPath, offset)
       if (childResult) {
         return childResult
       }

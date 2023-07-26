@@ -28,13 +28,11 @@ const isActive = computed(() => isActiveSidebarItem(item.value, route))
 const itemClass = computed(() => ({
   'sidebar-item': true,
   'sidebar-heading': depth.value === 0,
-  'active': isActive.value,
-  'collapsible': item.value.collapsible,
+  active: isActive.value,
+  collapsible: item.value.collapsible,
 }))
 
-const isOpenDefault = computed(() =>
-  item.value.collapsible ? isActive.value : true
-)
+const isOpenDefault = computed(() => (item.value.collapsible ? isActive.value : true))
 const [isOpen, toggleIsOpen] = useToggle(isOpenDefault.value)
 const onClick = (e: Event): void => {
   if (item.value.collapsible) {
@@ -58,19 +56,9 @@ onBeforeUnmount(() => {
 <template>
   <li>
     <AutoLink v-if="item.link" :class="itemClass" :item="item" />
-    <p
-      v-else
-      tabindex="0"
-      :class="itemClass"
-      @click="onClick"
-      @keydown.enter="onClick"
-    >
+    <p v-else tabindex="0" :class="itemClass" @click="onClick" @keydown.enter="onClick">
       {{ item.text }}
-      <span
-        v-if="item.collapsible"
-        class="arrow"
-        :class="isOpen ? 'down' : 'right'"
-      />
+      <span v-if="item.collapsible" class="arrow" :class="isOpen ? 'down' : 'right'" />
     </p>
 
     <DropdownTransition v-if="item.children?.length">

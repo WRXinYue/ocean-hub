@@ -6,20 +6,14 @@ import { usePageData, usePageFrontmatter } from '@vuepress/client'
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import type { MiThemePageFrontmatter } from '../../shared'
-import {
-  useScrollPromise,
-  useSidebarItems,
-  useThemeLocaleData,
-} from '../composables'
+import { useScrollPromise, useSidebarItems, useThemeLocaleData } from '../composables'
 
 const page = usePageData()
 const frontmatter = usePageFrontmatter<MiThemePageFrontmatter>()
 const themeLocale = useThemeLocaleData()
 
 // navbar
-const shouldShowNavbar = computed(
-  () => frontmatter.value.navbar !== false && themeLocale.value.navbar !== false
-)
+const shouldShowNavbar = computed(() => frontmatter.value.navbar !== false && themeLocale.value.navbar !== false)
 
 // sidebar
 const sidebarItems = useSidebarItems()
@@ -73,30 +67,20 @@ const onBeforeLeave = scrollPromise.pending
 </script>
 
 <template>
-  <div
-    class="theme-container"
-    :class="containerClass"
-    @touchstart="onTouchStart"
-    @touchend="onTouchEnd"
-  >
-    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
+  <div class="theme-container" :class="containerClass" @touchstart="onTouchStart" @touchend="onTouchEnd">
+    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" />
 
     <div class="sidebar-mask" @click="toggleSidebar(false)" />
 
     <Sidebar>
       <template #bottom>
-				<MkDots :class="$style.sidebarDots" :space="12"/>
-        <MkAd :class="$style.koko9" class="mkAd"/>
+        <MkDots :class="$style.sidebarDots" :space="12" />
+        <MkAd :class="$style.koko9" class="mkAd" />
       </template>
     </Sidebar>
 
-    <Transition
-      name="fade-slide-y"
-      mode="out-in"
-      @before-enter="onBeforeEnter"
-      @before-leave="onBeforeLeave"
-    >
-      <Page :key="page.path"/>
+    <Transition name="fade-slide-y" mode="out-in" @before-enter="onBeforeEnter" @before-leave="onBeforeLeave">
+      <Page :key="page.path" />
     </Transition>
   </div>
 </template>
@@ -124,8 +108,7 @@ const onBeforeLeave = scrollPromise.pending
   scrollbar-width: thin;
   scrollbar-color: var(--c-brand) var(--c-border);
   background-color: var(--c-bg-sidebar);
-  transition: transform var(--t-transform), background-color var(--t-color),
-    border-color var(--t-color);
+  transition: transform var(--t-transform), background-color var(--t-color), border-color var(--t-color);
   &::-webkit-scrollbar {
     width: 7px;
   }
@@ -290,30 +273,30 @@ const onBeforeLeave = scrollPromise.pending
 
 <style lang="scss" module>
 .sidebarDots {
-	display: block;
-	margin: 0 32px 2em 32px;
-	width: calc(100% - 64px);
-	height: 40px;
-	opacity: 0.2;
+  display: block;
+  margin: 0 32px 2em 32px;
+  width: calc(100% - 64px);
+  height: 40px;
+  opacity: 0.2;
 }
 
 .koko9 {
-	display: block;
-	margin: 0 32px 32px 32px;
+  display: block;
+  margin: 0 32px 32px 32px;
 
-	> img {
-		display: block;
-		width: 100%;
-	}
+  > img {
+    display: block;
+    width: 100%;
+  }
 }
 
 .live2d {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	width: 300px;
-	height: 600px;
-	border: none;
-	pointer-events: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 600px;
+  border: none;
+  pointer-events: none;
 }
 </style>

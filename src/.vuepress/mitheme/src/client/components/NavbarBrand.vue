@@ -1,10 +1,5 @@
 <script setup lang="ts">
-import {
-  ClientOnly,
-  useRouteLocale,
-  useSiteLocaleData,
-  withBase,
-} from '@vuepress/client'
+import { ClientOnly, useRouteLocale, useSiteLocaleData, withBase } from '@vuepress/client'
 import { computed, h } from 'vue'
 import type { FunctionalComponent } from 'vue'
 import { useDarkMode, useThemeLocaleData } from '../composables'
@@ -14,9 +9,7 @@ const siteLocale = useSiteLocaleData()
 const themeLocale = useThemeLocaleData()
 const isDarkMode = useDarkMode()
 
-const navbarBrandLink = computed(
-  () => themeLocale.value.home || routeLocale.value
-)
+const navbarBrandLink = computed(() => themeLocale.value.home || routeLocale.value)
 const navbarBrandTitle = computed(() => siteLocale.value.title)
 const navbarBrandLogo = computed(() => {
   if (isDarkMode.value && themeLocale.value.logoDark !== undefined) {
@@ -44,11 +37,7 @@ const NavbarBrandLogo: FunctionalComponent = () => {
   <RouterLink :to="navbarBrandLink">
     <NavbarBrandLogo />
 
-    <span
-      v-if="navbarBrandTitle"
-      class="site-name"
-      :class="{ 'can-hide': navbarBrandLogo }"
-    >
+    <span v-if="navbarBrandTitle" class="site-name" :class="{ 'can-hide': navbarBrandLogo }">
       {{ navbarBrandTitle }}
     </span>
   </RouterLink>
