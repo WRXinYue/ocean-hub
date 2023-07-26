@@ -5,7 +5,7 @@
     </template>
     <template #sidebar-bottom>
       <MkDots :class="$style.sidebarDots" :space="12" />
-      <MkAd :class="$style.koko9" class="mkAd" />
+      <!-- <MkAd :class="$style.koko9" class="mkAd" /> -->
     </template>
     <template #page-top>
       <MkDots :class="$style.headerDots" />

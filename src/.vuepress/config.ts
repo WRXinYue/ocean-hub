@@ -71,7 +71,7 @@ export default defineUserConfig<DefaultThemeOptions>({
 				relatedPagesText: 'Related pages',
 				readThisArticle: 'Read this article',
 				navbar: [
-					{ text: 'Blog', link: '/blog/' },
+					{ text: 'Blog', link: '/docs/blog/' },
 					{ text: 'Taking part', children: ['/instances', '/plugins/', '/appendix/assets'] },
 					{
 						text: 'Documentation', children: [
@@ -157,7 +157,7 @@ export default defineUserConfig<DefaultThemeOptions>({
 				relatedPagesText: '相关页面',
 				readThisArticle: '阅读本文章',
 				navbar: [
-					{ text: '博客', link: '/blog/' },
+					{ text: '博客', link: '/docs/blog/' },
 					{ text: '参与', children: ['/zh-CN/instances', '/zh-CN/plugins/', '/zh-CN/appendix/assets'] },
 					{
 						text: '帮助文档', children: [
@@ -243,7 +243,7 @@ export default defineUserConfig<DefaultThemeOptions>({
 				relatedPagesText: '関連するページ',
 				readThisArticle: 'この記事を読む',
 				navbar: [
-					{ text: 'ブログ', link: '/ja/blog/' },
+					{ text: 'ブログ', link: '/docs/blog/' },
 					{ text: 'お楽しみ', children: ['/ja/instances', '/ja/plugins/', '/ja/appendix/assets'] },
 					{
 						text: 'ドキュメント', children: [
@@ -330,7 +330,7 @@ export default defineUserConfig<DefaultThemeOptions>({
 				relatedPagesText: '관련 페이지',
 				readThisArticle: '이 문서 읽기',
 				navbar: [
-					{ text: '블로그', link: '/ko/blog/' },
+					{ text: '블로그', link: '/docs/blog/' },
 					{ text: '둘러보기', children: ['/ko/instances', '/ko/plugins/', '/ko/appendix/assets'] },
 					{
 						text: '설명서', children: [
@@ -432,7 +432,7 @@ export default defineUserConfig<DefaultThemeOptions>({
 				toggleColorMode: 'cambia i colori',
 				toggleSidebar: 'menu laterale di navigazione',
 				navbar: [
-					{ text: 'Blog Giapponese', link: '/blog' },
+					{ text: 'Blog Giapponese', link: '/docs/blog/' },
 					{ text: 'Partecipa', children: ['/it/instances', '/it/plugins', '/it/appendix/assets'] },
 					{
 						text: 'Documentazione', children: [
@@ -517,7 +517,7 @@ export default defineUserConfig<DefaultThemeOptions>({
 				relatedPagesText: 'Powiązane strony',
 				readThisArticle: 'Przeczytaj ten artykuł',
 				navbar: [
-					{ text: 'Blog', link: '/pl/blog/' },
+					{ text: 'Blog', link: '/docs/blog/' },
 					{ text: 'Dołącz', children: ['/pl/instances', '/pl/plugins/', '/pl/appendix/assets'] },
 					{
 						text: 'Dokumentacja', children: [

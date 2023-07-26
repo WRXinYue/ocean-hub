@@ -13,7 +13,7 @@
     <Sidebar>
       <template #bottom>
         <MkDots :class="$style.sidebarDots" :space="12" />
-        <MkAd :class="$style.koko9" class="mkAd" />
+        <!-- <MkAd :class="$style.koko9" class="mkAd" /> -->
       </template>
     </Sidebar>
 
@@ -25,7 +25,7 @@
       </ClientOnly>
 
       <div class="container">
-        <svg
+        <!-- <svg
           class="logo"
           viewBox="0 0 515 136"
           version="1.1"
@@ -41,7 +41,7 @@
               style="fill: currentColor; fill-rule: nonzero"
             />
           </g>
-        </svg>
+        </svg> -->
         <div class="tagline" id="tagline">
           <div class="row">Interplanetary</div>
           <div class="row">Knowledge Sharing</div>
@@ -57,7 +57,7 @@
       <!--<img src="/top-corner-2.svg" class="corner2">-->
       <MkDots v-parallax="1.4" class="dots1" :space="30" />
       <MkDots v-parallax="1.5" class="dots2" :space="30" />
-      <img
+      <!-- <img
         v-parallax="2"
         src="/screenshot-desktop.png"
         class="screenshot desktop"
@@ -68,7 +68,7 @@
         src="/screenshot-mobile.png"
         class="screenshot mobile"
         alt="screenshot of Misskey in a mobile browser"
-      />
+      /> -->
       <!-- <img v-parallax="4" src="/ai.png" class="ai" alt="Ai-chan, Misskey's mascott"> -->
       <a
         href="https://github.com/misskey-dev/misskey"
@@ -265,7 +265,7 @@
         </div>
       </div>
 
-      <div class="supporters">
+      <!-- <div class="supporters">
         <div class="container">
           <div class="title">{{ (frontmatter.sections as any).sponsors.title }}</div>
           <a style="display: block" class="rss3" title="RSS3" href="https://rss3.io/" target="_blank"
@@ -283,7 +283,7 @@
             ><img src="/sponsors/dcadvirth.png" alt="DC Advirth" style="width: 100px"
           /></a>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="footer">

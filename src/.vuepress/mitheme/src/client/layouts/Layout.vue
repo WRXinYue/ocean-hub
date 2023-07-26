@@ -75,7 +75,7 @@ const onBeforeLeave = scrollPromise.pending
     <Sidebar>
       <template #bottom>
         <MkDots :class="$style.sidebarDots" :space="12" />
-        <MkAd :class="$style.koko9" class="mkAd" />
+        <!-- <MkAd :class="$style.koko9" class="mkAd" /> -->
       </template>
     </Sidebar>
 
