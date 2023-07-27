@@ -103,23 +103,23 @@
       <div class="container">
         <div class="item">
           <div class="icon"><img src="/emojis/four-leaf-clover_1f340.png" aria-hidden="true" /></div>
-          <div class="title">{{ (frontmatter.keyFeatures as any).open.title }}</div>
-          <div class="description">{{ (frontmatter.keyFeatures as any).open.description }}</div>
+          <div class="title">{{ frontmatter.keyFeatures.open.title }}</div>
+          <div class="description">{{ frontmatter.keyFeatures.open.description }}</div>
         </div>
         <div class="item">
           <div class="icon"><img src="/emojis/ringed-planet_1fa90.png" aria-hidden="true" /></div>
-          <div class="title">{{ (frontmatter.keyFeatures as any).federated.title }}</div>
-          <div class="description">{{ (frontmatter.keyFeatures as any).federated.description }}</div>
+          <div class="title">{{ frontmatter.keyFeatures.federated.title }}</div>
+          <div class="description">{{ frontmatter.keyFeatures.federated.description }}</div>
         </div>
         <div class="item">
           <div class="icon"><img src="/emojis/package_1f4e6.png" aria-hidden="true" /></div>
-          <div class="title">{{ (frontmatter.keyFeatures as any).multifunction.title }}</div>
-          <div class="description">{{ (frontmatter.keyFeatures as any).multifunction.description }}</div>
+          <div class="title">{{ frontmatter.keyFeatures.multifunction.title }}</div>
+          <div class="description">{{ frontmatter.keyFeatures.multifunction.description }}</div>
         </div>
         <div class="item">
           <div class="icon"><img src="/emojis/gear_2699-fe0f.png" aria-hidden="true" /></div>
-          <div class="title">{{ (frontmatter.keyFeatures as any).customizable.title }}</div>
-          <div class="description">{{ (frontmatter.keyFeatures as any).customizable.description }}</div>
+          <div class="title">{{ frontmatter.keyFeatures.customizable.title }}</div>
+          <div class="description">{{ frontmatter.keyFeatures.customizable.description }}</div>
         </div>
       </div>
     </div>
@@ -127,8 +127,8 @@
     <div class="body">
       <div class="about" id="learnMore">
         <div class="container">
-          <div class="title" v-html="(frontmatter.sections as any).federatedSoftware.title"></div>
-          <div class="description" v-html="(frontmatter.sections as any).federatedSoftware.description"></div>
+          <div class="title" v-html="frontmatter.sections.federatedSoftware.title"></div>
+          <div class="description" v-html="frontmatter.sections.federatedSoftware.description"></div>
         </div>
       </div>
 
@@ -138,8 +138,8 @@
         <div class="container">
           <div class="h">
             <div class="container">
-              <div class="title">{{ (frontmatter.sections as any).features.title }}</div>
-              <div class="text">{{ (frontmatter.sections as any).features.description }}</div>
+              <div class="title">{{ frontmatter.sections.features.title }}</div>
+              <div class="text">{{ frontmatter.sections.features.description }}</div>
             </div>
           </div>
           <div class="list">
@@ -147,29 +147,29 @@
               <div v-fade-in class="item"
                 ><div class="content">
                   <img src="/top-features-note.png" class="img" alt="some notes" />
-                  <div class="title">{{ (frontmatter.sections as any).features.list.note.title }}</div>
-                  <div class="description">{{ (frontmatter.sections as any).features.list.note.description }}</div>
+                  <div class="title">{{ frontmatter.sections.features.list.note.title }}</div>
+                  <div class="description">{{ frontmatter.sections.features.list.note.description }}</div>
                 </div></div
               >
               <div v-fade-in class="item"
                 ><div class="content">
                   <img src="/top-features-reaction.png" class="img" alt="some emojis in the reaction picker" />
-                  <div class="title">{{ (frontmatter.sections as any).features.list.reaction.title }}</div>
-                  <div class="description">{{ (frontmatter.sections as any).features.list.reaction.description }}</div>
+                  <div class="title">{{ frontmatter.sections.features.list.reaction.title }}</div>
+                  <div class="description">{{ frontmatter.sections.features.list.reaction.description }}</div>
                 </div></div
               >
               <div v-fade-in class="item"
                 ><div class="content">
                   <img src="/top-features-theme.png" class="img" alt="color palette" />
-                  <div class="title">{{ (frontmatter.sections as any).features.list.theme.title }}</div>
-                  <div class="description">{{ (frontmatter.sections as any).features.list.theme.description }}</div>
+                  <div class="title">{{ frontmatter.sections.features.list.theme.title }}</div>
+                  <div class="description">{{ frontmatter.sections.features.list.theme.description }}</div>
                 </div></div
               >
               <div v-fade-in class="item"
                 ><div class="content">
                   <img src="/top-features-charts.png" class="img" alt="Charts" />
-                  <div class="title">{{ (frontmatter.sections as any).features.list.charts.title }}</div>
-                  <div class="description">{{ (frontmatter.sections as any).features.list.charts.description }}</div>
+                  <div class="title">{{ frontmatter.sections.features.list.charts.title }}</div>
+                  <div class="description">{{ frontmatter.sections.features.list.charts.description }}</div>
                 </div></div
               >
             </div>
@@ -181,24 +181,24 @@
                     class="img"
                     alt="logos of Misskey and other ActivityPub server software"
                   />
-                  <div class="title">{{ (frontmatter.sections as any).features.list.federation.title }}</div>
+                  <div class="title">{{ frontmatter.sections.features.list.federation.title }}</div>
                   <div class="description">{{
-                    (frontmatter.sections as any).features.list.federation.description
+                    frontmatter.sections.features.list.federation.description
                   }}</div>
                 </div></div
               >
               <div v-fade-in class="item"
                 ><div class="content">
                   <img src="/top-features-drive.png" class="img" alt="a list of files in Misskey Drive" />
-                  <div class="title">{{ (frontmatter.sections as any).features.list.drive.title }}</div>
-                  <div class="description">{{ (frontmatter.sections as any).features.list.drive.description }}</div>
+                  <div class="title">{{ frontmatter.sections.features.list.drive.title }}</div>
+                  <div class="description">{{ frontmatter.sections.features.list.drive.description }}</div>
                 </div></div
               >
               <div v-fade-in class="item"
                 ><div class="content">
                   <img src="/top-features-thread.png" class="img" alt="multiple messages arranged in a thread" />
-                  <div class="title">{{ (frontmatter.sections as any).features.list.thread.title }}</div>
-                  <div class="description">{{ (frontmatter.sections as any).features.list.thread.description }}</div>
+                  <div class="title">{{ frontmatter.sections.features.list.thread.title }}</div>
+                  <div class="description">{{ frontmatter.sections.features.list.thread.description }}</div>
                 </div></div
               >
               <div v-fade-in class="item"
@@ -208,8 +208,8 @@
                     class="img"
                     alt="sample widget showing activity as colored dots"
                   />
-                  <div class="title">{{ (frontmatter.sections as any).features.list.widgets.title }}</div>
-                  <div class="description">{{ (frontmatter.sections as any).features.list.widgets.description }}</div>
+                  <div class="title">{{ frontmatter.sections.features.list.widgets.title }}</div>
+                  <div class="description">{{ frontmatter.sections.features.list.widgets.description }}</div>
                 </div></div
               >
             </div>
@@ -220,35 +220,35 @@
       <MkDots class="dots" :space="30" />
 
       <div class="start" id="gettingStarted">
-        <div class="title">{{ (frontmatter.sections as any).gettingStarted.title }}</div>
+        <div class="title">{{ frontmatter.sections.gettingStarted.title }}</div>
         <div class="container">
           <div v-fade-in class="find">
             <div class="container">
               <div class="icon"><img src="/emojis/ringed-planet_1fa90.png" aria-hidden="true" /></div>
-              <div class="title">{{ (frontmatter.sections as any).gettingStarted.find.title }}</div>
+              <div class="title">{{ frontmatter.sections.gettingStarted.find.title }}</div>
               <div class="description"></div>
               <RouterLink class="link" to="./instances.html">{{
-                (frontmatter.sections as any).gettingStarted.find.list
+                frontmatter.sections.gettingStarted.find.list
               }}</RouterLink>
             </div>
           </div>
           <div v-fade-in class="create">
             <div class="container">
               <div class="icon"><img src="/emojis/package_1f4e6.png" aria-hidden="true" /></div>
-              <div class="title">{{ (frontmatter.sections as any).gettingStarted.create.title }}</div>
+              <div class="title">{{ frontmatter.sections.gettingStarted.create.title }}</div>
               <div class="description"></div>
               <RouterLink class="link" to="./docs/install.html">{{
-                (frontmatter.sections as any).gettingStarted.create.guide
+                frontmatter.sections.gettingStarted.create.guide
               }}</RouterLink>
             </div>
           </div>
           <div v-fade-in class="docs">
             <div class="container">
               <div class="icon"><img src="/emojis/light-bulb_1f4a1.png" aria-hidden="true" /></div>
-              <div class="title">{{ (frontmatter.sections as any).gettingStarted.docs.title }}</div>
+              <div class="title">{{ frontmatter.sections.gettingStarted.docs.title }}</div>
               <div class="description"></div>
               <RouterLink class="link" to="./docs/misskey.html">{{
-                (frontmatter.sections as any).gettingStarted.docs.docs
+                frontmatter.sections.gettingStarted.docs.docs
               }}</RouterLink>
             </div>
           </div>
@@ -259,15 +259,15 @@
 
       <div class="donation">
         <div class="container">
-          <div class="title">{{ (frontmatter.sections as any).donation.title }}</div>
-          <div class="description">{{ (frontmatter.sections as any).donation.description }}</div>
+          <div class="title">{{ frontmatter.sections.donation.title }}</div>
+          <div class="description">{{ frontmatter.sections.donation.description }}</div>
           <RouterLink class="link" to="./docs/donate.html">{{ frontmatter.learnMore }}</RouterLink>
         </div>
       </div>
 
       <!-- <div class="supporters">
         <div class="container">
-          <div class="title">{{ (frontmatter.sections as any).sponsors.title }}</div>
+          <div class="title">{{ frontmatter.sections.sponsors.title }}</div>
           <a style="display: block" class="rss3" title="RSS3" href="https://rss3.io/" target="_blank"
             ><img src="/sponsors/rss3.svg" alt="RSS3" style="width: 130px"
           /></a>
@@ -300,7 +300,7 @@ import { ClientOnly, usePageFrontmatter } from '@vuepress/client'
 import Navbar from '@theme/Navbar.vue'
 import Sidebar from '@theme/Sidebar.vue'
 
-const frontmatter = usePageFrontmatter()
+const frontmatter = usePageFrontmatter() as any
 
 const vParallax = {
   mounted: (src: any, binding: any, vn: any) => {
