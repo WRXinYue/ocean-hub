@@ -18,12 +18,10 @@ Ocean Blog为什么需要Ocean作为前缀，是因为这些庞杂的原子性�
 :::
 
 
-## Always Open-Source
-Misskey has always been, and will always be, open source.Open source means, simply speaking, <b>making the source code of software (a program) publicly available</b>.This also includes being able to adjust or redistribute the source code in its definition. The entirety of Misskey's source code is [being licensed](https://github.com/misskey-dev) under an open-source license called [AGPL](https://github.com/misskey-dev/misskey/blob/develop/LICENSE), which means anyone can freely inspect, use, adjust, change or redistribute as they see fit. Open source has many merits, including allowing anyone being able to make changes as they like, to make sure the code does not include any harmful components and being able to easily participate in its development. For realizing the distributed nature of Misskey, this concept of open source is indispensable. Using the same example as before, most profit-oriented services like Twitter, Facebook etc. are not open source.
+## 永久开源
+Ocean Blog主要是用于知识库的构建，目前最佳的实战是使用博客的系统，然后不断细化，并计算其原子知识点，从而形成个人的知识点库。而本系统可以进行不断的扩展，说不定在未来的视频中也可以做到这样不断细分视频，从而构建一个 讲解各个原子知识点的视频 的视频库。所以为了不断适应未来的不同的变化，Ocean Blog将永久开源，为推进人类科学进步做出贡献。
 
-::: tip
-Technically speaking, Misskey's source code is being managed via Git, and its repository is being hosted at [GitHub.](https://github.com/misskey-dev)
-:::
+
 
 ## Joining development and supporting the project
 If you like Misskey, please support the project.Supporting the project can be done in many ways, with some of them introduced below.Some of these do not require programming skills, so anyone can feel free to support Misskey their own way.We're always waiting for you.
