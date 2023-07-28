@@ -23,17 +23,20 @@ Ocean Blog主要是用于知识库的构建，目前最佳的实战是使用博�
 
 
 
-## Joining development and supporting the project
-If you like Misskey, please support the project.Supporting the project can be done in many ways, with some of them introduced below.Some of these do not require programming skills, so anyone can feel free to support Misskey their own way.We're always waiting for you.
+## 加入我们||支持项目
+如果你喜欢Ocean Blog，请支持这个项目。支持该项目可以通过多种方式完成，其中一些将在下面介绍。其中一些不需要编程技能，因此任何人都可以自由地以自己的方式支持Ocean Blog。我们一直在等你。
 
-### Adding features or fixing bugs
-If you possess software engineering skills, you can contribute to the project through editing its source code. For guidelines regarding this, please see [here](https://github.com/misskey-dev/misskey/blob/develop/CONTRIBUTING.md).
+### 添加功能或修复错误
+添加功能或修复错误 如果您拥有软件工程技能，则可以通过编辑其源代码为项目做出贡献。有关这方面的指南，请参阅[这里](https://github.com/misskey-dev/misskey/blob/develop/CONTRIBUTING.md).
+<!--TODO 将连接地址进行更换-->
 
-### Participating in discussions
-You can contribute by sharing your opinion on new or existing features, as well as by reporting bugs. Such discussions can be held at [GitHub](https://github.com/misskey-dev) or the [Forums](https://forum.misskey.io/) etc.
+### 参与讨论
+你可以通过分享你对新功能或现有功能的意见以及报告错误来做出贡献。此类讨论可以在[GitHub](https://github.com/misskey-dev)或[论坛](https://forum.misskey.io/)等上进行。
+<!--TODO 将连接地址进行更换-->
 
-### Translating text
-Misskey is available in many languages (also called i18n, which is an abbreviation for Internationalization).While the original language is generally japanese, volunteers are translating Misskey into other languages. Helping out with this translation work is also a form of contributing. Misskey uses a service called [Crowdin to manage its translations.](https://crowdin.com/project/misskey)
+### 翻译文本
+ Ocean Blog 有多种语言版本（也称为 i18n，是国际化的缩写）。虽然原始语言通常是中文简体，但志愿者正在将Ocean Blog翻译成其他语言。帮助这项工作也是一种贡献形式。Ocean Blog使用名为[Crowdin来管理其翻译的服务。](https://crowdin.com/project/misskey)
+<!--TODO 更换地址-->
 
 ### Sharing your impressions
 Besides reporting bugs, please also feel free to share positive impressions such as which parts of Misskey you personally like, or things about Misskey that you find fun.As things like these serve as motivation for the developers, it also counts as indirect support for the project.
