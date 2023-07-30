@@ -162,7 +162,7 @@ export default defineUserConfig<DefaultThemeOptions>({
 					{
 						text: '帮助文档', children: [
 							'/zh-CN/docs/ocean-blog',
-							'/zh-CN/docs/oceanblog',
+							'/zh-CN/docs/atomic-knowledge',
 							'/zh-CN/docs/releases',
 							'/zh-CN/docs/misskey-hub',
 							'/zh-CN/docs/faq',
