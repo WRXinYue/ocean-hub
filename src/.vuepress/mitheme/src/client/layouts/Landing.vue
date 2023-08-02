@@ -349,8 +349,8 @@ const toggleSidebar = (to?: boolean): void => {
 
 onMounted(() => {
   const lang = navigator.language.toLowerCase()
-  if ((location.pathname === '/' && !lang.startsWith('zh-CN')) || location.pathname === '/zh-cn/') {
-    location.href = '/zh-CN/'
+  if ((location.pathname === '/' && !lang.startsWith('zh-CN'))) {
+    location.href = '/zh/'
   } else if (location.pathname === '/' && lang.startsWith('it')) {
     location.href = '/it/'
   }
