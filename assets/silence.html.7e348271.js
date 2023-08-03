@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-216107a0","path":"/pl/docs/features/silence.html","title":"Wyciszenie","lang":"pl-PL","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1690364711000,"contributors":[{"name":"WRXinYue","email":"3322543587@qq.com","commits":1}]},"filePathRelative":"pl/docs/features/silence.md"}');export{e as data};

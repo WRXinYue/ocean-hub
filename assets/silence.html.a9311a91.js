@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6dab6884","path":"/zh/docs/features/silence.html","title":"Silence","lang":"zh","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1690949448000,"contributors":[{"name":"WRXinYue","email":"3322543587@qq.com","commits":1}]},"filePathRelative":"zh/docs/features/silence.md"}');export{e as data};
