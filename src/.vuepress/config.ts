@@ -203,6 +203,16 @@ export default defineUserConfig<DefaultThemeOptions>({
 								]
 							},
 							{
+								text: '技术文档', children: [
+									'/zh/docs/tech',
+									'/zh/docs/tech/configuration',
+									'/zh/docs/tech/any-sync',
+									'/zh/docs/tech/anytype-heart',
+									'/zh/docs/tech/glossary',
+									'/zh/docs/tech/overview',
+								]
+							},
+							{
 								text: '管理员', children: [
 									'/zh/docs/install',
 									'/zh/docs/admin/emoji',
