@@ -5,7 +5,7 @@
 <script>
 import {} from 'vue'
 import { usePageData } from '@vuepress/client'
-import { useThemeLocaleData } from '@vuepress/plugin-theme-data/lib/client'
+import { useThemeLocaleData } from '@vuepress/plugin-theme-data/client'
 
 export default {
   setup() {
