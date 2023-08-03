@@ -10,7 +10,7 @@
 
 <script>
 import {} from 'vue'
-import { useThemeLocaleData } from '@vuepress/plugin-theme-data/client'
+import { useThemeLocaleData } from '@vuepress/plugin-theme-data/lib/client'
 
 export default {
   props: {
