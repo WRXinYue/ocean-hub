@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-76798314","path":"/it/docs/features/favorite.html","title":"I preferiti","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1690364711000,"contributors":[{"name":"WRXinYue","email":"3322543587@qq.com","commits":1}]},"filePathRelative":"it/docs/features/favorite.md"}');export{e as data};

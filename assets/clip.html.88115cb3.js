@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-cda7899e","path":"/pl/docs/features/clip.html","title":"Klip / Clip","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1690364711000,"contributors":[{"name":"WRXinYue","email":"3322543587@qq.com","commits":1}]},"filePathRelative":"pl/docs/features/clip.md"}');export{e as data};
