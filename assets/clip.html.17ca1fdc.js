@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-a4854540","path":"/it/docs/features/clip.html","title":"Le clip","lang":"it-IT","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1690364711000,"contributors":[{"name":"WRXinYue","email":"3322543587@qq.com","commits":1}]},"filePathRelative":"it/docs/features/clip.md"}');export{t as data};

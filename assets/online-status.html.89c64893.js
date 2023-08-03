@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-11e3af96","path":"/fr/docs/features/online-status.html","title":"\xC9tat de connexion","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1690364711000,"contributors":[{"name":"WRXinYue","email":"3322543587@qq.com","commits":1}]},"filePathRelative":"fr/docs/features/online-status.md"}');export{e as data};

@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-5c0fb48e","path":"/pl/docs/admin/nginx.html","title":"Konfiguracja ngix","lang":"pl-PL","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1690364711000,"contributors":[{"name":"WRXinYue","email":"3322543587@qq.com","commits":1}]},"filePathRelative":"pl/docs/admin/nginx.md"}');export{e as data};
