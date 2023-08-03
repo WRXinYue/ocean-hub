@@ -13,20 +13,14 @@
 <script>
 import {} from 'vue'
 import { usePageData } from '@vuepress/client'
-import { useThemeLocaleData } from '@vuepress/plugin-theme-data/client'
-import type { ThemeData } from '@vuepress/plugin-theme-data/client'
-
-type themeData = ThemeData<{
-	relatedPagesText: string
-}>
+import { useThemeLocaleData } from '@vuepress/plugin-theme-data/lib/client'
 
 export default {
   setup() {
     const page = usePageData()
 
     return {
-      // themeLocale: useThemeLocaleData(),
-      themeLocale: useThemeLocaleData<themeData>(),
+      themeLocale: useThemeLocaleData(),
       relatedPages: page.value.relatedPages || [],
     }
   },
