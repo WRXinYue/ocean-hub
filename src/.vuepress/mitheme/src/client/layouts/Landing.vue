@@ -132,9 +132,10 @@
         </div>
       </div>
 
-      <MkDots class="dots" :space="30" />
+			<!-- TODO: 后期更改为自己功能示例 -->
+      <!-- <MkDots class="dots" :space="30" /> -->
 
-      <div class="features">
+      <!-- <div class="features">
         <div class="container">
           <div class="h">
             <div class="container">
@@ -215,7 +216,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <MkDots class="dots" :space="30" />
 
@@ -288,7 +289,7 @@
 
     <div class="footer">
       <div class="container">
-        <div class="c">&copy; 2023 Ocean, syuilo, and other contributors</div>
+        <div class="c">&copy; 2023 Ocean, Ocean Team and other contributors</div>
       </div>
     </div>
   </div>
