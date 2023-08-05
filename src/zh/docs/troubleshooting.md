@@ -1,49 +1,49 @@
 ---
-description: 'If you run into a problem, please check this page first.'
+description: '如果您遇到问题，请先检查此页面。'
 ---
 
-# Troubleshooting
+# 故障排除
 ::: tip
-Please also use the [Frequently asked questions](./faq.md) page.
+另请使用[常见问题](./faq.md) 页面。
 :::
 
-If you run into a problem, please check this page first. In the case that you can't find your problem here, or the steps described here don't solve your issue, please contact your server's administrator or [Report it as a bug](./report-issue).
+如果您遇到问题，请先检查此页面。 如果您在此处找不到问题，或者此处描述的步骤无法解决您的问题，请联系您的服务器管理员或[将其报告为错误](./report-issue)。
 
-## The client does not start
-In most of the cases, this is due your used browser's or operating system's version being outdated. Please try updating your browser or operating system to the latest version and then try again.
+## 客户端没有启动
+在大多数情况下，这是由于您使用的浏览器或操作系统的版本已过时。 请尝试将您的浏览器或操作系统更新至最新版本，然后重试。
 
-Although this does not happen frequently, if your client will still not start after this, it is possible for the cache to be at fault.In this case, please try clearing your cache and then try again.
+虽然这种情况不会经常发生，但如果此后您的客户端仍然无法启动，则可能是缓存有问题。在这种情况下，请尝试清除缓存，然后重试。
 
-## Pages cannot be loaded
-If your client does boot, but you get an error when trying to load a page, please check your network connection for errors.In addition, check that the server you are trying to access is not down.
+## 页面无法加载
+如果您的客户端确实启动，但在尝试加载页面时出现错误，请检查您的网络连接是否有错误。此外，请检查您尝试访问的服务器是否未关闭。
 
-Although this does not happen frequently, cases where the cache is at fault can happen.In this case, please try clearing your cache and then try again.
+虽然这种情况不会经常发生，但也可能会出现缓存故障的情况。在这种情况下，请尝试清除缓存，然后重试。
 
-Any remaining problems are likely related to the server you are trying to access, so please contact its administrator.
+任何剩余问题可能与您尝试访问的服务器有关，因此请联系其管理员。
 
-## The client is slow
-Please try the following:
+## 客户端速度很慢
+请尝试以下操作：
 
-- Activate "Reduce UI animations" in the client settings
-- Deactivate "Use blur effect for modals" in the client settings
-- Activate hardware acceleration in your browser's settings
-- Upgrade the specs of your used device
+- 在客户端设置中激活“减少 UI 动画”
+- 在客户端设置中停用“对模态使用模糊效果”
+- 在浏览器设置中激活硬件加速
+- 升级您使用过的设备的规格
 
-## Parts of the UI are weird (For example, the background is transparent)
-Broken UI display may be caused by the theme cache system when the UI is changed as part of an update. Pressing "Clear cache" in the settings will fix this.
+## UI 的某些部分很奇怪（例如背景是透明的）
+当 UI 在更新过程中更改时，主题缓存系统可能会导致 UI 显示损坏。 按设置中的“清除缓存”即可解决此问题。
 
 ::: warning
-Specifically clear the "Client's" cache. Don't clear the "Browser's" cache.
+特别清除“客户端”缓存。 不要清除“浏览器”缓存。
 :::
 
-## The blinking light of a notification or Antenna won't go away
-A blinking light indicates unread content.In cases where this light won't go away, there is usually unread content that has been pushed away by new incoming content. If you believe to have read all content, but the light still won't go away (likely a bug), you can forcibly mark all content as read via the user settings.
+## 通知或天线的闪烁灯不会消失
+闪烁的指示灯表示未读内容。如果该指示灯不会消失，则通常有未读内容已被新传入的内容推开。 如果您认为已阅读所有内容，但指示灯仍然不会消失（可能是错误），您可以通过用户设置强制将所有内容标记为已读。
 
-## The renote button is blocked out
-Followers-only notes cannot be renoted.
+## 重记按钮被遮挡
+仅限关注者的注释无法重新注释。
 
-## Specific parts of the Misskey Web UI are not being displayed
-Problems like these can arise if you are using an Adblocker. For an optimized experience on Misskey, please turn it off.
+## Ocean Web UI 的特定部分未显示
+如果您使用广告拦截器，可能会出现此类问题。 为了获得最佳的 Ocean 体验，请关闭它。
 
-## Some parts of the Misskey Web UI are untranslated
-In most cases, this is simply a matter of the translation not having been done yet instead of being a bug.Please wait until the translation of this area has been completed. You can alternatively also [participate in translation](./misskey) yourself.
+## Ocean Web UI 的某些部分未翻译
+在大多数情况下，这只是翻译尚未完成的问题，而不是错误。请等待该区域的翻译完成。 您也可以自己[参与翻译](./ocean)。

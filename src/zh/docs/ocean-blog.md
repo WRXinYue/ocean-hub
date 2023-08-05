@@ -27,65 +27,56 @@ Ocean Blog主要是用于知识库的构建，目前最佳的实战是使用博�
 如果你喜欢Ocean Blog，请支持这个项目。支持该项目可以通过多种方式完成，其中一些将在下面介绍。其中一些不需要编程技能，因此任何人都可以自由地以自己的方式支持Ocean Blog。我们一直在等你。
 
 ### 添加功能或修复错误
-添加功能或修复错误 如果您拥有软件工程技能，则可以通过编辑其源代码为项目做出贡献。有关这方面的指南，请参阅[这里](https://github.com/misskey-dev/misskey/blob/develop/CONTRIBUTING.md).
+添加功能或修复错误 如果您拥有软件工程技能，则可以通过编辑其源代码为项目做出贡献。有关这方面的指南，请参阅[这里](https://github.com/Ocean-dev/Ocean/blob/develop/CONTRIBUTING.md).
 <!--TODO 将连接地址进行更换-->
 
 ### 参与讨论
-你可以通过分享你对新功能或现有功能的意见以及报告错误来做出贡献。此类讨论可以在[GitHub](https://github.com/misskey-dev)或[论坛](https://forum.misskey.io/)等上进行。
+你可以通过分享你对新功能或现有功能的意见以及报告错误来做出贡献。此类讨论可以在[GitHub](https://github.com/Ocean-dev)或[论坛](https://forum.Ocean.io/)等上进行。
 <!--TODO 将连接地址进行更换-->
 
 ### 翻译文本
- Ocean Blog 有多种语言版本（也称为 i18n，是国际化的缩写）。虽然原始语言通常是中文简体，但志愿者正在将Ocean Blog翻译成其他语言。帮助这项工作也是一种贡献形式。Ocean Blog使用名为[Crowdin来管理其翻译的服务。](https://crowdin.com/project/misskey)
+ Ocean Blog 有多种语言版本（也称为 i18n，是国际化的缩写）。虽然原始语言通常是中文简体，但志愿者正在将Ocean Blog翻译成其他语言。帮助这项工作也是一种贡献形式。Ocean Blog使用名为[Crowdin来管理其翻译的服务。](https://crowdin.com/project/Ocean)
 <!--TODO 更换地址-->
 
-### Sharing your impressions
-Besides reporting bugs, please also feel free to share positive impressions such as which parts of Misskey you personally like, or things about Misskey that you find fun.As things like these serve as motivation for the developers, it also counts as indirect support for the project.
+### 分享你的印象
+除了反馈bug之外，也请大家分享一些积极的印象，比如你个人喜欢Ocean的哪些部分，或者Ocean中你觉得有趣的事情。这些都是开发者的动力，也算是对Ocean的间接支持。 项目。
 
-### Increasing the number of Misskists
-"Misskist" refers to the people using Misskey. By spreading the word about Misskey through introducing it to your acquaintances, the number of Misskists may increase, which serves as motivation for the developers.
+### 增加 Misskists 的数量
+“Miskist”指的是使用Ocean的人。 通过向熟人介绍Ocean来传播它，Miskists的数量可能会增加，这成为开发者的动力。
 
-### Making donations
-[Please take a look here](./donate.md)
+### 捐款
+[请看这里](./donate.md)
 
-## Frequently Asked Questions
-### What is this project aiming to achieve?
-To put it bluntly, while this is a bit vague, Misskey is aiming to be a widely-used all-purpose platform. Unlike other platforms, Misskey is not grounded in a specific idea (for example, anti-centralization) or vision and being developed with that in mind, so it's a bit "aimless" in this respect. On the other hand though, this creates a flexibility due to not being bound by a specific direction to go towards.
+## 经常问的问题
+### 这个项目的目标是什么？
+坦率地说，虽然这有点模糊，但 Ocean 的目标是成为一个广泛使用的通用平台。 与其他平台不同，Ocean 并没有基于特定的想法（例如反中心化）或愿景并以此为基础进行开发，因此在这方面它有点“漫无目的”。 但另一方面，由于不受特定方向的限制，这创造了灵活性。
 
 
-### Is Misskey being developed by a company?
-No.Misskey is being developed by an individual person and not commercialized through connection with any particular company. Development members are generally volunteers. Additionally, while there are some corporate sponsors, development is still centered around the community.
+### Ocean是由一家公司开发的吗？
+No.Ocean 是由个人开发的，并未通过与任何特定公司的联系进行商业化。 开发成员一般都是志愿者。 此外，虽然有一些企业赞助商，但开发仍然以社区为中心。
 
-### Who is managing Misskey?
-Due to the distributed nature of Misskey, each individual server has their own administration.Therefore, not all of Misskey is managed by one individual person or company. This means that, as the development team does not control individual servers, for management-related questions you should contact your server's administration instead. You can verify who is managing your individual server on [this page](/about). If you were to create a server, then you would also become its administrator.
+### 谁在管理 Ocean？
+由于Ocean的分布式特性，每个单独的服务器都有自己的管理。因此，并非所有Ocean都由个人或公司管理。 这意味着，由于开发团队不控制单个服务器，因此对于与管理相关的问题，您应该联系服务器的管理人员。 您可以在[此页面](/about)上验证谁在管理您的个人服务器。 如果您要创建一台服务器，那么您也将成为其管理员。
 
-### Which server should I choose?
-[You can find an (incomplete) list of servers here.](../instances.md) Depending on the server, its community or central theme (for example, liking a show) may vary, so if there is a server that suits your interests, joining it would likely be a good choice. Besides that, server size, userbase, country or spoken language, reliance or trust in the administration team and many other things can also serve as criteria. There is however no single server that serves as the official server of Misskey.You also have the choice of creating a new server of your own.
+### 我应该选择哪个服务器？
+[您可以在此处找到（不完整）服务器列表。](../instances.md) 根据服务器的不同，其社区或中心主题（例如，喜欢某个节目）可能会有所不同，因此如果有一台服务器 适合您的兴趣，加入它可能是一个不错的选择。 除此之外，服务器大小、用户群、国家或口语、对管理团队的依赖或信任以及许多其他因素也可以作为标准。 然而，没有一个服务器可以作为 Ocean 的官方服务器。您也可以选择创建自己的新服务器。
 
-Generally speaking, no matter which server you join, you will still be able to connect with users from all other servers.
+一般来说，无论您加入哪个服务器，您仍然可以与所有其他服务器的用户连接。
 
-### How can I create my own server?
-Thank you for having an interest in creating a Misskey server. In the current year of 2022 there is no specialized Misskey hosting service, so creating a new server requires a certain amount of knowledge. Please see [here](./install.md) for more information regarding this.
+### 如何创建自己的服务器？
+感谢您有兴趣创建 Ocean 服务器。 目前2022年还没有专门的Ocean托管服务，因此创建新服务器需要一定的知识。 请参阅[此处](./install.md) 了解更多相关信息。
 
-### What kind of technology does Misskey use?
-As development on Misskey progressed, the technology it has used has changed greatly.In the beginning, it used a combination of MySQL + PHP + jQuery, but currently uses the following.
-- Server-side: Node.js
-- Database: PostgreSQL, Redis
-- UI Framework: Vue.js
-- Programming language: TypeScript
+### Ocean使用什么样的技术？
+随着Ocean开发的不断进展，它所使用的技术也发生了很大的变化。最开始，它使用MySQL + PHP + jQuery的组合，但目前使用以下技术。
+- 服务器端：Node.js
+- 数据库：PostgreSQL、Redis
+- UI框架：Vue.js
+- 编程语言：TypeScript
 
-In addition to this, from Misskey derived technology such as MFM or AiScript are also being used.
+除此之外，还使用了源自 Ocean 的技术，例如 MFM 或 AiScript。
 
-### Is this a fork of Mastodon?
-No.Misskey is a project completely different from Mastodon or other alike projects. It has been in development for a long time already.However, it only became a distributed network after the appearance of Mastodon. Besides both projects implementing the ActivityPub protocol, there is no relation between the two.
+### 这是 Mastodon 的叉子吗？
+No.Ocean 是一个与 Mastodon 或其他类似项目完全不同的项目。 它已经发展了很长时间了。但是，它是在Mastodon出现之后才成为一个分布式网络。 除了两个项目都实现了 ActivityPub 协议之外，两者之间没有任何关系。
 
-### Are there any apps for iOS / Android available?
-While no official Misskey app for either OS exists, there are several third-party applications. For details, please check [here](./apps).
-
-However, functionality of third-party applications will inevitably lag behind the official Web client, so unless you really want to use a native application, we recommend the official Web client instead. As the Misskey Web client supports PWA, it is also possible to make it act as if it was a native application instead. For details regarding this, please check [here](todo).
-
-### Where can I download Misskey's logo or icon?
-Please refer to the [assets collection](../appendix/assets.html).
-
-### Who's that cute cat-eared girl that you see sometimes?
-It's Misskey's guardian deity, Ai.(They called Ai cute, yay!)
-<div class="info">ℹ️ To read more about Ai, check <a href="https://xn--931a.moe/" target="_blank">here</a> (Japanese-only).</div>
+### 在哪里可以下载 Ocean 的徽标或图标？
+请参阅[资产集合](../appendix/assets.html)。

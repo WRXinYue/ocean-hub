@@ -19,7 +19,7 @@ const ssrTransformCustomDir = () => {
 
 export default defineUserConfig<DefaultThemeOptions>({
 	// '/' 如果使用自己的域名
-	// '/misskey-hub/' 如果您没有使用自己的域名
+	// '/ocean-hub/' 如果您没有使用自己的域名
 	base: '/',
 
 	lang: 'zh',
@@ -50,15 +50,15 @@ export default defineUserConfig<DefaultThemeOptions>({
 	],
 
 	locales: {
-		'/': { lang: 'en-US', description: 'Official website of Misskey project' },
-		'/zh/': { lang: 'zh', description: 'Misskey项目的官方网站' },
-		'/ja/': { lang: 'ja-JP', description: 'オープンソースの分散型マイクロブログプラットフォーム、Misskeyの公式サイト' },
+		'/': { lang: 'en-US', description: 'Official website of Ocean project' },
+		'/zh/': { lang: 'zh', description: 'Ocean项目的官方网站' },
+		'/ja/': { lang: 'ja-JP', description: 'オープンソースの分散型マイクロブログプラットフォーム、Oceanの公式サイト' },
 	},
 
 	theme: localTheme({
-		repo: 'misskey-dev/misskey-hub',
+		repo: 'Ocean-dev/ocean-hub',
 		docsDir: 'src',
-		logo: 'https://raw.githubusercontent.com/misskey-dev/assets/main/favicon.png',
+		logo: 'https://raw.githubusercontent.com/Ocean-dev/assets/main/favicon.png',
 		locales: {
 			'/': {
 				selectLanguageName: 'English',
@@ -68,13 +68,13 @@ export default defineUserConfig<DefaultThemeOptions>({
 				relatedPagesText: 'Related pages',
 				readThisArticle: 'Read this article',
 				navbar: [
-					{ text: 'Blog', link: '/docs/blog/' },
+					{ text: 'Blog', link: '/blog/' },
 					{ text: 'Taking part', children: ['/instances', '/plugins/', '/appendix/assets'] },
 					{
 						text: 'Documentation', children: [
-							'/docs/misskey',
+							'/docs/Ocean',
 							'/docs/releases',
-							'/docs/misskey-hub',
+							'/docs/ocean-hub',
 							'/docs/faq',
 							'/docs/glossary',
 							'/docs/troubleshooting',
@@ -129,17 +129,17 @@ export default defineUserConfig<DefaultThemeOptions>({
 					},
 					{
 						text: 'Links', children: [
-							{ text: 'Official Discord', link: 'https://discord.gg/Wp8gVStHW3' },
-							{ text: 'Donations (Patreon)', link: 'https://www.patreon.com/syuilo' },
-							{ text: 'Translation (Crowdin)', link: 'https://crowdin.com/project/misskey' },
-							{ text: '藍.moe (Mascot art site)', link: 'https://xn--931a.moe' },
-							{ text: 'Accounts', children: [{ text: '@repo@p1.a9z.dev', link: 'https://p1.a9z.dev/@repo' }] },
+							{ text: 'Official Discord', link: 'https://discord.gg/apaTzGUF' },
+							// { text: 'Donations (Patreon)', link: 'https://www.patreon.com/syuilo' },
+							// { text: 'Translation (Crowdin)', link: 'https://crowdin.com/project/Ocean' },
+							// { text: '藍.moe (Mascot art site)', link: 'https://xn--931a.moe' },
+							// { text: 'Accounts', children: [{ text: '@repo@p1.a9z.dev', link: 'https://p1.a9z.dev/@repo' }] },
 							{
 								text: 'Repository', children: [
-									{ text: 'misskey', link: 'https://github.com/misskey-dev/misskey' },
-									{ text: 'misskey.js', link: 'https://github.com/misskey-dev/misskey.js' },
-									{ text: 'mfm.js', link: 'https://github.com/misskey-dev/mfm.js' },
-									{ text: 'misskey-hub', link: 'https://github.com/misskey-dev/misskey-hub' },
+									// { text: 'Ocean', link: 'https://github.com/Ocean-dev/Ocean' },
+									// { text: 'Ocean.js', link: 'https://github.com/Ocean-dev/Ocean.js' },
+									// { text: 'mfm.js', link: 'https://github.com/Ocean-dev/mfm.js' },
+									{ text: 'ocean-hub', link: 'https://github.com/wrxinyue/ocean-hub' },
 								]
 							},
 						]
@@ -154,14 +154,14 @@ export default defineUserConfig<DefaultThemeOptions>({
 				relatedPagesText: '相关页面',
 				readThisArticle: '阅读本文章',
 				navbar: [
-					{ text: '博客', link: '/docs/blog/' },
+					{ text: '博客', link: '/blog/' },
 					{ text: '参与', children: ['/zh/instances', '/zh/plugins/', '/zh/appendix/assets'] },
 					{
 						text: '帮助文档', children: [
 							'/zh/docs/ocean-blog',
 							'/zh/docs/atomic-knowledge',
 							'/zh/docs/releases',
-							'/zh/docs/misskey-hub',
+							'/zh/docs/ocean-hub',
 							'/zh/docs/faq',
 							'/zh/docs/glossary',
 							'/zh/docs/troubleshooting',
@@ -226,17 +226,17 @@ export default defineUserConfig<DefaultThemeOptions>({
 					},
 					{
 						text: '链接', children: [
-							{ text: '官方Discord', link: 'https://discord.gg/Wp8gVStHW3' },
-							{ text: '赞助 (Patreon)', link: 'https://www.patreon.com/syuilo' },
-							{ text: '翻译 (Crowdin)', link: 'https://crowdin.com/project/misskey' },
-							{ text: '蓝.moe (吉祥物艺廊)', link: 'https://xn--931a.moe' },
-							{ text: '账户', children: [{ text: '@repo@p1.a9z.dev', link: 'https://p1.a9z.dev/@repo' }] },
+							{ text: '官方Discord', link: 'https://discord.gg/apaTzGUF' },
+							// { text: '赞助 (Patreon)', link: 'https://www.patreon.com/syuilo' },
+							// { text: '翻译 (Crowdin)', link: 'https://crowdin.com/project/Ocean' },
+							// { text: '蓝.moe (吉祥物艺廊)', link: 'https://xn--931a.moe' },
+							// { text: '账户', children: [{ text: '@repo@p1.a9z.dev', link: 'https://p1.a9z.dev/@repo' }] },
 							{
 								text: '储存库', children: [
-									{ text: 'misskey', link: 'https://github.com/misskey-dev/misskey' },
-									{ text: 'misskey.js', link: 'https://github.com/misskey-dev/misskey.js' },
-									{ text: 'mfm.js', link: 'https://github.com/misskey-dev/mfm.js' },
-									{ text: 'misskey-hub', link: 'https://github.com/misskey-dev/misskey-hub' },
+									// { text: 'Ocean', link: 'https://github.com/Ocean-dev/Ocean' },
+									// { text: 'Ocean.js', link: 'https://github.com/Ocean-dev/Ocean.js' },
+									// { text: 'mfm.js', link: 'https://github.com/Ocean-dev/mfm.js' },
+									{ text: 'ocean-hub', link: 'https://github.com/wrxinyue/ocean-hub' },
 								]
 							},
 						]
@@ -251,13 +251,13 @@ export default defineUserConfig<DefaultThemeOptions>({
 				relatedPagesText: '関連するページ',
 				readThisArticle: 'この記事を読む',
 				navbar: [
-					{ text: 'ブログ', link: '/docs/blog/' },
+					{ text: 'ブログ', link: '/blog/' },
 					{ text: 'お楽しみ', children: ['/ja/instances', '/ja/plugins/', '/ja/appendix/assets'] },
 					{
 						text: 'ドキュメント', children: [
-							'/ja/docs/misskey',
+							'/ja/docs/Ocean',
 							'/ja/docs/releases',
-							'/ja/docs/misskey-hub',
+							'/ja/docs/ocean-hub',
 							'/ja/docs/donate',
 							'/ja/docs/faq',
 							'/ja/docs/glossary',
@@ -313,17 +313,17 @@ export default defineUserConfig<DefaultThemeOptions>({
 					},
 					{
 						text: 'リンク', children: [
-							{ text: '公式Discord', link: 'https://discord.gg/Wp8gVStHW3' },
-							{ text: '寄付 (Patreon)', link: 'https://www.patreon.com/syuilo' },
-							{ text: '翻訳 (Crowdin)', link: 'https://crowdin.com/project/misskey' },
-							{ text: '藍.moe', link: 'https://xn--931a.moe' },
-							{ text: 'アカウント', children: [{ text: '@repo@p1.a9z.dev', link: 'https://p1.a9z.dev/@repo' }] },
+							{ text: '公式Discord', link: 'https://discord.gg/apaTzGUF' },
+							// { text: '寄付 (Patreon)', link: 'https://www.patreon.com/syuilo' },
+							// { text: '翻訳 (Crowdin)', link: 'https://crowdin.com/project/Ocean' },
+							// { text: '藍.moe', link: 'https://xn--931a.moe' },
+							// { text: 'アカウント', children: [{ text: '@repo@p1.a9z.dev', link: 'https://p1.a9z.dev/@repo' }] },
 							{
 								text: 'リポジトリ', children: [
-									{ text: 'misskey', link: 'https://github.com/misskey-dev/misskey' },
-									{ text: 'misskey.js', link: 'https://github.com/misskey-dev/misskey.js' },
-									{ text: 'mfm.js', link: 'https://github.com/misskey-dev/mfm.js' },
-									{ text: 'misskey-hub', link: 'https://github.com/misskey-dev/misskey-hub' },
+									// { text: 'Ocean', link: 'https://github.com/Ocean-dev/Ocean' },
+									// { text: 'Ocean.js', link: 'https://github.com/Ocean-dev/Ocean.js' },
+									// { text: 'mfm.js', link: 'https://github.com/Ocean-dev/mfm.js' },
+									{ text: 'ocean-hub', link: 'https://github.com/wrxinyue/ocean-hub' },
 								]
 							},
 						]

@@ -1,23 +1,23 @@
 ---
 home: true
-title: Misskey Hub
+title: Ocean Hub
 heroImage: /banner.svg
-tagline: Official web site of open-source interplanetary micro-blogging platform Misskey
-footer: Copyright &copy; 2023 syuilo and other contributors
+tagline: 开源博客平台Ocean官方网站
+footer: Copyright &copy; 2023 ocean team and other contributors
 actions:
-  - text: Getting started
+  - text: 快速开始
     link: ./docs/getting-started
     type: primary
-  - text: What is Misskey?
-    link: ./docs/misskey
+  - text: 关于 Ocean?
+    link: ./docs/Ocean
     type: secondary
 features:
-  - title: Distributed 🪐
-    details: Independent communities are run on multiple servers, and these are interconnected.
-  - title: Lightweight 🚀
-    details: Because it uses Node.js, which runs at high speed, it is lightweight even when federated with a large number of servers.
-  - title: Fun 🍮
-    details: It has distinctive features such as reactions and a highly customizable UI.
+  - title: 分布式 🪐
+    details: 独立的社区运行在多个服务器上，并且这些服务器是互连的。
+  - title: 轻量 🚀
+    details: 由于它使用高速运行的 Node.js，因此即使与大量服务器联合，它也是轻量级的。
+  - title: 乐趣 🍮
+    details: 它具有独特的功能，例如反应和高度可定制的用户界面。
 ---
 
 <ClientOnly>

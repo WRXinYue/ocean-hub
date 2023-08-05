@@ -13,7 +13,7 @@
     <template #page-bottom>
       <MkRelatedPages />
       <MkDots :class="$style.footerDots" />
-      <div :class="$style.footer">Copyright &copy; 2022 syuilo and other contributors</div>
+      <div :class="$style.footer">Copyright &copy; 2023 ocean team and other contributors</div>
     </template>
   </ParentLayout>
 
@@ -21,7 +21,7 @@
     v-if="aimode"
     :class="$style.live2d"
     ref="live2d"
-    src="https://misskey-dev.github.io/mascot-web/?scale=2&y=1.4"
+    src="https://Ocean-dev.github.io/mascot-web/?scale=2&y=1.4"
     title="Ai-chan animated Live2D version"
     allowtransparency
   ></iframe>

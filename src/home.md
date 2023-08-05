@@ -1,15 +1,15 @@
 ---
 home: true
-title: Misskey Hub
+title: Ocean Hub
 heroImage: /banner.svg
-tagline: Official web site of open-source interplanetary micro-blogging platform Misskey
-footer: Copyright &copy; 2023 syuilo and other contributors
+tagline: Official web site of open-source interplanetary micro-blogging platform Ocean
+footer: Copyright &copy; 2023 ocean team and other contributors
 actions:
   - text: Getting started
     link: ./docs/getting-started
     type: primary
-  - text: What is Misskey?
-    link: ./docs/misskey
+  - text: What is Ocean?
+    link: ./docs/Ocean
     type: secondary
 features:
   - title: Distributed 🪐

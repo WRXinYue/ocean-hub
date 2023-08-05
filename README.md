@@ -1,5 +1,5 @@
-# Misskey Hub
-Misskey Hub is an Official Site of Misskey.
+# Ocean Hub
+Ocean Hub is an Official Site of Ocean.
 
 Built with [VuePress](https://github.com/vuepress/vuepress-next).
 

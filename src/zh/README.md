@@ -20,29 +20,29 @@ keyFeatures:
 sections:
   federatedSoftware:
     title: "Ocean Blog 是一个 <b data-marker>去中心化</b> 的分布式博客平台。"
-    description: "Ocean Blog 是一个免费开放的分布式博客平台，任何人都可以在部署自己的 Misskey 服务器。一台运行 Misskey 的服务器称为实例，现在，全球已有数百上千个 Misskey 实例。Misskey 最重要的特性是其又称为 <b data-marker>ActivityPub</b> 的分布式通讯协议，无论在哪台实例中，用户都可以与其他支持 ActivityPub 的实例（例如 Mastodon、PixelFed、PeerTube 等等）进行互动。使用者可以自定 Misskey 主题，每台实例都有着不同的使用群体，语言，兴趣爱好等等，寻找适合自己的实例或搭建自己的实例也是一种乐趣。"
+    description: "Ocean Blog 是一个免费开放的分布式博客平台。它是基于一种思想进行设计的一套博客系统，主要用于的是知识的笔记的整理，并形成自己的知识库。其下包括：博客系统，原子性知识展示系统，AI答疑解惑系统，费曼学习系统，知识应用系统。"
   features:
     title: "主要特点"
-    description: "由一般到特殊，Misskey 有着各式各样的功能，这里仅是一部分。"
+    description: "由一般到特殊，Ocean 有着各式各样的功能，这里仅是一部分。"
     list:
       note:
         title: "帖子"
-        description: "在 Misskey 中，用户发出的投稿被称为“帖子”。您可以附加图片，视频，音频或其他任何文件，还可以引用其他的帖子。"
+        description: "在 Ocean 中，用户发出的投稿被称为“帖子”。您可以附加图片，视频，音频或其他任何文件，还可以引用其他的帖子。"
       reaction:
         title: "反应"
         description: "您可以对帖子做出“反映”，简单，轻松地表达自己的感受。"
       theme:
         title: "主题"
-        description: "Misskey 的前端可以高度自定义，您可以设计属于自己的 Misskey。"
+        description: "Ocean 的前端可以高度自定义，您可以设计属于自己的 Ocean。"
       charts:
         title: "统计图标"
-        description: "对于“统计党”，Misskey 提供了一个非常友好的功能 — 内置统计图标，将实例信息视觉化。"
+        description: "对于“统计党”，Ocean 提供了一个非常友好的功能 — 内置统计图标，将实例信息视觉化。"
       federation:
         title: "联合实例"
-        description: "作为支持 ActivityPub 通讯协议的 Misskey，您的实例可以连结到其他支持该协议的实例，不仅限于 Missky～"
+        description: "作为支持 ActivityPub 通讯协议的 Ocean，您的实例可以连结到其他支持该协议的实例，不仅限于 Missky～"
       drive:
         title: "云盘"
-        description: "Misskey 内置一个功能强大的云盘界面，您可以轻松地将自己喜爱的图片整理到云盘中，并且可以与他人共享。"
+        description: "Ocean 内置一个功能强大的云盘界面，您可以轻松地将自己喜爱的图片整理到云盘中，并且可以与他人共享。"
       thread:
         title: "讨论串"
         description: "有很多想要分享的吗？您可以将不同话题的帖子转换为“讨论串”，然后可以继续在特定话题上畅所欲言。"
@@ -50,7 +50,7 @@ sections:
         title: "小组件"
         description: "可以配置各式各样的小组件，依据喜好自定UI。"
   gettingStarted:
-    title: "现在就加入 Misskey 吧！"
+    title: "现在就加入 Ocean 吧！"
     find:
       title: "寻找实例"
       list: "实例列表"
@@ -62,7 +62,7 @@ sections:
       docs: "查看文档"
   donation:
     title: "捐赠"
-    description: "Misskey 是非盈利的，开发资金仰赖各位小伙伴们的捐赠。如果您喜欢 Misskey，请考虑支持我让开发得以延续。"
+    description: "Ocean 是非盈利的，开发资金仰赖各位小伙伴们的捐赠。如果您喜欢 Ocean，请考虑支持我让开发得以延续。"
   sponsors:
     title: "赞助者"
 ---
