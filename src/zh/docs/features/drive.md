@@ -1,25 +1,25 @@
-# Drive
+# 驾驶
 
-Drive is a feature that allows you to manage your files on Ocean.
+Drive 是一项允许您在 Ocean 上管理文件的功能。
 
 ::: tip
-Technically speaking, the drive can be seen as an interface where all the files are centrally managed on Ocean's system, which is also open to users.
+从技术上讲，驱动器可以看作是一个界面，所有文件都在Ocean的系统上集中管理，该系统也向用户开放。
 :::
 
-You can upload any file directly on the Drive page on Ocean Web, and any images you have set as your avatar or files you have attached to your notes will also be uploaded to the Drive.
+您可以直接在 Ocean Web 的云端硬盘页面上传任何文件，您设置为头像的任何图像或附加到笔记的文件也将上传到云端硬盘。
 
-Files uploaded to the drive can be downloaded at any time, or files can be reused by using 'attach files from drive' when creating notes.
+上传到驱动器的文件可以随时下载，也可以在创建笔记时使用“从驱动器附加文件”来重复使用文件。
 
-You can also create folders on your drive to organize multiple files together.
+您还可以在驱动器上创建文件夹以将多个文件组织在一起。
 
 ::: warning
-At the moment, when you delete a file from your drive, **all the content (notes, pages, etc.)** attached to that file will also be deleted.
+目前，当您从驱动器中删除文件时，**附加到该文件的所有内容（注释、页面等）**也将被删除。
 :::
 
-## Sensitive (NSFW)
+## 敏感（NSFW）
 
-Sensitive or NSFW (Not safe for work) is a flag that can be set on files in your drive.
-Files that have been flagged as unsafe to view will not be displayed without user interaction.
-This flag can be used, for example, to prevent images that are not suitable for viewing in the workplace or in public places from suddenly appearing.
+敏感或 NSFW（工作不安全）是可以在驱动器中的文件上设置的标志。
+如果没有用户交互，则不会显示已标记为不安全查看的文件。
+例如，该标志可用于防止突然出现不适合在工作场所或公共场所查看的图像。
 
-This flag can be toggled on and off manually, or it can be set at a moderator's discretion.
+该标志可以手动打开和关闭，也可以由主持人自行设置。

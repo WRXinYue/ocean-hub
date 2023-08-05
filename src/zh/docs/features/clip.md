@@ -1,10 +1,10 @@
-# Clip
+# 剪辑
 
-Clip is a feature that allows you to create collections of notes.
-The notes can be your own or created by others.
-You can create multiple clips and manage them by giving a name and description to each.
-You can also choose to make your clips public to make them available to other users.
+剪辑是一项允许您创建笔记集合的功能。
+这些笔记可以是您自己的，也可以是其他人创建的。
+您可以创建多个剪辑并通过为每个剪辑指定名称和描述来管理它们。
+您还可以选择公开您的剪辑，以供其他用户使用。
 
-To create a clip, click "Add" from the clip management page.
+要创建剪辑，请从剪辑管理页面单击“添加”。
 
-To add notes to a clip, choose the "Clip" option on the note's menu. Then select the clip to add the note to.
+要将注释添加到剪辑，请选择注释菜单上的“剪辑”选项。 然后选择要添加注释的剪辑。

@@ -1,92 +1,89 @@
-# Glossary
-A glossary about terms related to Ocean.
+# 术语表
+与海洋相关的术语词汇表。
 
-## Acct
+## 账户
 TODO
 
-## ActivityPub
-The protocol (method) used for enabling the distributed nature of Ocean. By adhering to this protocol, communication with other instances that also follow it becomes possible, forming what is known as the Fediverse.
+## 活动酒吧
+用于实现 Ocean 分布式特性的协议（方法）。 通过遵守该协议，与也遵循该协议的其他实例进行通信成为可能，形成所谓的 Fediverse。
 
 ## AiScript
-A programming language available for use on Ocean. For details, see [here.](../advanced/aiscript)
+一种可在 Ocean 上使用的编程语言。 有关详细信息，请参阅[此处](../advanced/aiscript)
 
 ## API
-An interface that can be used for interacting with Ocean through a program, available for each individiual instance. For details, see [here.](../docs/api)
+可用于通过程序与 Ocean 交互的接口，可用于每个单独的实例。 有关详细信息，请参阅[此处](../docs/api)
 
-## Bot
-An account that is being controlled by a program.
+## 机器人
+由程序控制的帐户。
 
-## CW
-An abbreviation of "Content Warning". A feature to hide the content of a note unless explicitly requested to be shown by a user. Mainly used to hide the content of long notes or to prevent posting spoilers publicly. For details, see [here.](../docs/features/note.html#cw)
+## 连续波
+“内容警告”的缩写。 隐藏注释内容的功能，除非用户明确请求显示。 主要用于隐藏长笔记的内容或防止公开发布剧透。 有关详细信息，请参阅[此处](../docs/features/note.html#cw)
 
-## Fediverse
-A network of instances composed of various different platforms that communicate with each other, including Ocean.
+## 费迪宇宙
+由相互通信的各种不同平台组成的实例网络，包括 Ocean。
 
 ## GTL
-An abbreviation for "Global TimeLine". For details about timelines, please see [here](../features/timeline).
+“全球时间线”的缩写。 有关时间线的详细信息，请参阅[此处](../features/timeline)。
 
 ## HTL
-An abbreviation for "Home TimeLine". For details about timelines, please see [here](../features/timeline)
+“Home TimeLine”的缩写。 有关时间线的详细信息，请参阅[此处](../features/timeline)
 
-## LTL
-An abbreviation for "Local TimeLine". For details about timelines, please see [here](../features/timeline)
+##零担
+“本地时间线”的缩写。 有关时间线的详细信息，请参阅[此处](../features/timeline)
 
-## MFM
-An abbreviation for "Markup language For Ocean", a markdown language available for use on Ocean. For details, see [here.](../features/mfm)
+## 磁力显微镜
+“Markup language For Ocean”的缩写，一种可在 Ocean 上使用的 Markdown 语言。 有关详细信息，请参阅[此处](../features/mfm)
+
+## 磁力显微镜
+“Markup language For Ocean”的缩写，一种可在 Ocean 上使用的 Markdown 语言。 有关详细信息，请参阅[此处](../features/mfm)
 
 ## NSFW
-An abbreviation for "Not Safe For Work". A feature to tag an image as "NSFW" and hide it unless explicitly requested to be shown by a user.
+“工作不安全”的缩写。 一种将图像标记为“NSFW”并隐藏它的功能，除非用户明确请求显示。
 
-## Renote
-The act of quoting an existing note, sharing an existing note, or the note created as a result of these acts. For details, see [here.](../docs/features/note.html#renote)
+## 备注
+引用现有笔记、共享现有笔记或由于这些行为而创建的笔记的行为。 有关详细信息，请参阅[此处](../docs/features/note.html#renote)
 
 ## STL
-An abbreviation for "Social TimeLine". For details about timelines, please see [here.](../features/timeline)
+“社交时间线”的缩写。 有关时间线的详细信息，请参阅[此处](../features/timeline)
 
-## Ai(藍)
-Ai(藍) is Ocean's official mascot.
-
-## Active users
-Those users amongst all existing ones who are continually using their account.
+## 活跃用户
+所有现有用户中持续使用其帐户的用户。
 
 ## Instance
 TODO
 
-## Custom Emoji
-Emoji provided by your instance. Emoji that are not specifically provided by your instance but are available by default are called "Unicode Emoji". For details, see [here.](../docs/features/custom-emoji)
+## 自定义表情符号
+您的实例提供的表情符号。 您的实例未专门提供但默认可用的表情符号称为“Unicode 表情符号”。 有关详细信息，请参阅[此处](../docs/features/custom-emoji)
 
 ## Control Panel
 TODO
 
-## Silence
-A state in which the visibility of the notes by said user cannot be set to "Public" anymore. Can be set for individual users by the discretion of Moderators. For details, see [here.](../features/silence)
+## 安静
+该用户的笔记可见性无法再设置为“公开”的状态。 可由版主自行决定为个人用户设置。 有关详细信息，请参阅[此处](../features/silence)
 
-## Job Queue
-A system used for sequentially broadcasting activities to other instances etc.
+## 作业队列
+用于按顺序向其他实例等广播活动的系统。
 
-## Suspend
-A state which makes the account of a user unusable.
+## 暂停
+导致用户帐户无法使用的状态。
 
-## Drive
-A feature allowing users to organize the files they have uploaded to Ocean. For details, see [here.](../features/drive)
+## 驾驶
+该功能允许用户组织他们上传到 Ocean 的文件。 有关详细信息，请参阅[此处](../features/drive)
 
-## Notes
-Content which may include text, images, surveys and others that has been posted to Ocean. For details, see [here.](../docs/features/note)
+## 注释
+内容可能包括文本、图像、调查和其他已发布到 Ocean 的内容。 有关详细信息，请参阅[此处](../docs/features/note)
 
-## Misskist
-Users of Ocean.
-
-## Moderator
-Users with the authority to manage the community of a instance by deactivating spam accounts, silencing users, deleting inappropriate posts, etc.
+## 主持人
+有权通过停用垃圾邮件帐户、禁止用户、删除不当帖子等来管理实例社区的用户。
 
 ## License
 TODO
 
-## Remote
-Used in context of instances separate from your own. Also used as prefix in other words like "Remote user". The opposite of "Local".
+## 偏僻的
+在与您自己不同的实例上下文中使用。 也用作其他词的前缀，例如“远程用户”。 与“本地”相反。
 
-## Federation
-The act of sharing information created on one's instance with other instances.
+## 联合会
+与其他实例共享在一个实例上创建的信息的行为。
 
-## Local
-Used in context of your own instance.Also used as prefix in other words like "Local users", "local timeline". The opposite of "Remote".
+## 本地
+在您自己的实例的上下文中使用。也用作前缀，如“本地用户”、“本地时间线”。 与“远程”相反。

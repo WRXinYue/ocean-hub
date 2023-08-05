@@ -1,29 +1,29 @@
-# Reaction
+# 反应
 
-This feature allows you to easily convey your reactions to other people's notes by adding emojis.
-To react in Ocean Web, click the + icon on the note to show the picker and select an emoji.
-You can also react using [custom emoji](./custom-emoji.md).
+此功能让您可以通过添加表情符号，轻松传达您对他人笔记的反应。
+要在 Ocean Web 中作出反应，请单击笔记上的 + 图标以显示选择器，然后选择一个表情符号。
+你也可以使用 [自定义表情符号](./custom-emoji.md)作出反应。
 
-## Customising the Reaction Picker
+## 自定义反应选取器
 
-In Ocean Web you can choose which emojis should appear in the picker and change the order they should appear in.
-You can set this in the "Reactions" section of the settings.
+在 Ocean Web 中，您可以选择哪些表情符号应出现在选取器中，并更改它们的显示顺序。
+您可以在设置的 "反应 "部分进行设置。
 
-## Reactions to Remote Posts
+## 对远程帖子的回复
 
-Since Reactions are an original Ocean feature, most of the time the activity will be sent to other instances as a "Like" unless the remote instance supports them.
-Usually, ActivityPub's "Like" is implemented as a favorite.
+由于 "回复 "是 Ocean 的原创功能，大多数情况下，活动会以 "赞 "的形式发送到其他实例，除非远程实例支持 "赞"。
+通常，ActivityPub 的 "赞 "是以收藏夹的形式实现的。
 
-## Reactions from remote instances
+## 远程实例的反应
 
-Since Ocean does not have likes, a "Like" from a remote instance will be displayed as a '👍' reaction.
+由于 Ocean 没有 "喜欢 "功能，来自远程实例的 "喜欢 "将显示为"👍"反应。
 
 ::: tip
-Your instance administrator may change this to be displayed as a '⭐' reaction.
-If you are an admin, see [here](../admin/default-reaction.md).
+您的实例管理员可以将其更改为显示为"⭐"反应。
+如果您是管理员，请参阅 [here](../admin/default-reaction.md).
 :::
 
-## See a list of all your reactions
+## 查看您的所有反应列表
 
-In Ocean Web, you can see the list of all the reactions you have made by opening the "Reactions" tab on your profile page.
-You can also choose to make this list public in the settings.
+在 Ocean Web，您可以打开个人档案页面上的 "反应 "选项卡，查看您做出的所有反应列表。
+您也可以在设置中选择公开该列表。

@@ -1,28 +1,28 @@
-# Timeline
+# 时间线
 
-The timeline displays [notes](.note) in reverse chronological order.
-There are different types of timelines as shown below, and the notes displayed differ depending on the type.
-Note that some types of timelines may be disabled by the instance.
+时间线按时间倒序显示[notes](.note)。
+时间线有如下所示的不同类型，并且显示的注释根据类型的不同而不同。
+请注意，实例可能会禁用某些类型的时间线。
 
-## Home
+## 家
 
-Posts by users you are following will be displayed. Abbreviated as HTL.
+将显示您关注的用户的帖子。 缩写为HTL。
 
-## Local
+## 当地的
 
-All local users' posts that do not have the visibility of "Home" will be shown. Abbreviated as LTL.
+将显示所有不具有“主页”可见性的本地用户的帖子。 缩写为 LTL。
 
-## Social
+## 社会的
 
-Posts of users you are following and all local users's posts that do not have the visibility of "Home" will be shown. Abbreviated as STL. Think of it as STL = HTL + LTL.
+将显示您关注的用户的帖子以及所有不具有“主页”可见性的本地用户的帖子。 缩写为STL。 可以将其视为 STL = HTL + LTL。
 
-## Global
+## 全球的
 
-All local users' posts that do not have the visibility of "Home" and all remote users' posts that do not have the visibility of "Home" that reach the server. Abbreviated as GTL.
+所有不具有“主页”可见性的本地用户帖子以及到达服务器的所有不具有“主页”可见性的远程用户帖子。 缩写为GTL。
 
-## Custom Timelines
+## 自定义时间线
 
-Ocean has other features where you can create timelines with more granularity. See [Lists](./list.md) and [Antennas](./antenna.md) for details.
+Ocean 还有其他功能，您可以在其中创建更精细的时间线。 详细信息请参见[列表](./list.md)和[天线](./antenna.md)。
 
 ## Comparison
 

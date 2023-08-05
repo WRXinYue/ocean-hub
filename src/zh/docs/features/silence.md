@@ -1,9 +1,9 @@
-# Silence
+# 静默
 
-Silence is one of the states that an account can be set to.
+静默是账户可以设置的状态之一。
 
-When your account is silenced, you cannot set the visibility of your notes to Public.
-Home, Followers, and Direct are still selectable, so even if your account is silenced, followers and direct visitors to your page will still be able to view your posts.
-They will just not be able to view them in the GTL (Global Timeline) or LTL (Local Timeline).
+当账户处于静默状态时，就不能将笔记的可见性设置为公开。
+主页、关注者和直接访问仍然可以选择，因此即使账户被静默，关注者和页面的直接访问者仍然可以查看您的帖子。
+只是他们无法在 GTL（全局时间线）或 LTL（本地时间线）中查看这些帖子。
 
-The silence status of an account is set by the instance moderators.
+账户的静默状态由实例版主设置。

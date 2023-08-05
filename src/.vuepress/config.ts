@@ -94,7 +94,6 @@ export default defineUserConfig<DefaultThemeOptions>({
 									'/docs/features/thread-mute',
 									'/docs/features/word-mute',
 									'/docs/features/mute-and-block',
-									'/docs/features/plugin',
 									'/docs/features/antenna',
 									'/docs/features/clip',
 									'/docs/features/favorite',
@@ -166,7 +165,7 @@ export default defineUserConfig<DefaultThemeOptions>({
 							'/zh/docs/glossary',
 							'/zh/docs/troubleshooting',
 							{
-								text: 'Features', children: [
+								text: '特性', children: [
 									'/zh/docs/features/note',
 									'/zh/docs/features/reaction',
 									'/zh/docs/features/timeline',
@@ -181,7 +180,6 @@ export default defineUserConfig<DefaultThemeOptions>({
 									'/zh/docs/features/thread-mute',
 									'/zh/docs/features/word-mute',
 									'/zh/docs/features/mute-and-block',
-									'/zh/docs/features/plugin',
 									'/zh/docs/features/antenna',
 									'/zh/docs/features/clip',
 									'/zh/docs/features/favorite',
@@ -279,7 +277,6 @@ export default defineUserConfig<DefaultThemeOptions>({
 									'/ja/docs/features/thread-mute',
 									'/ja/docs/features/word-mute',
 									'/ja/docs/features/mute-and-block',
-									'/ja/docs/features/plugin',
 									'/ja/docs/features/antenna',
 									'/ja/docs/features/clip',
 									'/ja/docs/features/favorite',

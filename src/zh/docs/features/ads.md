@@ -1,13 +1,13 @@
-# Advertisements
+# 广告
 
-Ocean can display ads in the instance timeline and other places if enabled by the instance administrator.
-You can reduce how often an ad is shown by clicking in the upper right corner of it.
+如果实例管理员启用，Ocean 可以在实例时间轴和其他位置显示广告。
+您可以通过点击广告右上角的 来减少广告的显示频率。
 
 ::: tip
-If the total number of ads being shown on the instance is small then an ad may still be shown to you often even after you choose to reduce how often it is displayed.
+如果实例上展示的广告总数较小，则即使您选择减少广告的展示频率，广告仍可能会经常向您展示。
 :::
 
-## Configuring Ads (Admins)
+## 配置广告（管理员）
 
-You can add, edit, and delete ads from the control panel of your instance.
-In there you can set any image, destination URL, shape, and display percentage for the ad.
+您可以从实例的控制面板添加、编辑和删除广告。
+您可以在其中设置广告的任何图像、目标 URL、形状和显示百分比。

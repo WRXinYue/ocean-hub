@@ -1,15 +1,15 @@
-# Thread mute
+# 线程静音
 
 ::: tip
-This feature is available since version 12.95.0.
+此功能自版本 12.95.0 起可用。
 :::
 
-Thread Mute mutes the thread of a given note. This includes all replies connected to the uppermost note.
+线程静音使给定音符的线程静音。 这包括与最上面的注释相关的所有回复。
 
-If you mute a thread, you will no longer be notified of new replies to that thread, nor will any of the replies mention you.
+如果您将某个话题静音，您将不再收到该话题的新回复通知，也不会有任何回复提及您。
 
-To mute a thread in Ocean Web, open the menu of any note belonging to the thread in question or the note from which it originated and select 'Mute Thread'.
+要在 Ocean Web 中静音某个线程，请打开属于相关线程的任何注释或该线程的来源注释的菜单，然后选择“静音线程”。
 
 ::: warning
-The entire thread will be muted, regardless of which note in the thread the mute operation is performed from.
+无论静音操作是从线程中的哪个音符执行的，整个线程都将被静音。
 :::

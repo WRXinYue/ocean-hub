@@ -1,15 +1,15 @@
-# Theme
+# 主题
 
-You can change the look and feel of the Missky client by applying a theme.
+您可以通过应用主题来更改 Missky 客户端的外观和风格。
 
-## Theme Settings
+## 主题设置
 
-Settings > Themes
+设置 > 主题
 
-## Creating a Theme
+## 创建主题
 
-The theme object code is written using JSON5.
-The theme has an object type like the one shown below.
+主题对象代码是使用 JSON5 编写的。
+该主题具有如下所示的对象类型。
 
 ``` js
 {
@@ -37,47 +37,47 @@ The theme has an object type like the one shown below.
 
 ```
 
-* `id` ... Unique theme ID. A UUID is recommended.
-* `name` ... Theme name
-* `author` ... Theme author
-* `desc` ... Theme description (Object)
-* `base` ... light or dark theme
-	* Use `light` for a light theme and `dark` for a dark theme.
-	* The theme inherits the base theme that is set here.
-* `props` ... Theme style definition. Explained in the following sections.
+* `id` ...唯一的主题 ID。 建议使用 UUID。
+* `name` ... 主题名称
+* `author` ...主题作者
+* `desc` ... 主题描述（对象）
+* `base` ...浅色或深色主题
+	* 使用“light”表示浅色主题，使用“dark”表示深色主题。
+	* 主题继承此处设置的基本主题。
+* `props` ...主题样式定义。 在以下各节中进行了解释。
 
-### Theme Style Definition
+### 主题风格定义
 
-Define the theme style within the `props`.
-The keys are the names of CSS variables, and the values specify the contents.
-Furthermore, this `props` object inherits from the base theme.
-The base theme is [_light.json5] if the `base` of this theme is `light` and [_dark.json5] if `dark`.
-That is, if there is no `props` key named `panel` in this theme, then it is set to the `panel` in the base theme.
+在“props”中定义主题样式。
+键是 CSS 变量的名称，值指定内容。
+此外，这个“props”对象继承自基本主题。
+如果该主题的“base”为“light”，则基本主题为 [_light.json5]；如果“dark”，则为 [_dark.json5]。
+也就是说，如果该主题中没有名为“panel”的“props”键，则将其设置为基本主题中的“panel”。
 
-[_light.json5]: https://github.com/ocean-dev/ocean/blob/develop/packages/frontend/src/themes/_light.json5
-[_dark.json5]:  https://github.com/ocean-dev/ocean/blob/develop/packages/frontend/src/themes/_dark.json5
+[_light.json5]：https://github.com/ocean-dev/ocean/blob/develop/packages/frontend/src/themes/_light.json5
+[_dark.json5]：https://github.com/ocean-dev/ocean/blob/develop/packages/frontend/src/themes/_dark.json5
 
-#### Value Syntax
+#### 值语法
 
-* Colors expressed with hexadecimal
-	* example: `#00ff00`
-* Colors expressed with `rgb(r, g, b)` format
-	* example: `rgb(0, 255, 0)`
-* Colors that contain alpha/transparency values expressed with `rgb(r, g, b, a)` format
-	* example: `rgba(0, 255, 0, 0.5)`
-* Other key value reference
-	* `@{key name}` is a reference to the value of another key. Replace `{key name}` with the name of the key you wish to reference.
-	* example: `@panel`
-* Constant (discussed below) reference
-	* `${constant name}` is a reference to a constant. Replace `{constant name}` with the name of the constant you with to reference.
-	* example: `$main`
-* Functions (discussed below)
-	* `:{関数名}<{引数}<{色}`
+* 颜色用十六进制表示
+	* 例如："#00ff00
+* 用 `rgb(r, g, b)` 格式表示的颜色
+	* 例如：`rgb(0, 255, 0)`
+* 包含用 `rgb(r, g, b, a)` 格式表示的阿尔法/透明度值的颜色
+	* 例如：`rgba(0, 255, 0, 0.5)`
+* 其他键值参考
+	* `@{key name}` 是对另一个键值的引用。将 `{key name}` 替换为您希望引用的键的名称。
+	* 例如：`@panel
+* 常量（下文将讨论）引用
+	* `${constant name}` 是对一个常量的引用。将 `{constant name}` 替换为您要引用的常量名称。
+	* 例如：`$main
+* 函数（将在下文讨论）
+	* `：{函数名}<{参数}<{颜色}`
 
-#### Constants
+#### 常量
 
-Constants are useful when you have values that you do not want to output as CSS variables, but want to use as values for other CSS variables."I don't want to output it as a CSS variable, but I do want to use it as a value for other CSS variables.
+当你有一些值不想作为 CSS 变量输出，但又想用作其他 CSS 变量的值时，常量就派上用场了。"我不想把它作为 CSS 变量输出，但我想把它用作其他 CSS 变量的值。"当你有一些值不想作为 CSS 变量输出，但又想用作其他 CSS 变量的值时，常量就派上用场了。
 
-#### Functions
+#### 函数
 
 WIP

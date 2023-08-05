@@ -1,8 +1,8 @@
-# Antenna
+# 天线
 
-Antenna is a feature that allows you to freely set conditions for a custom timeline and automatically collect matching notes.
+天线功能允许您自由设置自定义时间线的条件并自动收集匹配的笔记。
 
-Antenna conditions can include conditions to include/exclude certain keywords and tags in different combinations as well as other options.
-When a note matching an antenna's conditions is posted, the note will automatically be added to that antenna's timeline.
+天线条件可以包括包括/排除不同组合中的某些关键字和标签的条件以及其他选项。
+当发布符合天线条件的注释时，该注释将自动添加到该天线的时间线中。
 
-To create an antenna, click "Add" in the Manage antennas page. Then fill in the options to customize your antenna.
+要创建天线，请在管理天线页面中单击“添加”。 然后填写选项来定制您的天线。

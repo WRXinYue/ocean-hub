@@ -1,30 +1,30 @@
-# Deck UI
+# 用户界面
 
-Deck UI is one of the available UIs in Ocean. It is characterized by the ability to build highly customizable and informative UIs by displaying multiple views, called "columns", side by side.
-The deck option is only available on sufficiently large screens like a laptop computer.
+Deck UI 是 Ocean 中可用的 UI 之一。 它的特点是能够通过并排显示多个视图（称为“列”）来构建高度可定制且信息丰富的 UI。
+该甲板选项仅在足够大的屏幕（例如笔记本电脑）上可用。
 
-## Adding Columns
+## 添加列
 
-You can add a column by right-clicking on the deck background and selecting "Add Column". You can also click the '+' icon on the right side of the screen.
+您可以通过右键单击甲板背景并选择“添加列”来添加列。 您还可以单击屏幕右侧的“+”图标。
 
-## Move Columns
+## 移动列
 
-Columns can be repositioned by drag-and-drop or by using the column menu "Move" option (right-click on the column header).
+可以通过拖放或使用列菜单“移动”选项（右键单击列标题）来重新定位列。
 
-## Horizontal Division of Columns
+## 列的水平划分
 
-Columns can be arranged vertically as well as horizontally. Open the column's menu and select "Stack with the left column" to move the current column below the column to its left.
-To unstack a column, select "Pop column to the right" from the column's menu.
+列可以垂直也可以水平排列。 打开列的菜单并选择“与左列堆叠”将列下方的当前列移至其左侧。
+要取消堆叠列，请从列的菜单中选择“将列弹出到右侧”。
 
-## Configure Column Layout
+## 配置列布局
 
-Select "Column settings" in the column menu to edit column layout settings. Here you can change the column name and width.
-If the colum is set to flexible then it will expand beyond its set width to fill remaining horizontal space on the screen.
+在列菜单中选择“列设置”以编辑列布局设置。 您可以在此处更改列名称和宽度。
+如果列设置为灵活，那么它将扩展超出其设置的宽度以填充屏幕上剩余的水平空间。
 
-## Deck Settings
+## 牌组设置
 
-Deck-related settings can be changed in the settings menu (click the gear icon in the bottom right of the screen.
+可以在设置菜单中更改与牌组相关的设置（单击屏幕右下角的齿轮图标。
 
-## Deck Profiles
+## 甲板剖面图
 
-You can create/load a deck profile by clicking on the menu in the top right of the screen. Choose "New profile" to create a new blank deck to customize. Select another profile to switch to it. The trash button deletes the current profile.
+您可以通过单击屏幕右上角的菜单来创建/加载甲板配置文件。 选择“新配置文件”以创建新的空白甲板进行自定义。 选择另一个配置文件以切换到它。 垃圾桶按钮删除当前配置文件。

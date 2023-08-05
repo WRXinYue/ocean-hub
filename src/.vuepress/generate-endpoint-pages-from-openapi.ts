@@ -31,7 +31,7 @@ export async function generateEndpointPages(app: App) {
 
 		const endpointsDir = locale + 'docs/api/endpoints/';
 
-		let indexContent = '# エンドポイント一覧\n';
+		let indexContent = '# 端点列表\n';
 
 		indexContent += `
 <MkEndpoints :endpoints="${JSON.stringify(endpointsForComponent).replace(/"/g, '\'')}" :tags="${JSON.stringify(endpointTags).replace(/"/g, '\'')}"/>`;
@@ -40,7 +40,7 @@ export async function generateEndpointPages(app: App) {
 			const name = endpointPath.substring(1);
 			const def = _openApi.paths[endpointPath]['post'];
 			const requireCredential = def.security?.length > 0;
-	
+
 			let content = `# \`${name}\``;
 
 			if (requireCredential) {
@@ -50,7 +50,7 @@ export async function generateEndpointPages(app: App) {
 			content += `\n${def.description}\n`;
 
 			// TODO: permission
-	
+
 			if (def.requestBody && Object.keys(def.requestBody.content['application/json']?.schema?.properties ?? {}).length > 0) {
 				content += `
 ## Parameters
@@ -63,7 +63,7 @@ export async function generateEndpointPages(app: App) {
 none
 `;
 			}
-	
+
 			if (def.responses['200']) {
 				const ref = def.responses['200'].content['application/json'].schema.$ref;
 				const schema = ref ? _openApi.components.schemas[ref.replace('#/components/schemas/', '')] : def.responses['200'].content['application/json'].schema;
@@ -86,7 +86,7 @@ none
 ${JSON5.stringify(def, null, '\t')}
 \`\`\`
 `;
-	
+
 			const page = await createPage(app, {
 				path: endpointsDir + name + '.html',
 				content: content,

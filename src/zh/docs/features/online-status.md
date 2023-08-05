@@ -1,7 +1,7 @@
-# Online Status
+# 在线状态
 
-A user's **online status** is an indication of their Ocean usage status.
-Your online status is displayed as an indicator in the corner of the user icon on your user page and elsewhere.
+用户的**在线状态**显示其 ocean 使用状态。
+您的在线状态会以指示符的形式显示在您的用户页面和其他地方的用户图标的角落里。
 
 <table>
 	<tr>
@@ -31,9 +31,9 @@ Your online status is displayed as an indicator in the corner of the user icon o
 	</tr>
 </table>
 
-Your online status will change automatically and cannot be set manually.
-You can set your online status to be private.
+您的在线状态将自动更改，无法手动设置。
+您可以将在线状态设置为私人状态。
 
 ::: warning
-Some features, such as user suggestions, may be based on online status, so making your status private may make it harder for other users to find you.
+某些功能（如用户建议）可能基于在线状态，因此将您的状态设为非公开可能会使其他用户更难找到您。
 :::

@@ -1,72 +1,72 @@
-# Charts
+# 图表
 
-Ocean can generate and display charts for an instance's various federated data sources.
-Charts allow you to get a visual depiction of the usage, federation status, and activity of each user.
+Ocean 可以生成并显示实例的各种联合数据源的图表。
+图表使您能够直观地描述每个用户的使用情况、联合状态和活动。
 
-Instance charts can be viewed from the *instance information* page (accessible by clicking the instance logo in the navigation menu).
+可以从*实例信息*页面查看实例图表（通过单击导航菜单中的实例徽标即可访问）。
 
-Below is a description of each chart and its contents.
+以下是每个图表及其内容的描述。
 
 ## Federation Chart
 
-This chart shows information about federated instances.
+此图表显示有关联合实例的信息。
 
 ### Pub
 
-The number of instances that this instance is publishing activities to.
+此实例将活动发布到的实例数。
 
 ### Sub
 
-The number of instances that this instance is receiving activities from.
+该实例正在从中接收活动的实例数。
 
 ### Received
 
-The number of instances that have sent an activity to this instance.
+已向此实例发送活动的实例数。
 
 ### Delivered
 
-The number of instances that this instance has delivered an activity to.
+该实例已向其交付活动的实例数。
 
 ### Stalled
 
-The number of instances where an error was encountered when delivering an activity.
+交付活动时遇到错误的实例数。
 
 ## Active Users Chart
 
-Chart of user activity on this instance.
+此实例上的用户活动图表。
 
-### Read & Write
+### 读和写
 
-The number of users that have read and written.
+已读取和写入的用户数量。
 
 ### Read
 
-The number of users that have read.
+已阅读的用户数量。
 
 ### Write
 
-The number of users that have written.
+已写入的用户数量。
 
 ### < Week
 
-The number of users with an account less than one week old.
+帐户创建时间不满一周的用户数量。
 
 ### < Month
 
-The number of users with an account less than one month old.
+帐户创建时间不足 1 个月的用户数量。
 
 ### < Year
 
-The number of users with an account less than one year old.
+帐户使用时间不满一年的用户数量。
 
 ### > Week
 
-The number of users with an account older than one week.
+拥有超过一周的帐户的用户数量。
 
 ### > Month
 
-The number of users with an account older than one month.
+拥有超过 1 个月帐户的用户数量。
 
 ### > Year
 
-The number of users with an account older than one year.
+拥有一年以上帐户的用户数量。

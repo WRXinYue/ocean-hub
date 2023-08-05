@@ -1,51 +1,51 @@
 ---
-description: 'The streaming API provides real-time information (e.g., new posts in the timeline, reactions, followers, etc.) and various other operations.'
+description: 流媒体应用程序接口提供实时信息（如时间轴上的新帖子、反应、关注者等）和其他各种操作。
 ---
 
-# Streaming API
+# 流媒体应用程序接口
 
 ::: tip
-You should read the [Ocean API documentation](../index.md) first.
+您应该先阅读[Ocean API 文档]（.../index.md）。
 :::
 
-The streaming API provides real-time information (e.g., new posts in the timeline, reactions, followers, etc.) and various other operations.
+流应用程序接口提供实时信息（如时间轴上的新帖子、反应、关注者等）和其他各种操作。
 
-## Connecting to the stream.
+## 连接到流媒体。
 
-To use the streaming API, you have to connect to the Ocean server using **websocket**.
+要使用流媒体应用程序接口，必须使用**websocket**连接到 Ocean 服务器。
 
-The websocket URL looks like this:
+websocket URL 如下
 
 ```:no-line-numbers
 wss://{host}/streaming?i={token}
 ```
 
-where
-- `{host}` is the host of the instance you want to connect to.
-- `{token}` is the users access token.
+其中
+- `{host}`是要连接的实例的主机。
+- `{token}`是用户的访问令牌。
 
 ::: tip
-You can also connect without the access token, but this will limit the information you receive and operations you can perform.
+您也可以在没有访问令牌的情况下进行连接，但这将限制您接收的信息和执行的操作。
 :::
 
-Once you are connected to the stream, you can subscribe to posts as described below, but at this stage you cannot, for example, receive new posts from your timeline.
+连接到信息流后，您就可以按下文所述订阅帖子，但在此阶段您还不能接收时间轴上的新帖子。
 
-To receive such events, you need to join a **channel** on the stream, as described below.
+要接收此类事件，您需要加入流上的**频道**，如下所述。
 
-**All data should be encoded as JSON.**
+**所有数据都应编码为 JSON。
 
-## Channel
-Ocean's streaming API has the concept of channels. This is a mechanism for separating the information to be sent and received.
-By joining channels on the stream, you will be able to receive various kinds of information and send information.
+## 频道
+Ocean 的流 API 有通道的概念。这是一种分离发送和接收信息的机制。
+通过加入流上的通道，您将能够接收各种信息并发送信息。
 
 ::: tip
-You can join multiple channels simultaneously on a single stream connection.
+您可以在单个数据流连接上同时加入多个频道。
 :::
 
-The following sections describe how to use the channels. To see what channels are available, please refer to the [Channel List](./channel/index.md).
+下文将介绍如何使用这些频道。要查看可用的频道，请参阅[频道列表]（./channel/index.md）。
 
-### Joining a channel
-To join a channel, send the following JSON data on the stream:
+### 加入频道
+要加入一个频道，请在数据流中发送以下 JSON 数据：
 
 ```js
 {
@@ -61,18 +61,18 @@ To join a channel, send the following JSON data on the stream:
 ```
 
 where
-- `channel` is the name of the channel you want to connect to. The types of channels are described later in this section.
-- `id` is an arbitrary ID for interacting with that channel. This is necessary to identify which channel the message is coming from, because a stream contains multiple channels. This ID can be something like a UUID or a random number.
-- `params` are parameters required when joining a channel. Different channels require different parameters when connecting. When connecting to a channel that does not require parameters, this property can be omitted.
+- `channel` 通道 "是您要连接的通道名称。本节稍后将介绍通道的类型。
+- `id` 是与该频道交互的任意 ID。这是识别信息来自哪个通道的必要条件，因为一个数据流包含多个通道。ID 可以是 UUID 或随机数。
+- `params` 是加入通道时所需的参数。不同的频道在连接时需要不同的参数。连接到不需要参数的频道时，可以省略此属性。
 
 ::: tip
-The ID is not per channel but per channel connection, because a channel may be needed multiple times but with different parameters.
+ID 不是每个通道的 ID，而是每个通道连接的 ID，因为一个通道可能需要多次使用，但参数不同。
 :::
 
-### Receiving messages from channels
-For example, a timeline channel will send out a message when there is a new post. By receiving the message, you will know in real time that a new post has been published on your timeline.
+### 接收来自频道的信息
+例如，时间轴频道会在有新文章发布时发送消息。收到消息后，你就能实时知道时间轴上发布了新文章。
 
-When a channel issues a message, the following JSON data is sent:
+当频道发布消息时，会发送以下 JSON 数据：
 ```js
 {
 	type: 'channel',
@@ -86,15 +86,15 @@ When a channel issues a message, the following JSON data is sent:
 }
 ```
 
-where
-- `id` is the ID that you set when connecting to that channel as mentioned above. This lets you know from which channel (instantiation) this message is coming.
-- `type` is the type of message. The types of messages that get sent depend on the channel.
-- `body` holds the content of the message. The content of the message depends on the channel.
+其中
+- `id` 是您在连接到上述通道时设置的 ID。这可以让您知道这条信息来自哪个通道（实例）。
+- `type` 是信息的类型。发送的信息类型取决于通道。
+- `body` 是信息的内容。信息内容取决于信道。
 
-### Sending a message to a channel
-On some channels, it is also possible to send messages and perform other operations in addition to receiving messages.
+### 向通道发送信息
+在某些频道上，除了接收信息外，还可以发送信息和执行其他操作。
 
-To send a message to a channel, send the following JSON data to the stream:
+要向通道发送信息，请向数据流发送以下 JSON 数据：
 ```js
 {
 	type: 'channel',
@@ -108,13 +108,13 @@ To send a message to a channel, send the following JSON data to the stream:
 }
 ```
 
-where
-- `id` is the ID that you set when connecting to that channel as mentioned above. This lets you determine which channel (instantiation) the message is for.
-- `type` is the type of message. Different channels accept different types of messages.
-- `body` contains the content of the message. Different channels accept different message contents.
+其中
+- `id` 是您在连接上述通道时设置的 ID。这可以让您确定消息是哪个通道（实例）的。
+- `type` 是信息类型。不同的频道接受不同类型的信息。
+- `body` 包含信息内容。不同的频道接受不同的信息内容。
 
-### Disconnecting from a channel
-To disconnect from a channel (instantiation), send the following JSON data to the stream:
+### 断开与频道的连接
+要断开与频道的连接（实例化），请向数据流发送以下 JSON 数据：
 ```js
 {
 	type: 'disconnect',
@@ -124,22 +124,26 @@ To disconnect from a channel (instantiation), send the following JSON data to th
 }
 ```
 
-where
-- `id` is the ID that you set when connecting to that channel as mentioned above. This lets you determine which channel (instantiation) you want to disconnect from.
+其中
+- `id` 是您在连接到上述通道时设置的 ID。这样就可以确定要断开连接的通道（实例）。
 
-## Capturing Notes
-Ocean provides a mechanism called note capture. This is the ability to receive a stream of events for a given note.
+## 捕捉笔记
+Ocean 提供了一种名为 "笔记捕捉 "的机制。这是一种接收给定音符事件流的能力。
 
-For example, let's say you grab a timeline and display it to your users. Let's say someone reacts to one of the posts in the timeline.
-However, since the client has no way of knowing that a note has been reacted to, it is not possible to reflect the reaction in the timeline in real time.
+例如，假设您抓取了一条时间线，并将其显示给用户。假设有人对时间轴上的某个帖子做出了反应。
+然而，由于客户端无法知道某条记录是否已被回应，因此无法在时间轴中实时反映回应情况。
 
-To solve this problem, Ocean provides a note capture mechanism. When you capture a note, you will receive events related to that note, and you can display reactions to it in real time.
+为了解决这个问题，Ocean 提供了一个捕获备注的机制。捕获笔记后，您将收到与该笔记相关的事件，并可实时显示对该笔记的反应。
 
-The following sections describe how to use the note capture function. To see what kind of capture events are available, see the [Capture Events List](./note-capture-events.md).
+下文将介绍如何使用笔记捕捉功能。要了解可用的捕获事件类型，请参阅[捕获事件列表](./note-capture-events.md)。
 
-### Capturing a Note
+### 捕获笔记
 
-To capture a note, send the following JSON data to the stream:
+要捕获笔记，请向流发送以下 JSON 数据：
+
+### 捕获笔记
+
+要捕获笔记，请向流发送以下 JSON 数据：
 ```js
 {
 	type: 'subNote',
@@ -149,12 +153,12 @@ To capture a note, send the following JSON data to the stream:
 }
 ```
 
-where
-- `id` is the ID of the note you want to capture.
+其中
+- `id` 是您要捕获的注释的 ID。
 
-When you send this message, you are asking Ocean to capture the note, and events related to that note will then be streamed to you.
+当您发送此消息时，您就是在请求 Ocean 捕捉该笔记，然后与该笔记相关的事件就会流式传输给您。
 
-For example, when a note gets a reaction, you will see a message like the following:
+例如，当某个备忘得到回应时，您会看到如下信息：
 ```js
 {
 	type: 'noteUpdated',
@@ -169,16 +173,16 @@ For example, when a note gets a reaction, you will see a message like the follow
 }
 ```
 
-where
-- `body.id` will be set to the ID of the post that triggered the event.
-- `body.type` will be the type of the event.
-- `body.body` will contain the details of the event.
+其中
+- `body.id` 将设置为触发事件的帖子的 ID。
+- `body.type` 将是事件的类型。
+- `body.body` 将包含事件的详细信息。
 
-### Un-capturing a Note
+### 取消捕获注释
 
-If you no longer want to receive events related to a note, such as when it no longer appears on your screen, you can remove the capture request.
+如果您不想再接收与备注相关的事件，例如当备注不再出现在屏幕上时，您可以删除捕获请求。
 
-Send the following JSON data:
+发送以下 JSON 数据：
 ```js
 {
 	type: 'unsubNote',
@@ -188,7 +192,7 @@ Send the following JSON data:
 }
 ```
 
-where
-- `id` is the ID of the note you want to uncapture.
+其中
+- `id` 是您要取消捕获的笔记的 ID。
 
-Once you send this message, no more events related to that note will be sent to you.
+发送此信息后，将不会再向您发送与该笔记相关的事件。

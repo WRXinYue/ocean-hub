@@ -1,24 +1,22 @@
-# Getting Started with Ocean
-Ocean is a program and a project.
-The server running Ocean, which is open to the public on the Internet, is called an **instance**.
-To use Ocean, you need to create an account in one of the instances and use that instance.
+# Ocean 入门
+Ocean 是一个计划和一个项目。
+运行 Ocean 的服务器在互联网上向公众开放，称为**实例**。
+要使用 Ocean，您需要在其中一个实例中创建一个帐户并使用该实例。
 
-You can select an instance of your choice from the [instance list](../instances.md).
+您可以从[实例列表](../instances.md)中选择您选择的实例。
 
 ::: tip
-No matter which instance you choose, you will be able to interact with users on other instances.
+无论您选择哪个实例，您都可以与其他实例上的用户进行交互。
 
 ::: details
-Ocean has the ability to federate.
+Ocean 具有联盟的能力。
 
-Ocean has built-in federation support, which allows users in different instances to follow, react, and renote in the same way as users on the same instance.
+Ocean 具有内置的联合支持，允许不同实例中的用户以与同一实例上的用户相同的方式关注、反应和重新记录。
 
-Ocean's federation is based on an open common standard called ActivityPub, and is compatible with other software such as Mastodon and Pleroma.
+Ocean 的联盟基于名为 ActivityPub 的开放通用标准，并且与 Mastodon 和 Pleroma 等其他软件兼容。
 :::
 
-## Choosing an Instance
-### Instance Themes
-Some instances may have a specific theme, for example, "I like certain stuff and activities".
-It is recommended to find an instance of the theme that suits you best.
-
-### Instance user base
+## 选择实例
+### 实例主题
+有些实例可能有特定的主题，例如“我喜欢某些东西和活动”。
+建议找到最适合您的主题实例。

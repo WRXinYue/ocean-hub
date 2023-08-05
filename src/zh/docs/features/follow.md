@@ -1,5 +1,5 @@
-# Follow
+# 关注
 
-When you follow a user, you will see their posts on your home timeline; however, their replies to other users will not be included.
+当您关注某个用户时，您将在您的主页时间线上看到他们的帖子； 但是，他们对其他用户的回复将不包括在内。
 
-To follow a user, click the "Follow" button on the user's profile page. To unfollow a user, click the button again.
+要关注用户，请单击用户个人资料页面上的“关注”按钮。 要取消关注用户，请再次单击该按钮。

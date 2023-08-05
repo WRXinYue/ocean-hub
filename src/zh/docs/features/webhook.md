@@ -1,21 +1,21 @@
-# Webhook
+# 网络钩子
 
 ::: tip
-This feature is available as of Ocean version 12.109.0.
+该功能从 Ocean 12.109.0 版开始提供。
 :::
 
 ::: warning
-This is an experimental feature and may be unstable or subject to change in the future.
+这是一项试验性功能，可能不稳定或将来会有变化。
 :::
 
-Ocean provides a webhook which allows you to receive various events from Ocean in real time.
+Ocean 提供网络钩子，让您可以实时接收来自 Ocean 的各种事件。
 
-You can manage your webhooks by going to Settings > Webhook.
+您可以进入 "设置">"网络钩子 "管理网络钩子。
 
-Once a webhook is registered, an HTTP request is sent to the specified URL each time the specified event occurs. The request method will be POST and contain JSON in its body.
-In addition, the request header will contain the secret that was set during registration with the name `X-Ocean-Hook-Secret`. You can use this secret to verify that the request is legitimate.
+注册 Webhook 后，每次发生指定事件时，都会向指定 URL 发送 HTTP 请求。请求方法将是 POST，正文中包含 JSON。
+此外，请求头还将包含注册时设置的密文，名称为 "X-Ocean-Hook-Secret"。你可以使用该秘密验证请求是否合法。
 
-The payload wil contain the following properties.
+有效载荷将包含以下属性。
 
 <MkSchemaViewerItemObject :schema="{
 	type: 'object',
@@ -47,17 +47,17 @@ The payload wil contain the following properties.
 	}
 }"/>
 
-If the destination server returns a 5XX error or does not respond, the request is resent after a time delay.
+如果目标服务器返回 5XX 错误或没有响应，请求会在延迟一段时间后重新发送。
 
-Webhooks can individually have their active status changed from the administration screen to temporarily stop sending requests.
+Webhooks 可以通过管理屏幕单独更改其激活状态，以暂时停止发送请求。
 
-## Event
+## 事件
 
-The following is a description and payload for each event type.
+以下是每种事件类型的说明和有效载荷。
 
-### follow
+### 关注
 
-Occurs when you follow someone.
+当您关注某人时发生。
 
 <MkSchemaViewerItemObject :schema="{
 	type: 'object',

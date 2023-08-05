@@ -1,7 +1,7 @@
 <template>
   <div class="mk-endpoints">
     <div class="tags">
-      <div class="title">タグで絞り込み</div>
+      <div class="title">按标签过滤</div>
       <div class="tags">
         <span
           class="tag"

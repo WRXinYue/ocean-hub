@@ -17,7 +17,7 @@ export async function generateEndpointPages(app: App) {
 			endpointsForIndex.push({
 				name: name, summary: def.summary, tags: def.tags ?? []
 			});
-	
+
 			let content = `---
 filePath: '${locale + `docs/api/endpoints/${name}.json5`}'
 description: '${def.summary}'
@@ -36,7 +36,7 @@ description: '${def.summary}'
 `;
 
 			// TODO: permission
-	
+
 			if (def.req && Object.keys(def.req).length > 0) {
 				content += `
 ## パラメータ
@@ -50,7 +50,7 @@ description: '${def.summary}'
 <el-alert title="なし" type="success" :closable="false" />
 `;
 			}
-	
+
 			if (def.res) {
 				content += `
 ## レスポンス
@@ -89,7 +89,7 @@ description: '${def.summary}'
 
 		const endpointTags = Array.from(new Set(endpointsForIndex.flatMap(x => x.tags)));
 
-		let indexContent = '# エンドポイント一覧\n';
+		let indexContent = '# 端点列表\n';
 
 		indexContent += `
 <MkEndpoints :endpoints="${JSON.stringify(endpointsForIndex).replace(/"/g, '\'')}" :tags="${JSON.stringify(endpointTags).replace(/"/g, '\'')}"/>`;

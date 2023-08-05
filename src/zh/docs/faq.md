@@ -1,28 +1,20 @@
-# Frequently Asked Questions
-This document will list answers to frequently asked questions regarding the usage of Ocean. Answers to frequently asked questions related to Ocean as a project can be found [here](../ocean#frequently-asked-questions).
+# 经常问的问题
+本文档将列出有关 Ocean 使用的常见问题的解答。 与 Ocean 作为项目相关的常见问题的答案可以在[此处](../ocean#frequently-asked-questions)找到。
 
-## "Are there any apps for iOS / Android available?"
-While no official Ocean app for either OS exists, there are several third-party applications. For details, please check [here](./apps).
+## "当我想关注其他服务器的用户时，我该怎么办？"
+从菜单中选择搜索栏，然后输入他们的用户名，包括他们的主机服务器。 例如：`@wrxinyue@ocean.io`
 
-However, functionality of third-party applications will inevitably lag behind the official Web client, so unless you really want to use a native application, we recommend the official Web client instead. As the Ocean Web client supports PWA, it is also possible to make it act as if it was a native application instead. For details regarding this, please check [here](todo).
+## "如何收回 Renote？"
+按重新笔记时间戳旁边显示的三个点（“...”），然后选择“收回重新笔记”。 要了解有关 Renotes 的更多信息，请查看[此处](../features/note#renote)。
 
-## "Can't I log in through a Mastodon client?"
-As Ocean is not compatible with the Mastodon API, barring some exceptions, using Mastodon clients to log into Ocean is not possible.
+## "我不想显示 URL 的预览。"
+您可以使用 MFM 阻止预览 URL。 请检查 MFM Cheatsheet，您可以通过输入以下 URL“https://YourInstanceHostname/mfm-cheat-sheet”在实例中看到它。
 
-## "What do I do when I want to follow users from other servers?"
-Select the search bar from the menu and enter their username including their host server. E.g.: `@syuilo@ocean.io`
+## "我想添加自定义表情符号。"
+只有管理员可以添加、编辑或删除自定义表情符号。 如果您想要执行上述任一操作，请询问您的实例管理员。
 
-## "How do I take back a Renote?"
-Press the three dots ("...") displayed next to the renote timestamp and select "Take back Renote". To read more about Renotes, please check [here](../features/note#renote).
+## "我想开发一个机器人。"
+可以使用 Ocean API 开发机器人。 请[参见此处](../docs/api)。
 
-## "I don't want the preview of an URL to be displayed."
-You can prevent an URL from being previewed using MFM. Please check the MFM Cheatsheet which you can see it in your instance with typing a following URL `https://YourInstanceHostname/mfm-cheat-sheet`.
-
-## "I want to add custom emoji."
-Only administrators can add, edit or delete custom emoji. If you'd like to do either of these things, please ask your instance administrator.
-
-## "I want to develop a Bot."
-It is possible to develop a Bot using the Ocean API. Please, [see here](../docs/api).
-
-## Which service does the note translation function use?
-[DeepL](https://www.deepl.com/) is being used for this.
+## 笔记翻译功能使用什么服务？
+[DeepL](https://www.deepl.com/) 正用于此目的。

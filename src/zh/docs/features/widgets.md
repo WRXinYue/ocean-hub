@@ -1,98 +1,94 @@
-# Widgets
+# 小工具
 
-A widget is a small display element that can be added to the Ocean UI to display and interact with information.
-By default they are displayed on the right side of the screen or accessed from the stack icon in the mobile web app navigation menu.
+小工具是一种小型显示元素，可添加到 Ocean UI 中，用于显示信息并与之互动。
+默认情况下，它们显示在屏幕右侧，或通过移动网络应用程序导航菜单中的堆栈图标访问。
 
-To edit widgets, switch to widget edit mode at the bottom of the widget view. In widget edit mode you can add, delete, and reorder widgets.
+要编辑部件，请切换到部件视图底部的部件编辑模式。在部件编辑模式下，您可以添加、删除和重新排列部件。
 
-After you close out of the widget layout editor, you can also configure settings for each widget's behavior.
+关闭部件布局编辑器后，还可以对每个部件的行为进行设置。
 
-## List of Available Widgets
+## 可用部件列表
 
-### Notifications
+### 通知
 
-Shows a list of your notifications. You can change the types of notifications shown by opening the notification widget menu. If you disable "User global settings" you can choose to only show certain types of notifications.
+显示通知列表。您可以打开通知 Widget 菜单，更改显示的通知类型。如果禁用 "用户全局设置"，则可以选择只显示某些类型的通知。
 
-### Timeline
+###时间轴
 
-Display a timeline. You can choose from one of the standard timelines (Home, Local, Social, and Global) or one of your custom user [Lists](./list.md) or [Antennas](./antenna.md).
+显示时间轴。你可以选择标准时间轴（主页、本地、社交和全球）或自定义用户 [列表](./list.md) 或 [天线](./antenna.md)。
 
-### RSS Reader
+### RSS 阅读器
 
-Displays a list of items from an RSS feed. You can provide any valid RSS feed URL in the configuration.
+显示来自 RSS 源的项目列表。您可以在配置中提供任何有效的 RSS 源 URL。
 
-### RSS-Ticker
+### RSS 标记
 
-Similar to the RSS Reader, but the ticker shows the feed as a scrolling ticker on a single line. There are also more options to customize how the the feed will be refreshed and displayed.
+与 RSS 阅读器类似，但滴答器以单行滚动滴答器的形式显示 RSS 源。此外，还有更多选项可自定义刷新和显示 RSS 源的方式。
 
-### Trending
+### 趋势
 
-Displays trending [Hashtags](./hashtag.md) as well as statistics of how many users have mentioned it and a graph of that hashtag's activity.
+显示流行的 [标签](./hashtag.md)，以及提及该标签的用户统计和该标签的活动图表。
+#### 活动
 
-### Activity
+显示随时间变化的可视化活动。
 
-Displays a visualization of activity over time.
+### 在线用户
 
-### Online Users
+显示该实例的活跃用户数量。
 
-Displays the number of users that are active on this instance.
+### 照片
 
-### Photos
+显示你最近拍摄的照片。
 
-Displays a gallery of your recent photos.
+### 幻灯片
 
-### Slideshow
+显示指定驱动器文件夹中照片的幻灯片。要选择驱动器文件夹，请在退出 widget 布局编辑器后左键单击幻灯片窗口小部件。然后选择要包含在幻灯片中的文件夹复选框，并点击复选标记确认。
 
-Displays a slideshow of photos one of your specified drive folders. To select the drive folder, left-click on the slideshow widget after you have exited the widget layout editor. Then select the checkbox of folders you want included in the slideshow and click the check mark to confirm.
+### 日历
 
-### Calendar
+显示当前日期以及显示日期进程的图形。
 
-Displays the current date as well as a graphic showing the date progression.
+### 时钟
 
-### Clock
+显示模拟时钟。模拟时钟有许多自定义外观的选项。
 
-Displays an analog clock. The analog clock has many options to customize its appearance.
+### 数字时钟
 
-### Digital Clock
+显示数字时钟。
 
-Displays a digital clock.
+### UNIX 时钟
 
-### UNIX Clock
+显示自 UNIX 纪元（1970-01-01T00:00:00Z）以来的秒数。
 
-Displays the seconds elapsed since the UNIX Epoch (1970-01-01T00:00:00Z).
+### 联合
 
-### Federation
+联盟实例列表及其近期活动图表。
 
-List of federated instances and graphs of their recent activity.
+### 实例云
 
-### Instance Cloud
+显示联合实例的交互式动画。
 
-An interactive animation that shows federated instances.
+###便笺
 
-### Sticky Notes
+一个文本区域，您可以在此记下自己的简短笔记。您可以保存您的便笺，无论您在哪里访问 Ocean Web，都能看到它。
 
-A text area where you can jot down short notes for yourself. You can save your sticky note and it will be available wherever you access Ocean Web.
+### 发布表单
 
-### Posting Form
+[Note](./note.md)组成菜单的小部件形式。
 
-A widget form of the [Note](./note.md) composition menu.
+### 服务器指标
 
-### Server Metrics
+显示服务器指标。可通过点击小工具标题上的箭头更改显示的指标类型。
 
-A display of the server metrics. The type of metrics displayed can changed by clicking the arrows in the header of the widget.
+#### 作业队列
 
-### Job Queue
+显示服务器作业队列统计数据。
 
-A display of the server job queue statistics.
+### AiScript 控制台
 
-### AiScript Console
+可用于测试和执行 [AiScript](../advanced/aiscript.md) 程序的小工具版本。这是通过帮助菜单访问 Scratchpad 页面的 widget 版本。
 
-A widget version that you can use to test and execute [AiScript](../advanced/aiscript.md) programs. This is a widget version of the Scratchpad page accessible through the help menu.
+### 按钮
 
-### Button
+交互式按钮，点击后可运行你自定义的 [AiScript](../advanced/aiscript.md) 程序。
 
-An interactive button that when clicked runs your own custom [AiScript](../advanced/aiscript.md) program.
-
-### Ai
-
-A digital version of the Ocean mascot, Ai, that will follow you around the site.

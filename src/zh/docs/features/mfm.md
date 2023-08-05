@@ -1,60 +1,60 @@
 ---
-description: 'MFM is a dedicated markup language that can be used in various places on Ocean.'
+description: 'MFM是一种专用标记语言，可以在Ocean上的各个地方使用。'
 ---
 
 # MFM
-MFM, which stands for Ocean Flavoured Markdown, is a dedicated markup language that can be used in various places on Ocean.
+MFM，全称是 Ocean Flavored Markdown，是一种专用的标记语言，可以在 Ocean 的各个地方使用。
 
 ::: tip
-Some of the syntax is compatible with Markdown.
+一些语法与 Markdown 兼容。
 :::
 
-## examples of where ocean is allowed
-- note body
-- content warnings
-- user name
-- user profile
+## 允许海洋的地方的示例
+- 注释正文
+- 内容警告
+- 用户名
+- 用户资料
 
-## Syntax
-### Mentions
+## 句法
+### 提及
 ::: tip
-For more information about Mentions, see [here](./mention.md).
+有关提及的更多信息，请参阅[此处](./mention.md)。
 :::
 
 ```:no-line-numbers
-@alice
+@wrxinyue
 ```
 ```:no-line-numbers
-@alice@example.com
+@wrxinyue@example.com
 ```
 
-### Hashtags
+### 标签
 
 ::: tip
-For more information about hashtags, see [here](./hashtag).
+有关主题标签的更多信息，请参阅[此处](./hashtag)。
 :::
 
 ```:no-line-numbers
 #ocean
 ```
 
-### Custom Emoji
+### 自定义表情符号
 
 ::: tip
-For more information about custom emoji, see [here](./custom-emoji).
+有关自定义表情符号的更多信息，请参阅[此处](./custom-emoji)。
 :::
 
 ```:no-line-numbers
 :ocean:
 ```
 
-### Links
+### 链接
 
 ```:no-line-numbers
-[example link](https://example.com)
+[示例链接](https://example.com)
 ```
 
-### Bold
+### 加粗
 
 ```:no-line-numbers
 **Bold**
@@ -63,10 +63,10 @@ For more information about custom emoji, see [here](./custom-emoji).
 ---
 
 ::: tip
-More available syntax can be found in the **MFM cheat sheet** provided by the Ocean web UI under `/mfm-cheat-sheet` on your instance.
+更多可用的语法可以在您的实例的`/mfm-cheat-sheet`下的 Ocean Web UI 提供的 **MFM 备忘单**中找到。
 :::
 
-## Information for Developers
+## 开发者信息
 
-The parser implementation of MFM is available as a library, making it easier to embed MFM in your clients.
-- [ocean-dev/mfm.js](https://github.com/ocean-dev/mfm.js) - parser implementation in JavaScript
+MFM 的解析器实现可作为库提供，从而更轻松地将 MFM 嵌入到客户端中。
+- [ocean-dev/mfm.js](https://github.com/ocean-dev/mfm.js) - JavaScript 中的解析器实现

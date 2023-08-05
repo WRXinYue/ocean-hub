@@ -1,56 +1,56 @@
-# Muting and Blocking
+# 静音和屏蔽
 
-If you don't like a user, you can mute them to make them disappear from your timelines.
-Alternatively, you can block a user to prevent them from seeing your content or engaging with you in any way.
-People won't know that you have muted them, but they will know that you have blocked them. It is up to you to decide which option you prefer.
-
-::: tip
-Mute and block can be used together.
-:::
-
-::: warning
-Please consider reporting any users who violate the Terms of Service to the moderators.
-:::
-
-In Ocean Web, you can see the list of users you have muted or blocked by going to Settings > Mute & Block.
-
-## Muting
-
-If you mute a user, the following content about that user will no longer appear in Ocean:
-
-- the user's posts (and replies and Renotes to those posts) in the timeline and post search results
-- notifications from that user
-- message history with the user in Ocean chat
-- etc.
-
-To mute a user in Ocean Web, open the menu on the user's profile page and press the "Mute" button.
+如果你不喜欢某个用户，可以将其静音，使其从你的时间线中消失。
+或者，你也可以屏蔽一个用户，不让他看到你的内容或以任何方式与你互动。
+别人不会知道你已将其静音，但会知道你已将其屏蔽。您可以自行决定选择哪种方式。
 
 ::: tip
-They will not be notified that you have muted them, and they will not know that you have muted them.
-:::
-
-## Blocking
-If you block a user, they will not be able to see your content and they will not be able to do any the following actions:
-
-- follow you
-- add you to a user list
-- reply or renote you
-- react or vote in one of your polls
-- send a message to you
-- etc.
-
-Also,
-
-- if the user is already following you when you block them, they will unfollow you
-- if the user has you in their user lists when you block them, you will be removed from those lists
-
-To block a user on Ocean Web, open the menu on the user's profile page and press the "Block" button.
-
-::: warning
-You will not be notified that you have been blocked by someone, but you will know indirectly that you have been blocked because you will not be able to take any of the above actions, such as following someone.
+静音和屏蔽可同时使用。
 :::
 
 ::: warning
-The other person will not be able to see your content, but they will be able to see it if they switch accounts or log out. Blocking is only a simple, but useful feature.
-You can change your privacy settings in Settings > Privacy to make it more difficult for blocked users to view your content by requiring approval for follow requests and setting your default note visibility to "Followers".
+请考虑向版主报告任何违反服务条款的用户。
+:::
+
+在 Ocean Web，您可以进入设置 > 静音和阻止，查看您已静音或阻止的用户列表。
+
+## 静音
+
+如果您将某个用户设为静音，则该用户的以下内容将不再出现在 Ocean 中：
+
+- 时间线和帖子搜索结果中该用户的帖子（以及对这些帖子的回复和 Renotes
+- 来自该用户的通知
+- 与该用户在 Ocean 聊天中的消息记录
+- 等等。
+
+要在 Ocean Web 中将用户静音，请打开用户资料页面的菜单，按 "静音 "按钮。
+
+::: tip
+他们不会收到您已将其静音的通知，也不会知道您已将其静音。
+:::
+
+## 阻止
+如果您屏蔽了某个用户，他们将无法看到您的内容，也无法执行以下任何操作：
+
+- 关注您
+- 将您添加到用户列表
+- 回复或重新注释您
+- 在您的投票中作出反应或投票
+- 向您发送消息
+- 等等。
+
+还有
+
+- 如果用户在您屏蔽他们时已经关注了您，他们会取消对您的关注
+- 如果在您封停该用户时，该用户已将您列入其用户列表，则您将从这些列表中删除
+
+要在 Ocean Web 上封堵某个用户，请打开该用户资料页面的菜单，然后按 "封堵 "按钮。
+
+::: warning
+您不会收到您已被某人屏蔽的通知，但您会间接知道您已被屏蔽，因为您将无法采取任何上述操作，例如关注某人。
+:::
+
+::: warning
+对方将无法看到你的内容，但如果他们切换账户或注销，则可以看到你的内容。屏蔽只是一个简单但有用的功能。
+你可以在 "设置">"隐私 "中更改隐私设置，让被屏蔽的用户更难查看你的内容，方法是要求关注请求获得批准，并将默认备注可见性设置为 "关注者"。
 :::
