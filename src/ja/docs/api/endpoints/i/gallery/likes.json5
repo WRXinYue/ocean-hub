@@ -17,12 +17,12 @@
 			},
 			sinceId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも大きいいいねを返します。',
 			},
 			untilId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも小さいいいねを返します。',
 			},
 		},
@@ -48,7 +48,7 @@
 					optional: false,
 					nullable: false,
 					ref: 'GalleryPost',
-					$ref: 'misskey://GalleryPost',
+					$ref: 'ocean://GalleryPost',
 				},
 			},
 			required: [

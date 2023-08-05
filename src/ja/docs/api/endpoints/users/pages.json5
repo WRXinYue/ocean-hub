@@ -10,7 +10,7 @@
 		properties: {
 			userId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: 'ユーザーのid。',
 			},
 			limit: {
@@ -22,12 +22,12 @@
 			},
 			sinceId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも大きいページを返します。',
 			},
 			untilId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりもc小さいページを返します。',
 			},
 		},
@@ -44,7 +44,7 @@
 			optional: false,
 			nullable: false,
 			ref: 'Page',
-			$ref: 'misskey://Page',
+			$ref: 'ocean://Page',
 		},
 	},
 	errors: {},

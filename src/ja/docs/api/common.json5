@@ -49,7 +49,7 @@
 					nullable: true,
 				},
 				user: {
-					$ref: 'misskey://User',
+					$ref: 'ocean://User',
 				},
 				userId: {
 					type: 'string',

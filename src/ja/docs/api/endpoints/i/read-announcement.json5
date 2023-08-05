@@ -10,7 +10,7 @@
 		properties: {
 			announcementId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '既読にするお知らせのid。',
 			},
 		},

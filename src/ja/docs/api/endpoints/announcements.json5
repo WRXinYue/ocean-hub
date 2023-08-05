@@ -22,12 +22,12 @@
 			},
 			sinceId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも大きいお知らせを返します。',
 			},
 			untilId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも小さいお知らせを返します。',
 			},
 		},

@@ -19,7 +19,7 @@
 			optional: false,
 			nullable: false,
 			ref: 'UserList',
-			$ref: 'misskey://UserList',
+			$ref: 'ocean://UserList',
 		},
 	},
 	errors: {},

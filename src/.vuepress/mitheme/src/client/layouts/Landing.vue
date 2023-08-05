@@ -61,17 +61,17 @@
         v-parallax="2"
         src="/screenshot-desktop.png"
         class="screenshot desktop"
-        alt="screenshot of Misskey in a PC browser"
+        alt="screenshot of Ocean in a PC browser"
       />
       <img
         v-parallax="3"
         src="/screenshot-mobile.png"
         class="screenshot mobile"
-        alt="screenshot of Misskey in a mobile browser"
+        alt="screenshot of Ocean in a mobile browser"
       /> -->
-      <!-- <img v-parallax="4" src="/ai.png" class="ai" alt="Ai-chan, Misskey's mascott"> -->
+      <!-- <img v-parallax="4" src="/ai.png" class="ai" alt="Ai-chan, Ocean's mascott"> -->
       <a
-        href="https://github.com/misskey-dev/misskey"
+        href="https://github.com/ocean-dev/ocean"
         target="_blank"
         class="github-corner"
         aria-label="View source on GitHub"
@@ -179,7 +179,7 @@
                   <img
                     src="/top-features-federation.png"
                     class="img"
-                    alt="logos of Misskey and other ActivityPub server software"
+                    alt="logos of Ocean and other ActivityPub server software"
                   />
                   <div class="title">{{ frontmatter.sections.features.list.federation.title }}</div>
                   <div class="description">{{
@@ -189,7 +189,7 @@
               >
               <div v-fade-in class="item"
                 ><div class="content">
-                  <img src="/top-features-drive.png" class="img" alt="a list of files in Misskey Drive" />
+                  <img src="/top-features-drive.png" class="img" alt="a list of files in Ocean Drive" />
                   <div class="title">{{ frontmatter.sections.features.list.drive.title }}</div>
                   <div class="description">{{ frontmatter.sections.features.list.drive.description }}</div>
                 </div></div
@@ -247,7 +247,7 @@
               <div class="icon"><img src="/emojis/light-bulb_1f4a1.png" aria-hidden="true" /></div>
               <div class="title">{{ frontmatter.sections.gettingStarted.docs.title }}</div>
               <div class="description"></div>
-              <RouterLink class="link" to="./docs/misskey.html">{{
+              <RouterLink class="link" to="./docs/ocean.html">{{
                 frontmatter.sections.gettingStarted.docs.docs
               }}</RouterLink>
             </div>
@@ -288,7 +288,7 @@
 
     <div class="footer">
       <div class="container">
-        <div class="c">&copy; 2023 Misskey, syuilo, and other contributors</div>
+        <div class="c">&copy; 2023 Ocean, syuilo, and other contributors</div>
       </div>
     </div>
   </div>

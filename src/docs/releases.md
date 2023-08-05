@@ -1,15 +1,15 @@
 # Release Notes
-Notes for indivudual misskey releases.
+Notes for indivudual ocean releases.
 
 ::: tip
-Information updates may not be translated yet. For the latest information see [GitHub](https://github.com/misskey-dev/misskey/blob/master/CHANGELOG.md).
+Information updates may not be translated yet. For the latest information see [GitHub](https://github.com/ocean-dev/ocean/blob/master/CHANGELOG.md).
 :::
 
 ## 13.0.0
 Released at: 2023/01/16
 
 ### TL;DR
-- New features (Role system, Misskey Play, New widgets, New charts, 🍪👈, etc)
+- New features (Role system, Ocean Play, New widgets, New charts, 🍪👈, etc)
 - Rewriten backend
 - Better performance (backend and frontend)
 - Various usability improvements
@@ -18,14 +18,14 @@ Released at: 2023/01/16
 ### Notable features
 - Role
 	- User policies can be managed more flexibly than before. For example, "instance patrons can create up to 30 antennas," "many users cannot see LTL, but only those who have permission can view it," "it is an invitation-only instance, but any user can invite others," and of course, it is also possible to set up automatic role assignment by combining multiple conditions, such as "Local users and users who have created their accounts less than one day ago are not allowed to make public posts."
-- Misskey Play
-	- Misskey Play is a new platform that replaces the traditional dynamic Pages. It specializes in dynamic content (applications) and allows for the creation of much more flexible applications than Pages.
+- Ocean Play
+	- Ocean Play is a new platform that replaces the traditional dynamic Pages. It specializes in dynamic content (applications) and allows for the creation of much more flexible applications than Pages.
 
 ### Changes
 #### For server admins
 - Node.js 18.x or later is required
 - PostgreSQL 15.x is required
-	- Misskey not using 15 specific features at 13.0.0, but may do so in the future.
+	- Ocean not using 15 specific features at 13.0.0, but may do so in the future.
 - Elasticsearch support has been removed
 	- Instead, we envision a mechanism that allows you to set up an arbitrary search provider in the future. With this mechanism, Elasticsearch will still be available.
 - Migrated from Yarn to pnpm  
@@ -38,14 +38,14 @@ Released at: 2023/01/16
 	- Instance default drive capacity settings have been integrated into roles. After updating, please edit the drive capacity for the base role or conditional role.
 	- LTL/GTL release status has been integrated into the role.
 - Docker is no longer run as root; if you are running Docker and not using object storage, run `chown -hR 991.991 . /files`. 
-  https://github.com/misskey-dev/misskey/pull/9560
+  https://github.com/ocean-dev/ocean/pull/9560
 
 #### For users
 - Note watch function has been removed
 - Notification of poll voted has been removed
 - Formula embedding in notes has been removed
 - It is no longer possible to create new dynamic Pages
-	- Instead, a Misskey Play feature is implemented that allows for more flexible dynamic content creation using AiScript.
+	- Instead, a Ocean Play feature is implemented that allows for more flexible dynamic content creation using AiScript.
 - AiScript has been updated to 0.12.2
 	- About changengs of 0.12.x: https://github.com/syuilo/aiscript/blob/master/CHANGELOG.md#0120
 	- Plug-ins less than 0.12.x cannot be loaded
@@ -58,7 +58,7 @@ Released at: 2023/01/16
 	- To get custom emoji list information, request to `emojis` endpoint
 - API: custom emoji entities no longer include the `url` property
 	- To display an emoji image, request `<instance host>/emoji/<emoji name>.webp` which will return the image.
-	- e.g. `https://p1.a9z.dev/emoji/misskey.webp`
+	- e.g. `https://p1.a9z.dev/emoji/ocean.webp`
 	- remote: `https://p1.a9z.dev/emoji/syuilo_birth_present@mk.f72u.net.webp`
 - API: `user` and `note` entities no longer contain the `emojis` property
 - API: `user` entities no longer contain the `avatarColor` and `bannerColor` properties
@@ -67,7 +67,7 @@ Released at: 2023/01/16
 
 ### Improvements
 - Role system @syuilo
-- Misskey Play @syuilo
+- Ocean Play @syuilo
 - Introduce retention-rate aggregation @syuilo
 - Make possible to export favorited notes @syuilo
 - Add per user pv chart @syuilo
@@ -377,7 +377,7 @@ Released at: 2022/06/11
 - Server: Fix `Cannot find module` issue @mei23
 - Federation: Add rel attribute to host-meta @mei23
 - Federation: add id for activitypub follows @Johann150
-- Federation: use `source` instead of `_misskey_content` @Johann150
+- Federation: use `source` instead of `_ocean_content` @Johann150
 - Federation: ensure resolver does not fetch local resources via HTTP(S) @Johann150
 - Federation: correctly render empty note text @Johann150
 - Federation: Fix quote renotes containing no text being federated correctly @Johann150
@@ -429,7 +429,7 @@ Released at: 2022/04/02
 ### Improvements
 - Webhooks @syuilo
 - Bull Dashboard built in to check and manipulate job queues @syuilo
-  - To open the Bull Dashboard, you must relog (log out and log back in) to misskey once with your admin account
+  - To open the Bull Dashboard, you must relog (log out and log back in) to ocean once with your admin account
 - Check that installed Node.js version fulfils version requirement @ThatOneCalculator
 - Server: overall performance improvements @syuilo
 - Federation: avoid duplicate activity delivery @Johann150
@@ -462,7 +462,7 @@ Released at: 2022-03-09
 
 ### Changes
 - The ability to set the maximum number of characters in a note has been removed and the default is now a flat 3000 characters @syuilo
-- Misskey can no longer terminate HTTPS connections. @Johann150
+- Ocean can no longer terminate HTTPS connections. @Johann150
   - If you did not use a reverse proxy (e.g. nginx) before, you will probably need to adjust your configuration file and set up a reverse proxy. The https configuration key is no longer    recognized!
 
 ### Improvements
@@ -627,7 +627,7 @@ After the update, some custom emoji may not be displayed. In this case, batch ex
 - Custom emoji batch editing function
 - Batch import of custom emoji
 - Posting form now allows temporary switching of posting accounts
-- Unifying Misskey-specific IRIs in JSON-LD `@context`.
+- Unifying Ocean-specific IRIs in JSON-LD `@context`.
 - Improved client performance
 - Security Improvements
 
@@ -744,5 +744,5 @@ Released at: 12/03/2021
 - client: fixed the style of the Reaction List and Renote List tooltips
 
 ::: warning
-Older releases are not translated yet. If you can, please edit this page to add them from the Japanese changelog on [GitHub](https://github.com/misskey-dev/misskey/blob/master/CHANGELOG.md).
+Older releases are not translated yet. If you can, please edit this page to add them from the Japanese changelog on [GitHub](https://github.com/ocean-dev/ocean/blob/master/CHANGELOG.md).
 :::

@@ -1,20 +1,20 @@
 ---
-description: 'Misskey APIに関連するライブラリの一覧'
+description: 'Ocean APIに関連するライブラリの一覧'
 ---
 
 # ライブラリの一覧
 
 ## JavaScript
 
-- [misskey.js](https://github.com/misskey-dev/misskey.js)
+- [ocean.js](https://github.com/ocean-dev/ocean.js)
 
 ## Java
 
-- [misskey4j](https://github.com/uakihir0/misskey4j)
+- [ocean4j](https://github.com/uakihir0/ocean4j)
 
 ## Python
 
-- [Misskey.py](https://github.com/YuzuRyo61/Misskey.py)
+- [Ocean.py](https://github.com/YuzuRyo61/Ocean.py)
 
 ## .Net
 
@@ -22,12 +22,12 @@ description: 'Misskey APIに関連するライブラリの一覧'
 
 ## Dart / Flutter
 
-- [misskey](https://github.com/misskey-dart/misskey)
+- [ocean](https://github.com/ocean-dart/ocean)
 
 ## Go
 
-- [go-misskey](https://github.com/yitsushi/go-misskey)
+- [go-ocean](https://github.com/yitsushi/go-ocean)
 
 ## Rust
 
-- [misskey-rs](https://github.com/coord-e/misskey-rs)
+- [ocean-rs](https://github.com/coord-e/ocean-rs)

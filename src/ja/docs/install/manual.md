@@ -1,11 +1,11 @@
 ---
-description: 'このガイドではMisskeyのインストール・セットアップ方法について解説します。'
+description: 'このガイドではOceanのインストール・セットアップ方法について解説します。'
 ---
 
-Misskey構築の手引き
+Ocean構築の手引き
 ================================================================
 
-このガイドではMisskeyのインストール・セットアップ方法について解説します。
+このガイドではOceanのインストール・セットアップ方法について解説します。
 
 ::: danger
 一度使用を始めたサーバーのドメイン・ホスト名では、データベースを作り直さないでください！
@@ -28,19 +28,19 @@ sudo corepack enable
 
 ユーザーの作成
 ----------------------------------------------------------------
-Misskeyはrootユーザーで実行しない方がよいため、代わりにユーザーを作成します。
+Oceanはrootユーザーで実行しない方がよいため、代わりにユーザーを作成します。
 Debianの例:
 
 ```sh
-adduser --disabled-password --disabled-login misskey
+adduser --disabled-password --disabled-login ocean
 ```
 
-Misskeyのインストール
+Oceanのインストール
 ----------------------------------------------------------------
 ```sh
-sudo -iu misskey
-git clone --recursive https://github.com/misskey-dev/misskey.git
-cd misskey
+sudo -iu ocean
+git clone --recursive https://github.com/ocean-dev/ocean.git
+cd ocean
 git checkout master
 git submodule update --init
 NODE_ENV=production pnpm install --frozen-lockfile
@@ -58,7 +58,7 @@ cp .config/example.yml .config/default.yml
 
 ビルドと初期化
 ----------------------------------------------------------------
-次のコマンドでMisskeyのビルドとデータベースの初期化を行います。
+次のコマンドでOceanのビルドとデータベースの初期化を行います。
 これにはしばらく時間がかかります。
 
 ```sh
@@ -68,7 +68,7 @@ pnpm run init
 
 起動
 ----------------------------------------------------------------
-お疲れ様でした。以下のコマンドでMisskeyを起動できます。
+お疲れ様でした。以下のコマンドでOceanを起動できます。
 
 ```sh
 NODE_ENV=production pnpm run start
@@ -80,24 +80,24 @@ GLHF✨
 
 systemdサービスのファイルを作成
 
-`/etc/systemd/system/misskey.service`
+`/etc/systemd/system/ocean.service`
 
 エディタで開き、以下のコードを貼り付けて保存:
 
 ``` ini
 [Unit]
-Description=Misskey daemon
+Description=Ocean daemon
 
 [Service]
 Type=simple
-User=misskey
+User=ocean
 ExecStart=/usr/bin/npm start
-WorkingDirectory=/home/misskey/misskey
+WorkingDirectory=/home/ocean/ocean
 Environment="NODE_ENV=production"
 TimeoutSec=60
 StandardOutput=journal
 StandardError=journal
-SyslogIdentifier=misskey
+SyslogIdentifier=ocean
 Restart=always
 
 [Install]
@@ -105,30 +105,30 @@ WantedBy=multi-user.target
 ```
 
 ::: warning
-CentOSで1024以下のポートを使用してMisskeyを使用する場合は`ExecStart=/usr/bin/sudo /usr/bin/npm start`に変更する必要があります。
+CentOSで1024以下のポートを使用してOceanを使用する場合は`ExecStart=/usr/bin/sudo /usr/bin/npm start`に変更する必要があります。
 :::
 
-systemdを再読み込みしmisskeyサービスを有効化
+systemdを再読み込みしoceanサービスを有効化
 
 ```sh
 sudo systemctl daemon-reload
-sudo systemctl enable misskey
+sudo systemctl enable ocean
 ```
 
-misskeyサービスの起動
+oceanサービスの起動
 
 ```sh
-sudo systemctl start misskey
+sudo systemctl start ocean
 ```
 
 ::: tip
-`systemctl status misskey`と入力すると、サービスの状態を調べることができます。
+`systemctl status ocean`と入力すると、サービスの状態を調べることができます。
 :::
 ::::
 
-## Misskeyのアップデート方法
+## Oceanのアップデート方法
 ::: warning
-アップデートの際は必ず[リリースノート](https://github.com/misskey-dev/misskey/blob/master/CHANGELOG.md)を確認し、変更点や追加で必要になる作業の有無(ほとんどの場合ありません)を予め把握するようにしてください。
+アップデートの際は必ず[リリースノート](https://github.com/ocean-dev/ocean/blob/master/CHANGELOG.md)を確認し、変更点や追加で必要になる作業の有無(ほとんどの場合ありません)を予め把握するようにしてください。
 :::
 
 masterをpullし直し、インストール、ビルド、データベースのマイグレーションを行います:
@@ -144,10 +144,10 @@ pnpm run migrate
 
 アップデート内容、およびデータベースの規模によっては時間がかかることがあります。
 
-アップデートが終わり次第、Misskeyプロセスを再起動してください。
+アップデートが終わり次第、Oceanプロセスを再起動してください。
 
 ```sh
-sudo systemctl restart misskey
+sudo systemctl restart ocean
 ```
 
 ::: tip

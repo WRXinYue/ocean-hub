@@ -1,12 +1,12 @@
 # 配置 Nginx
-1. 创建 `/etc/nginx/conf.d/misskey.conf` 或 `/etc/nginx/sites-available/misskey.conf` 并复制下面的示例配置到该文件.\
-   (文件名可以自定义，不一定强制为"misskey")
+1. 创建 `/etc/nginx/conf.d/ocean.conf` 或 `/etc/nginx/sites-available/ocean.conf` 并复制下面的示例配置到该文件.\
+   (文件名可以自定义，不一定强制为"ocean")
 2. 修改示例配置中的如下内容:
    1. 将“example.tld”替换为自己的域名，请注意不只有一处.\
      `ssl_certificate` and `ssl_certificate_key` 应当是从  Let's Encrypt 或自己上传的 SSL 证书的绝对路径。
 	 2. 若使用 CDN，例如 Cloudflare, 移除 "If it's behind another reverse proxy or CDN, remove the following."后面的四行（4 lines）。
-3. 如果创建了 `/etc/nginx/sites-available/misskey.conf`, 那么需要创建一个为 `/etc/nginx/sites-enabled/misskey.conf` 的 symlink：\
-   `sudo ln -s /etc/nginx/sites-available/misskey.conf /etc/nginx/sites-enabled/misskey.conf`
+3. 如果创建了 `/etc/nginx/sites-available/ocean.conf`, 那么需要创建一个为 `/etc/nginx/sites-enabled/ocean.conf` 的 symlink：\
+   `sudo ln -s /etc/nginx/sites-available/ocean.conf /etc/nginx/sites-enabled/ocean.conf`
 4. 输入 `sudo nginx -t` 命令来验证配置文件是否有效。
 5. 输入 `sudo systemctl restart nginx` 命令来重启 Nginx。
 

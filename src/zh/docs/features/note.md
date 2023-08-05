@@ -1,10 +1,10 @@
 # Notes
 
-Notes are a central concept within Misskey, and refer to content that may include text, images, polls and more that has been posted to Misskey. In this context, "to note" is also used as a verb referring to the creation of a note.
+Notes are a central concept within Ocean, and refer to content that may include text, images, polls and more that has been posted to Ocean. In this context, "to note" is also used as a verb referring to the creation of a note.
 
 By composing a note, it will be added to the [timeline](./timeline) and sent to your followers and other users from your server.
 
-On Misskey, it is also possible to add [Reactions](./reaction) to notes. Additionally, you can reply to or quote notes.
+On Ocean, it is also possible to add [Reactions](./reaction) to notes. Additionally, you can reply to or quote notes.
 
 By adding a note to your [Favorites](./favorite), you can easily find it at a later point in time.
 

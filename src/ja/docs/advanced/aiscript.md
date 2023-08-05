@@ -1,8 +1,8 @@
 # AiScript
-AiScriptは、Misskeyで使用できるスクリプト言語です。
+AiScriptは、Oceanで使用できるスクリプト言語です。
 
 ::: tip
-AiScript実装はMisskeyとは別リポジトリで、[オープンソースで公開されています](https://github.com/syuilo/aiscript)。
+AiScript実装はOceanとは別リポジトリで、[オープンソースで公開されています](https://github.com/syuilo/aiscript)。
 :::
 
 ## 使い方

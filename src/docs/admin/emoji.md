@@ -18,11 +18,11 @@ Please note that Emoji may be subject to copyright and you are responsible for c
 
 If you have an image file that you would like to turn into a custom emoji you can import the image as an emoji.
 This works just like attaching files to a note:
-You can choose to upload a new file, pick a file from your Misskey drive or upload a file from another URL.
+You can choose to upload a new file, pick a file from your Ocean drive or upload a file from another URL.
 
 ::: danger
 When you import emoji from your drive, the file will remain inside your drive.
-Misskey does not make a copy of this file so if you delete it, the emoji will be broken.
+Ocean does not make a copy of this file so if you delete it, the emoji will be broken.
 :::
 
 The emoji will be added to the instance and you will then be able to edit or delete it as usual.

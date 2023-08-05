@@ -10,7 +10,7 @@
 		properties: {
 			userId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: 'ミュートするユーザーのid。',
 			},
 			expiresAt: {

@@ -1,13 +1,13 @@
 ---
-description: 'MisskeyはAPIを公開しています。APIを使ってMisskeyクライアント、Misskey連携Webサービス、Bot等(以下「アプリケーション」と呼びます)を開発することができます。'
+description: 'OceanはAPIを公開しています。APIを使ってOceanクライアント、Ocean連携Webサービス、Bot等(以下「アプリケーション」と呼びます)を開発することができます。'
 ---
 
-# Misskey API
-MisskeyはAPIを公開しています。APIを使ってMisskeyクライアント、Misskey連携Webサービス、Bot等(以下「アプリケーション」と呼びます)を開発することができます。
+# Ocean API
+OceanはAPIを公開しています。APIを使ってOceanクライアント、Ocean連携Webサービス、Bot等(以下「アプリケーション」と呼びます)を開発することができます。
 ストリーミングAPIもあるので、リアルタイム性のあるアプリケーションを作ることも可能です。
 
 ::: tip
-Misskey公式SDKやサードパーティライブラリを使うことによって、このドキュメントで説明するいくつかの手順を簡略化できるなど、より便利にAPIを利用することができます。\
+Ocean公式SDKやサードパーティライブラリを使うことによって、このドキュメントで説明するいくつかの手順を簡略化できるなど、より便利にAPIを利用することができます。\
 ライブラリについては[こちら](./libraries)を参照してください。
 :::
 
@@ -28,7 +28,7 @@ APIを使い始めるには、APIを利用するアカウントに紐づいた**
 - 後者の場合: **「アプリケーション利用者にアクセストークンの発行をリクエストする」** に進む
 
 ### 自分自身のアクセストークンを手動発行する
-Misskey Webの「設定 > API」で、自分のアクセストークンを発行できます。
+Ocean Webの「設定 > API」で、自分のアクセストークンを発行できます。
 
 ::: danger
 アクセストークンは他人に知られないようにしてください。
@@ -73,7 +73,7 @@ https://{host}/miauth/{session}
 
 ::: tip 例
 ```:no-line-numbers
-https://misskey.io/miauth/c1f6d42b-468b-4fd2-8274-e58abdedef6f?name=MyApp&callback=https%3A%2F%2Fmyapp.example.com%2Fcallback&permission=write:notes,write:following,read:drive
+https://ocean.io/miauth/c1f6d42b-468b-4fd2-8274-e58abdedef6f?name=MyApp&callback=https%3A%2F%2Fmyapp.example.com%2Fcallback&permission=write:notes,write:following,read:drive
 ```
 :::
 
@@ -119,7 +119,7 @@ https://{host}/api/miauth/{session}/check
 APIの詳細は、[APIリファレンス](./endpoints.html)を参照してください。
 
 ::: warning
-MisskeyはRESTを採用していません。
+OceanはRESTを採用していません。
 :::
 
-また、MisskeyはHTTP APIだけでなく、ストリーミングAPIも提供しています。ストリーミングAPIの詳細は[こちらのドキュメント](./streaming/index.md)を参照してください。
+また、OceanはHTTP APIだけでなく、ストリーミングAPIも提供しています。ストリーミングAPIの詳細は[こちらのドキュメント](./streaming/index.md)を参照してください。

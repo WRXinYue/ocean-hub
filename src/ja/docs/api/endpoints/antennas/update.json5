@@ -10,7 +10,7 @@
 		properties: {
 			antennaId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 			name: {
 				type: 'string',
@@ -28,7 +28,7 @@
 			},
 			userListId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				nullable: true,
 			},
 			keywords: {
@@ -86,7 +86,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'Antenna',
-		$ref: 'misskey://Antenna',
+		$ref: 'ocean://Antenna',
 	},
 	errors: {
 		'10c673ac-8852-48eb-aa1f-f5b67f069290': {

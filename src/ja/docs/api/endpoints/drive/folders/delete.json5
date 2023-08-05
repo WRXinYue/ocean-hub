@@ -10,7 +10,7 @@
 		properties: {
 			folderId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: 'フォルダーのid。',
 			},
 		},

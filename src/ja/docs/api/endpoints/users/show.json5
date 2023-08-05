@@ -12,7 +12,7 @@
 				properties: {
 					userId: {
 						type: 'string',
-						format: 'misskey:id',
+						format: 'ocean:id',
 						description: 'ユーザーのid。',
 					},
 				},
@@ -27,7 +27,7 @@
 						uniqueItems: true,
 						items: {
 							type: 'string',
-							format: 'misskey:id',
+							format: 'ocean:id',
 							description: 'ユーザーのid。',
 						},
 					},
@@ -61,14 +61,14 @@
 			{
 				type: 'object',
 				ref: 'UserDetailed',
-				$ref: 'misskey://UserDetailed',
+				$ref: 'ocean://UserDetailed',
 			},
 			{
 				type: 'array',
 				items: {
 					type: 'object',
 					ref: 'UserDetailed',
-					$ref: 'misskey://UserDetailed',
+					$ref: 'ocean://UserDetailed',
 				},
 			},
 		],

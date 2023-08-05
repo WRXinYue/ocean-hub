@@ -1,21 +1,21 @@
-利用 Docker Compose 搭建 Misskey 实例
+利用 Docker Compose 搭建 Ocean 实例
 ================================================================
 
-本篇教程叙述了如何使用 Docker Compose 安装和设置 Misskey。
+本篇教程叙述了如何使用 Docker Compose 安装和设置 Ocean。
 
 ::: danger
-请注意，一旦 Misskey 开始运行，不要更改域名和服务器的主机名。
+请注意，一旦 Ocean 开始运行，不要更改域名和服务器的主机名。
 :::
 
 ::: tip 在安装之前，请确保：
 - 已安装 docker 与 docker-compose。
 :::
 
-将 Misskey 克隆至本地并同步 master
+将 Ocean 克隆至本地并同步 master
 ----------------------------------------------------------------
 ```sh
-git clone -b master https://github.com/misskey-dev/misskey.git
-cd misskey
+git clone -b master https://github.com/ocean-dev/ocean.git
+cd ocean
 git checkout master
 ```
 
@@ -35,7 +35,7 @@ cp ./docker-compose.yml.example ./docker-compose.yml
 
 编译与初始化
 ----------------------------------------------------------------
-执行以下命令以开始编译 Misskey 并初始化数据库，这需要一些时间。
+执行以下命令以开始编译 Ocean 并初始化数据库，这需要一些时间。
 
 ``` shell
 sudo docker compose build
@@ -44,7 +44,7 @@ sudo docker compose run --rm web pnpm run init
 
 启动
 ----------------------------------------------------------------
-干得漂亮！您可以使用以下命令启动 Misskey。
+干得漂亮！您可以使用以下命令启动 Ocean。
 
 
 ```sh
@@ -56,7 +56,7 @@ sudo docker compose up -d
 如何更新
 ----------------------------------------------------------------
 ::: warning
-更新前，请务必查看 [版本说明](https://github.com/misskey-dev/misskey/blob/master/CHANGELOG.md) 以预先了解更改和是否需要额外工作（大多数情况下不需要）。
+更新前，请务必查看 [版本说明](https://github.com/ocean-dev/ocean/blob/master/CHANGELOG.md) 以预先了解更改和是否需要额外工作（大多数情况下不需要）。
 :::
 执行以下命令来更新：
 

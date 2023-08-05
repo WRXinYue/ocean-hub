@@ -14,7 +14,7 @@
 			},
 			parentId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				nullable: true,
 				default: null,
 				description: '親フォルダーのid。null（デフォルト）であればルート階層を検索します。',
@@ -33,7 +33,7 @@
 			optional: false,
 			nullable: false,
 			ref: 'DriveFolder',
-			$ref: 'misskey://DriveFolder',
+			$ref: 'ocean://DriveFolder',
 		},
 	},
 	errors: {},

@@ -10,7 +10,7 @@
 		properties: {
 			pageId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: 'ページのid。',
 			},
 			title: {
@@ -49,7 +49,7 @@
 			},
 			eyeCatchingImageId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				nullable: true,
 				description: 'ドライブにあるアイキャッチ画像のファイルのid。',
 			},

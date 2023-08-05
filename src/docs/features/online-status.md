@@ -1,6 +1,6 @@
 # Online Status
 
-A user's **online status** is an indication of their Misskey usage status.
+A user's **online status** is an indication of their Ocean usage status.
 Your online status is displayed as an indicator in the corner of the user icon on your user page and elsewhere.
 
 <table>
@@ -12,17 +12,17 @@ Your online status is displayed as an indicator in the corner of the user icon o
 	<tr>
 		<td>🟢 green</td>
 		<td>online</td>
-		<td>Misskey is being used right now.</td>
+		<td>Ocean is being used right now.</td>
 	</tr>
 	<tr>
 		<td>🟡 yellow</td>
 		<td>active</td>
-		<td>The user is absent but Misskey is still being used.</td>
+		<td>The user is absent but Ocean is still being used.</td>
 	</tr>
 	<tr>
 		<td>🔴 red</td>
 		<td>offline</td>
-		<td>Misskey is not used.</td>
+		<td>Ocean is not used.</td>
 	</tr>
 	<tr>
 		<td>⚫ grey</td>

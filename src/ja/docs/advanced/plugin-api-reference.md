@@ -12,7 +12,7 @@ info success warn error question\
 ユーザーが"OK"を選択した場合は true を、"キャンセル"を選択した場合は false が返ります。
 
 ## Mk:api(endpoint params)
-Misskey APIにリクエストします。第一引数にエンドポイント名、第二引数にパラメータオブジェクトを渡します。
+Ocean APIにリクエストします。第一引数にエンドポイント名、第二引数にパラメータオブジェクトを渡します。
 
 ## Mk:save(key value)
 任意の値に任意の名前を付けて永続化します。永続化した値は、AiScriptコンテキストが終了しても残り、Mk:loadで読み取ることができます。

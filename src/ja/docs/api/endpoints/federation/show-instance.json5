@@ -22,7 +22,7 @@
 			{
 				type: 'object',
 				ref: 'FederationInstance',
-				$ref: 'misskey://FederationInstance',
+				$ref: 'ocean://FederationInstance',
 			},
 			{
 				type: 'null',

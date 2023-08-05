@@ -10,7 +10,7 @@
 		properties: {
 			userId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: 'ブロックするユーザーのid。',
 			},
 		},
@@ -23,7 +23,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'UserDetailedNotMe',
-		$ref: 'misskey://UserDetailedNotMe',
+		$ref: 'ocean://UserDetailedNotMe',
 	},
 	errors: {
 		'7cc4f851-e2f1-4621-9633-ec9e1d00c01e': {

@@ -44,7 +44,7 @@
 			},
 			eyeCatchingImageId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				nullable: true,
 				description: 'ドライブにあるアイキャッチ画像のファイルのid。',
 			},
@@ -81,7 +81,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'Page',
-		$ref: 'misskey://Page',
+		$ref: 'ocean://Page',
 		description: '作成されたページ。',
 	},
 	errors: {

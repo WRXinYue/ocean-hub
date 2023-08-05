@@ -15,7 +15,7 @@
 			},
 			fileId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 		},
 		anyOf: [
@@ -23,7 +23,7 @@
 				properties: {
 					userId: {
 						type: 'string',
-						format: 'misskey:id',
+						format: 'ocean:id',
 					},
 				},
 				required: [
@@ -34,7 +34,7 @@
 				properties: {
 					groupId: {
 						type: 'string',
-						format: 'misskey:id',
+						format: 'ocean:id',
 					},
 				},
 				required: [
@@ -48,7 +48,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'MessagingMessage',
-		$ref: 'misskey://MessagingMessage',
+		$ref: 'ocean://MessagingMessage',
 	},
 	errors: {
 		'17e2ba79-e22a-4cbc-bf91-d327643f4a7e': {

@@ -11,7 +11,7 @@ none
 ## Events
 ### `note`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://Note'
+	$ref: 'ocean://Note'
 }"/>
 
 Occurs when a new note is added to the social timeline.

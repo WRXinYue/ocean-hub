@@ -10,7 +10,7 @@
 		properties: {
 			postId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 		},
 		required: [
@@ -22,7 +22,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'GalleryPost',
-		$ref: 'misskey://GalleryPost',
+		$ref: 'ocean://GalleryPost',
 	},
 	errors: {
 		'1137bf14-c5b0-4604-85bb-5b5371b1cd45': {

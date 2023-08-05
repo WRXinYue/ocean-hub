@@ -10,7 +10,7 @@
 		properties: {
 			listId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 		},
 		required: [
@@ -22,7 +22,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'UserList',
-		$ref: 'misskey://UserList',
+		$ref: 'ocean://UserList',
 	},
 	errors: {
 		'7bc05c21-1d7a-41ae-88f1-66820f4dc686': {

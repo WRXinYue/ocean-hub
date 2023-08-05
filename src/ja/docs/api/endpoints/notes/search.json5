@@ -14,12 +14,12 @@
 			},
 			sinceId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも大きいノートを返します。',
 			},
 			untilId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも小さいノートを返します。',
 			},
 			limit: {
@@ -41,14 +41,14 @@
 			},
 			userId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				nullable: true,
 				default: null,
 				description: '指定すると、そのユーザが作成したノートを検索します。',
 			},
 			channelId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				nullable: true,
 				default: null,
 				description: '指定すると、そのチャンネルに属するノートを検索します。userIdと併せて指定した場合、channelIdは無視されます。',
@@ -67,7 +67,7 @@
 			optional: false,
 			nullable: false,
 			ref: 'Note',
-			$ref: 'misskey://Note',
+			$ref: 'ocean://Note',
 		},
 	},
 	errors: {},

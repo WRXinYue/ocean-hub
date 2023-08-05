@@ -1,13 +1,13 @@
-Misskey 安装与配置教程
+Ocean 安装与配置教程
 ================================================================
 
-感谢您对搭建 Misskey 服务器感兴趣！
-本篇教程叙述了如何安装和配置 Misskey。
+感谢您对搭建 Ocean 服务器感兴趣！
+本篇教程叙述了如何安装和配置 Ocean。
 
 ----------------------------------------------------------------
 
 ::: danger
-请注意，一旦 Misskey 开始运行，不要更改域名和服务器的主机名。
+请注意，一旦 Ocean 开始运行，不要更改域名和服务器的主机名。
 :::
 
 *1.* 安装依赖
@@ -27,30 +27,30 @@ Misskey 安装与配置教程
 sudo corepack enable
 ```
 
-*2.* 创建一个运行 Misskey 的用户
+*2.* 创建一个运行 Ocean 的用户
 ----------------------------------------------------------------
-在 root 下运行 Misskey 不是一个好主意，所以我们创建一个新用户 misskey。
+在 root 下运行 Ocean 不是一个好主意，所以我们创建一个新用户 ocean。
 例如，在 Debian 中：
 
 ```sh
-adduser --disabled-password --disabled-login misskey
+adduser --disabled-password --disabled-login ocean
 ```
 
-*3.* 安装 Misskey
+*3.* 安装 Ocean
 ----------------------------------------------------------------
-1. 切换至 `misskey` 用户：
+1. 切换至 `ocean` 用户：
 
-	`sudo -iu misskey`
+	`sudo -iu ocean`
 
-2. 将 Misskey 克隆至本地：
+2. 将 Ocean 克隆至本地：
 
-	`git clone --recursive https://github.com/misskey-dev/misskey.git`
+	`git clone --recursive https://github.com/ocean-dev/ocean.git`
 
-3. 进入 misskey 仓库：
+3. 进入 ocean 仓库：
 
-	`cd misskey`
+	`cd ocean`
 
-4. 检查是否为 [最新版本](https://github.com/misskey-dev/misskey/releases/latest) （分支是否为 master）：
+4. 检查是否为 [最新版本](https://github.com/ocean-dev/ocean/releases/latest) （分支是否为 master）：
 
 	`git checkout master`
 
@@ -58,11 +58,11 @@ adduser --disabled-password --disabled-login misskey
 
     `git submodule update --init`
 
-5. 安装 Misskey 的依赖项：
+5. 安装 Ocean 的依赖项：
 
 	`pnpm install --frozen-lockfile`
 
-*4.* 配置 Misskey
+*4.* 配置 Ocean
 ----------------------------------------------------------------
 1. 复制 `.config/example.yml` 并重命名为 `default.yml`.
 
@@ -77,10 +77,10 @@ nano default.yml
 ```
 
 
-*5.* 编译 Misskey
+*5.* 编译 Ocean
 ----------------------------------------------------------------
 
-执行以下命令编译 Misskey：
+执行以下命令编译 Ocean：
 
 ```sh
 NODE_ENV=production pnpm run build
@@ -97,9 +97,9 @@ NODE_ENV=production pnpm run build
 	```
 	输入以下命令来新建数据库及用户（请注意，数据库需要以 UTF8 编码：
 	```
-	create database misskey with encoding = 'UTF8';
-	create user misskey with encrypted password '{YOUR_PASSWORD}';
-	grant all privileges on database misskey to misskey;
+	create database ocean with encoding = 'UTF8';
+	create user ocean with encrypted password '{YOUR_PASSWORD}';
+	grant all privileges on database ocean to ocean;
 	\q
 	```
 
@@ -108,7 +108,7 @@ NODE_ENV=production pnpm run build
 
 *7.* 环境配置完成！
 ----------------------------------------------------------------
-干得漂亮！现在，您有一个可以运行  Misskey 的环境了。
+干得漂亮！现在，您有一个可以运行  Ocean 的环境了。
 
 ### 正常启动（前台，不可退出终端或 ssh）
 运行 `NODE_ENV=production pnpm run start`。
@@ -117,25 +117,25 @@ NODE_ENV=production pnpm run build
 
 1. 创建 systemd 服务：
 
-	`nano /etc/systemd/system/misskey.service`
+	`nano /etc/systemd/system/ocean.service`
 
 2. 将以下内容复制进去：
 
 	::: details
 	```
 	[Unit]
-	Description=Misskey daemon
+	Description=Ocean daemon
 
 	[Service]
 	Type=simple
-	User=misskey
+	User=ocean
 	ExecStart=/usr/bin/npm start
-	WorkingDirectory=/home/misskey/misskey
+	WorkingDirectory=/home/ocean/ocean
 	Environment="NODE_ENV=production"
 	TimeoutSec=60
 	StandardOutput=journal
 	StandardError=journal
-	SyslogIdentifier=misskey
+	SyslogIdentifier=ocean
 	Restart=always
 
 	[Install]
@@ -143,33 +143,33 @@ NODE_ENV=production pnpm run build
 	```
 	:::
 
-3. 重载 systemd 并使 misskey service 开机自启：
+3. 重载 systemd 并使 ocean service 开机自启：
 
-	`sudo systemctl daemon-reload; sudo systemctl enable misskey`
+	`sudo systemctl daemon-reload; sudo systemctl enable ocean`
 
-4. 启动 misskey service：
+4. 启动 ocean service：
 
-	`sudo systemctl start misskey`
+	`sudo systemctl start ocean`
 
-您可以执行 `systemctl status misskey`检查该服务项是否正在运行。
+您可以执行 `systemctl status ocean`检查该服务项是否正在运行。
 
 ### 使用 OpenRC 启动
 
-1. 将以下文本复制到 `/etc/init.d/misskey`:
+1. 将以下文本复制到 `/etc/init.d/ocean`:
 
 	::: details
 	```sh
 	#!/sbin/openrc-run
 
-	name=misskey
-	description="Misskey daemon"
+	name=ocean
+	description="Ocean daemon"
 
 	command="/usr/bin/npm"
 	command_args="start"
-	command_user="misskey"
+	command_user="ocean"
 
 	supervisor="supervise-daemon"
-	supervise_daemon_args=" -d /home/misskey/misskey -e NODE_ENV=\"production\""
+	supervise_daemon_args=" -d /home/ocean/ocean -e NODE_ENV=\"production\""
 
 	pidfile="/run/${RC_SVCNAME}.pid"
 
@@ -185,15 +185,15 @@ NODE_ENV=production pnpm run build
 
 2. 设置开机自启：
 
-	`rc-update add misskey`
+	`rc-update add ocean`
 
-3. 启动 Misskey service：
+3. 启动 Ocean service：
 
-	`rc-service misskey start`
+	`rc-service ocean start`
 
-您可以执行 `rc-service misskey status`来检查该服务项是否正在运行。
+您可以执行 `rc-service ocean status`来检查该服务项是否正在运行。
 
-### 如何更新 Misskey？
+### 如何更新 Ocean？
 执行以下命令：
 1. `git checkout master`
 2. `git pull`
@@ -201,7 +201,7 @@ NODE_ENV=production pnpm run build
 4. `NODE_ENV=production pnpm install --frozen-lockfile`
 5. `NODE_ENV=production pnpm run build`
 6. `pnpm run migrate`
-7. 重新启动 Misskey 进程以应用更改
+7. 重新启动 Ocean 进程以应用更改
 8. 开始使用吧～
 
 如果更新遇到任何问题，请尝试以下操作：

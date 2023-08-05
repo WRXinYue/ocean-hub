@@ -1,11 +1,11 @@
 ---
-description: 'このガイドはDockerを使ったMisskeyセットアップ方法を説明します。'
+description: 'このガイドはDockerを使ったOceanセットアップ方法を説明します。'
 ---
 
-Docker Composeを使ったMisskey構築
+Docker Composeを使ったOcean構築
 ================================================================
 
-このガイドはDocker Composeを使ったMisskeyセットアップ方法を説明します。
+このガイドはDocker Composeを使ったOceanセットアップ方法を説明します。
 
 ::: danger
 一度使用を始めたサーバーのドメイン・ホスト名では、データベースを作り直さないでください！
@@ -18,8 +18,8 @@ Docker Composeを使ったMisskey構築
 リポジトリの取得
 ----------------------------------------------------------------
 ```sh
-git clone -b master https://github.com/misskey-dev/misskey.git
-cd misskey
+git clone -b master https://github.com/ocean-dev/ocean.git
+cd ocean
 git checkout master
 ```
 
@@ -38,7 +38,7 @@ cp ./docker-compose.yml.example ./docker-compose.yml
 
 ビルドと初期化
 ----------------------------------------------------------------
-次のコマンドでMisskeyのビルドとデータベースの初期化を行います。
+次のコマンドでOceanのビルドとデータベースの初期化を行います。
 これにはしばらく時間がかかります。
 
 ``` shell
@@ -48,7 +48,7 @@ sudo docker compose run --rm web pnpm run init
 
 起動
 ----------------------------------------------------------------
-お疲れ様でした。以下のコマンドでMisskeyを起動できます。
+お疲れ様でした。以下のコマンドでOceanを起動できます。
 
 ```sh
 sudo docker compose up -d
@@ -56,10 +56,10 @@ sudo docker compose up -d
 
 GLHF✨
 
-Misskeyのアップデート方法
+Oceanのアップデート方法
 ----------------------------------------------------------------
 ::: warning
-アップデートの際は必ず[リリースノート](https://github.com/misskey-dev/misskey/blob/master/CHANGELOG.md)を確認し、変更点や追加で必要になる作業の有無(ほとんどの場合ありません)を予め把握するようにしてください。
+アップデートの際は必ず[リリースノート](https://github.com/ocean-dev/ocean/blob/master/CHANGELOG.md)を確認し、変更点や追加で必要になる作業の有無(ほとんどの場合ありません)を予め把握するようにしてください。
 :::
 
 ```sh

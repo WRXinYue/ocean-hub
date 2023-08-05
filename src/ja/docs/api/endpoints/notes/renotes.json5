@@ -10,7 +10,7 @@
 		properties: {
 			noteId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: 'ノートのid。',
 			},
 			limit: {
@@ -22,12 +22,12 @@
 			},
 			sinceId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも大きいノートを返します。',
 			},
 			untilId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも小さいノートを返します。',
 			},
 		},
@@ -44,7 +44,7 @@
 			optional: false,
 			nullable: false,
 			ref: 'Note',
-			$ref: 'misskey://Note',
+			$ref: 'ocean://Note',
 		},
 	},
 	errors: {

@@ -1,9 +1,9 @@
 ---
-description: 'Misskeyサーバーの作成方法についての案内です。'
+description: 'Oceanサーバーの作成方法についての案内です。'
 ---
 
-# Misskeyサーバーの作成
-Misskeyサーバーの構築に関心をお寄せいただきありがとうございます。サーバーの作成方法はいくつかあるので、下記から選んでガイドをお読みください。
+# Oceanサーバーの作成
+Oceanサーバーの構築に関心をお寄せいただきありがとうございます。サーバーの作成方法はいくつかあるので、下記から選んでガイドをお読みください。
 
 ::: danger
 一度使用を始めたサーバーのドメイン・ホスト名では、データベースを作り直さないでください！
@@ -12,9 +12,9 @@ Misskeyサーバーの構築に関心をお寄せいただきありがとうご�
 ::: danger
 自分のサーバーに対して Cloudflare を使用する場合、 Auto Minify 設定は使用しないようにしてください。
 
-Cloudflare が最新の JavaScript を解釈せず、中のソースコードを破壊するため、Misskey が正常に動作しません。
+Cloudflare が最新の JavaScript を解釈せず、中のソースコードを破壊するため、Ocean が正常に動作しません。
 
-詳しくは [misskey-dev/misskey #9791](https://github.com/misskey-dev/misskey/issues/9791) をご覧ください。
+詳しくは [ocean-dev/ocean #9791](https://github.com/ocean-dev/ocean/issues/9791) をご覧ください。
 :::
 
 ## Docker Composeを使ったインストール
@@ -28,7 +28,7 @@ Cloudflare が最新の JavaScript を解釈せず、中のソースコードを
 [Ubuntu版詳細説明](./install/ubuntu-manual.html)
 
 ## YunoHostを使ったインストール
-MisskeyはYunoHostでAppとしてインストールできます。詳しくは、[Yunohost向けのMisskeyパッケージのリポジトリ](https://github.com/YunoHost-Apps/misskey_ynh)をご覧ください。
+OceanはYunoHostでAppとしてインストールできます。詳しくは、[Yunohost向けのOceanパッケージのリポジトリ](https://github.com/YunoHost-Apps/ocean_ynh)をご覧ください。
 
 ## Kubernetes/TrueNASを使ったインストール
 [こちら](./install/kubernetes.html)

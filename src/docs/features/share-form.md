@@ -1,6 +1,6 @@
 # Share Form
 
-When you open `/share` in Misskey Web, you open a sharing submission form. This sharing form is useful if you want users to share the content of your page with Misskey from an external web page.
+When you open `/share` in Ocean Web, you open a sharing submission form. This sharing form is useful if you want users to share the content of your page with Ocean from an external web page.
 
 You can specify a number of options in the URL, including the shared content, as a query parameters.
 

@@ -10,7 +10,7 @@
 		properties: {
 			userId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 			includeReplies: {
 				type: 'boolean',
@@ -24,11 +24,11 @@
 			},
 			sinceId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 			untilId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 			sinceDate: {
 				type: 'integer',
@@ -68,7 +68,7 @@
 			optional: false,
 			nullable: false,
 			ref: 'Note',
-			$ref: 'misskey://Note',
+			$ref: 'ocean://Note',
 		},
 	},
 	errors: {

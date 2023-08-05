@@ -36,7 +36,7 @@
 						optional: false,
 						nullable: false,
 						ref: 'UserDetailedNotMe',
-						$ref: 'misskey://UserDetailedNotMe',
+						$ref: 'ocean://UserDetailedNotMe',
 					},
 				},
 				required: [
@@ -60,7 +60,7 @@
 						optional: false,
 						nullable: false,
 						ref: 'Note',
-						$ref: 'misskey://Note',
+						$ref: 'ocean://Note',
 					},
 				},
 				required: [

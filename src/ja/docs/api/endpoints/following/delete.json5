@@ -10,7 +10,7 @@
 		properties: {
 			userId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: 'フォローを解除するユーザーのid。',
 			},
 		},
@@ -23,7 +23,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'UserLite',
-		$ref: 'misskey://UserLite',
+		$ref: 'ocean://UserLite',
 	},
 	errors: {
 		'5b12c78d-2b28-4dca-99d2-f56139b42ff8': {

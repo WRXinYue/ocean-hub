@@ -4,7 +4,7 @@
 		<el-collapse-item title="API Console" name="console">
 			<el-form :model="form" label-width="120px">
 				<el-form-item label="Host" prop="host" :rules="[{ required: true }]">
-					<el-input v-model="host" placeholder="misskey.example.com">
+					<el-input v-model="host" placeholder="ocean.example.com">
 						<template #prepend>https://</template>
 					</el-input>
 				</el-form-item>

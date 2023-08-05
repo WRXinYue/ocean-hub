@@ -5,14 +5,14 @@ description: 'The streaming API provides real-time information (e.g., new posts 
 # Streaming API
 
 ::: tip
-You should read the [Misskey API documentation](../index.md) first.
+You should read the [Ocean API documentation](../index.md) first.
 :::
 
 The streaming API provides real-time information (e.g., new posts in the timeline, reactions, followers, etc.) and various other operations.
 
 ## Connecting to the stream.
 
-To use the streaming API, you have to connect to the Misskey server using **websocket**.
+To use the streaming API, you have to connect to the Ocean server using **websocket**.
 
 The websocket URL looks like this:
 
@@ -35,7 +35,7 @@ To receive such events, you need to join a **channel** on the stream, as describ
 **All data should be encoded as JSON.**
 
 ## Channel
-Misskey's streaming API has the concept of channels. This is a mechanism for separating the information to be sent and received.
+Ocean's streaming API has the concept of channels. This is a mechanism for separating the information to be sent and received.
 By joining channels on the stream, you will be able to receive various kinds of information and send information.
 
 ::: tip
@@ -128,12 +128,12 @@ where
 - `id` is the ID that you set when connecting to that channel as mentioned above. This lets you determine which channel (instantiation) you want to disconnect from.
 
 ## Capturing Notes
-Misskey provides a mechanism called note capture. This is the ability to receive a stream of events for a given note.
+Ocean provides a mechanism called note capture. This is the ability to receive a stream of events for a given note.
 
 For example, let's say you grab a timeline and display it to your users. Let's say someone reacts to one of the posts in the timeline.
 However, since the client has no way of knowing that a note has been reacted to, it is not possible to reflect the reaction in the timeline in real time.
 
-To solve this problem, Misskey provides a note capture mechanism. When you capture a note, you will receive events related to that note, and you can display reactions to it in real time.
+To solve this problem, Ocean provides a note capture mechanism. When you capture a note, you will receive events related to that note, and you can display reactions to it in real time.
 
 The following sections describe how to use the note capture function. To see what kind of capture events are available, see the [Capture Events List](./note-capture-events.md).
 
@@ -152,7 +152,7 @@ To capture a note, send the following JSON data to the stream:
 where
 - `id` is the ID of the note you want to capture.
 
-When you send this message, you are asking Misskey to capture the note, and events related to that note will then be streamed to you.
+When you send this message, you are asking Ocean to capture the note, and events related to that note will then be streamed to you.
 
 For example, when a note gets a reaction, you will see a message like the following:
 ```js

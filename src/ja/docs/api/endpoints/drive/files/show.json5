@@ -12,7 +12,7 @@
 				properties: {
 					fileId: {
 						type: 'string',
-						format: 'misskey:id',
+						format: 'ocean:id',
 						description: 'ファイルのid。',
 					},
 				},
@@ -38,7 +38,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'DriveFile',
-		$ref: 'misskey://DriveFile',
+		$ref: 'ocean://DriveFile',
 	},
 	errors: {
 		'067bc436-2718-4795-b0fb-ecbe43949e31': {

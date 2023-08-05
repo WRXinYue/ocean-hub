@@ -10,7 +10,7 @@
 		properties: {
 			noteId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: 'ノートのid。',
 			},
 		},
@@ -23,7 +23,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'Note',
-		$ref: 'misskey://Note',
+		$ref: 'ocean://Note',
 	},
 	errors: {
 		'24fcbfc6-2e37-42b6-8388-c29b3861a08d': {

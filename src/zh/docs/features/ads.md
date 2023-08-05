@@ -1,6 +1,6 @@
 # Advertisements
 
-Misskey can display ads in the instance timeline and other places if enabled by the instance administrator.
+Ocean can display ads in the instance timeline and other places if enabled by the instance administrator.
 You can reduce how often an ad is shown by clicking in the upper right corner of it.
 
 ::: tip

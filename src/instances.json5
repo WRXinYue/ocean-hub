@@ -1,5 +1,5 @@
 [{
-	host: 'misskey.io',
+	host: 'ocean.io',
 	lang: 'ja',
 }, {
 	host: 'sushi.ski',
@@ -30,8 +30,8 @@
   name: 'Miruku',
   lang: 'en',
 }, {
-  host: 'misskey.social',
-  name: 'Misskey Social',
+  host: 'ocean.social',
+  name: 'Ocean Social',
   lang: 'it',
 }, {
 	host: 'fedi.mint.lgbt',
@@ -46,11 +46,11 @@
   name: 'Kitsune.MOE',
   lang: 'de',
 }, {
-  host: 'misskey.gg',
-  name: 'misskey.gg',
+  host: 'ocean.gg',
+  name: 'ocean.gg',
   lang: 'ja',
 }, {
-  host: 'misskey.kindworld.one',
+  host: 'ocean.kindworld.one',
   name: 'KindWorld',
   lang: 'ja',
 },

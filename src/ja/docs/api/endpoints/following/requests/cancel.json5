@@ -10,7 +10,7 @@
 		properties: {
 			userId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: 'フォローリクエストを送った相手ユーザーのid。',
 			},
 		},
@@ -23,7 +23,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'UserLite',
-		$ref: 'misskey://UserLite',
+		$ref: 'ocean://UserLite',
 	},
 	errors: {
 		'4e68c551-fc4c-4e46-bb41-7d4a37bf9dab': {

@@ -17,12 +17,12 @@
 			},
 			sinceId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも大きい通知を返します。',
 			},
 			untilId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも小さい通知を返します。',
 			},
 			following: {
@@ -94,7 +94,7 @@
 			optional: false,
 			nullable: false,
 			ref: 'Notification',
-			$ref: 'misskey://Notification',
+			$ref: 'ocean://Notification',
 		},
 	},
 	errors: {},

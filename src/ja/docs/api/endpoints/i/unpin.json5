@@ -10,7 +10,7 @@
 		properties: {
 			noteId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: 'ピン留めから解除するノートのid。',
 			},
 		},
@@ -23,7 +23,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'MeDetailed',
-		$ref: 'misskey://MeDetailed',
+		$ref: 'ocean://MeDetailed',
 	},
 	errors: {
 		'454170ce-9d63-4a43-9da1-ea10afe81e21': {

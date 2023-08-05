@@ -1,6 +1,6 @@
 {
 	summary: '指定したノートをピン留めに登録します。',
-	description: '指定したノートをピン留めに登録します。ピン留めされたノートはプロフィール情報に含まれ、Misskey Webではユーザーのプロフィールページで表示されます。',
+	description: '指定したノートをピン留めに登録します。ピン留めされたノートはプロフィール情報に含まれ、Ocean Webではユーザーのプロフィールページで表示されます。',
 	tags: [
 		'account',
 	],
@@ -10,7 +10,7 @@
 		properties: {
 			noteId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: 'ピン留めに登録するノートのid。',
 			},
 		},
@@ -23,7 +23,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'MeDetailed',
-		$ref: 'misskey://MeDetailed',
+		$ref: 'ocean://MeDetailed',
 	},
 	errors: {
 		'56734f8b-3928-431e-bf80-6ff87df40cb3': {

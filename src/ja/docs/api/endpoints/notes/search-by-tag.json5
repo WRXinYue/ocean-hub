@@ -33,12 +33,12 @@
 			},
 			sinceId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも大きいノートを返します。',
 			},
 			untilId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも小さいノートを返します。',
 			},
 			limit: {
@@ -66,7 +66,7 @@
 				properties: {
 					query: {
 						type: 'array',
-						description: '検索の条件式。二次元配列で指定します。外側の配列の要素はORで、内側の配列の要素はANDで結合されます。たとえば、[["fediverse"], ["misskey", "ai"]] と指定すると、 #fediverse のみを含むノートと、 #misskey と #ai を両方含むノートが返されますが、 #misskey を含み #ai を含まないノートは返されません。',
+						description: '検索の条件式。二次元配列で指定します。外側の配列の要素はORで、内側の配列の要素はANDで結合されます。たとえば、[["fediverse"], ["ocean", "ai"]] と指定すると、 #fediverse のみを含むノートと、 #ocean と #ai を両方含むノートが返されますが、 #ocean を含み #ai を含まないノートは返されません。',
 						items: {
 							type: 'array',
 							items: {
@@ -93,7 +93,7 @@
 			optional: false,
 			nullable: false,
 			ref: 'Note',
-			$ref: 'misskey://Note',
+			$ref: 'ocean://Note',
 		},
 	},
 	errors: {},

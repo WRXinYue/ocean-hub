@@ -1,6 +1,6 @@
 # Widgets
 
-A widget is a small display element that can be added to the Misskey UI to display and interact with information.
+A widget is a small display element that can be added to the Ocean UI to display and interact with information.
 By default they are displayed on the right side of the screen or accessed from the stack icon in the mobile web app navigation menu.
 
 To edit widgets, switch to widget edit mode at the bottom of the widget view. In widget edit mode you can add, delete, and reorder widgets.
@@ -71,7 +71,7 @@ An interactive animation that shows federated instances.
 
 ### Sticky Notes
 
-A text area where you can jot down short notes for yourself. You can save your sticky note and it will be available wherever you access Misskey Web.
+A text area where you can jot down short notes for yourself. You can save your sticky note and it will be available wherever you access Ocean Web.
 
 ### Posting Form
 
@@ -95,4 +95,4 @@ An interactive button that when clicked runs your own custom [AiScript](../advan
 
 ### Ai
 
-A digital version of the Misskey mascot, Ai, that will follow you around the site.
+A digital version of the Ocean mascot, Ai, that will follow you around the site.

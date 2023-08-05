@@ -7,12 +7,12 @@
 実験的な機能であるため、動作が不安定だったり今後仕様が変更される可能性があります。
 :::
 
-MisskeyにはWebhookが用意されています。Webhookを利用すると、Misskey上の様々なイベントをリアルタイムに受け取ることが可能です。
+OceanにはWebhookが用意されています。Webhookを利用すると、Ocean上の様々なイベントをリアルタイムに受け取ることが可能です。
 
 設定>Webhook でWebhookの管理を行えます。
 
 Webhookが登録されると、指定したイベントが発生した際に、指定したURLにHTTPリクエストが送信されます。リクエストのメソッドはPOSTで、ボディはJSONです。
-さらに、リクエストヘッダーには`X-Misskey-Hook-Secret`という名前で、登録時に設定したシークレットが含まれます。このシークレットが正しいか検証することで、リクエストが正規のものか判定することができます。
+さらに、リクエストヘッダーには`X-Ocean-Hook-Secret`という名前で、登録時に設定したシークレットが含まれます。このシークレットが正しいか検証することで、リクエストが正規のものか判定することができます。
 
 リクエストペイロードは以下のプロパティが入ります。
 
@@ -60,7 +60,7 @@ Webhookは管理画面から個別にアクティブ状態を設定でき、一�
 	type: 'object',
 	properties: {
 		user: {
-			$ref: 'misskey://User',
+			$ref: 'ocean://User',
 			description: 'フォローしたユーザー',
 		},
 	}
@@ -73,7 +73,7 @@ Webhookは管理画面から個別にアクティブ状態を設定でき、一�
 	type: 'object',
 	properties: {
 		user: {
-			$ref: 'misskey://User',
+			$ref: 'ocean://User',
 			description: 'フォローを行ったユーザー',
 		},
 	}
@@ -86,7 +86,7 @@ Webhookは管理画面から個別にアクティブ状態を設定でき、一�
 	type: 'object',
 	properties: {
 		user: {
-			$ref: 'misskey://User',
+			$ref: 'ocean://User',
 			description: 'フォロー解除したユーザー',
 		},
 	}
@@ -99,7 +99,7 @@ Webhookは管理画面から個別にアクティブ状態を設定でき、一�
 	type: 'object',
 	properties: {
 		note: {
-			$ref: 'misskey://Note',
+			$ref: 'ocean://Note',
 			description: '作成されたノート',
 		},
 	}
@@ -112,7 +112,7 @@ Webhookは管理画面から個別にアクティブ状態を設定でき、一�
 	type: 'object',
 	properties: {
 		note: {
-			$ref: 'misskey://Note',
+			$ref: 'ocean://Note',
 			description: '返信',
 		},
 	}
@@ -125,7 +125,7 @@ Webhookは管理画面から個別にアクティブ状態を設定でき、一�
 	type: 'object',
 	properties: {
 		note: {
-			$ref: 'misskey://Note',
+			$ref: 'ocean://Note',
 			description: 'Renote',
 		},
 	}
@@ -138,7 +138,7 @@ Webhookは管理画面から個別にアクティブ状態を設定でき、一�
 	type: 'object',
 	properties: {
 		note: {
-			$ref: 'misskey://Note',
+			$ref: 'ocean://Note',
 			description: 'メンションを含むノート',
 		},
 	}

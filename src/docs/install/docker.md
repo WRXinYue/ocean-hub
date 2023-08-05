@@ -1,7 +1,7 @@
-Create Misskey instance with Docker Compose
+Create Ocean instance with Docker Compose
 ================================================================
 
-This guide describes how to install and setup Misskey with Docker Compose.
+This guide describes how to install and setup Ocean with Docker Compose.
 
 ::: danger
 Do not recreate the database with the domain/hostname of the server once you have started using it!
@@ -14,8 +14,8 @@ Do not recreate the database with the domain/hostname of the server once you hav
 Get the repository
 ----------------------------------------------------------------
 ```sh
-git clone -b master https://github.com/misskey-dev/misskey.git
-cd misskey
+git clone -b master https://github.com/ocean-dev/ocean.git
+cd ocean
 git checkout master
 ```
 
@@ -35,7 +35,7 @@ Edit `docker-compose.yml` if necessary. (e.g. if you want to change the port).
 
 Build and initialize
 ----------------------------------------------------------------
-The following command will build Misskey and initialize the database.
+The following command will build Ocean and initialize the database.
 This will take some time.
 
 ``` shell
@@ -45,7 +45,7 @@ sudo docker compose run --rm web pnpm run init
 
 Launch
 ----------------------------------------------------------------
-Well done! You can start Misskey with the following command.
+Well done! You can start Ocean with the following command.
 
 
 ```sh
@@ -54,10 +54,10 @@ sudo docker compose up -d
 
 GLHF✨
 
-How to update your Misskey server
+How to update your Ocean server
 ----------------------------------------------------------------
 ::: warning
-When updating, be sure to check the [release notes](https://github.com/misskey-dev/misskey/blob/master/CHANGELOG.md) to know in advance the changes and whether or not additional work is required (in most cases, it is not).
+When updating, be sure to check the [release notes](https://github.com/ocean-dev/ocean/blob/master/CHANGELOG.md) to know in advance the changes and whether or not additional work is required (in most cases, it is not).
 :::
 
 ```sh

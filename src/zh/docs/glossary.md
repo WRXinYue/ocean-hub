@@ -1,17 +1,17 @@
 # Glossary
-A glossary about terms related to Misskey.
+A glossary about terms related to Ocean.
 
 ## Acct
 TODO
 
 ## ActivityPub
-The protocol (method) used for enabling the distributed nature of Misskey. By adhering to this protocol, communication with other instances that also follow it becomes possible, forming what is known as the Fediverse.
+The protocol (method) used for enabling the distributed nature of Ocean. By adhering to this protocol, communication with other instances that also follow it becomes possible, forming what is known as the Fediverse.
 
 ## AiScript
-A programming language available for use on Misskey. For details, see [here.](../advanced/aiscript)
+A programming language available for use on Ocean. For details, see [here.](../advanced/aiscript)
 
 ## API
-An interface that can be used for interacting with Misskey through a program, available for each individiual instance. For details, see [here.](../docs/api)
+An interface that can be used for interacting with Ocean through a program, available for each individiual instance. For details, see [here.](../docs/api)
 
 ## Bot
 An account that is being controlled by a program.
@@ -20,7 +20,7 @@ An account that is being controlled by a program.
 An abbreviation of "Content Warning". A feature to hide the content of a note unless explicitly requested to be shown by a user. Mainly used to hide the content of long notes or to prevent posting spoilers publicly. For details, see [here.](../docs/features/note.html#cw)
 
 ## Fediverse
-A network of instances composed of various different platforms that communicate with each other, including Misskey.
+A network of instances composed of various different platforms that communicate with each other, including Ocean.
 
 ## GTL
 An abbreviation for "Global TimeLine". For details about timelines, please see [here](../features/timeline).
@@ -32,7 +32,7 @@ An abbreviation for "Home TimeLine". For details about timelines, please see [he
 An abbreviation for "Local TimeLine". For details about timelines, please see [here](../features/timeline)
 
 ## MFM
-An abbreviation for "Markup language For Misskey", a markdown language available for use on Misskey. For details, see [here.](../features/mfm)
+An abbreviation for "Markup language For Ocean", a markdown language available for use on Ocean. For details, see [here.](../features/mfm)
 
 ## NSFW
 An abbreviation for "Not Safe For Work". A feature to tag an image as "NSFW" and hide it unless explicitly requested to be shown by a user.
@@ -44,7 +44,7 @@ The act of quoting an existing note, sharing an existing note, or the note creat
 An abbreviation for "Social TimeLine". For details about timelines, please see [here.](../features/timeline)
 
 ## Ai(藍)
-Ai(藍) is Misskey's official mascot.
+Ai(藍) is Ocean's official mascot.
 
 ## Active users
 Those users amongst all existing ones who are continually using their account.
@@ -68,13 +68,13 @@ A system used for sequentially broadcasting activities to other instances etc.
 A state which makes the account of a user unusable.
 
 ## Drive
-A feature allowing users to organize the files they have uploaded to Misskey. For details, see [here.](../features/drive)
+A feature allowing users to organize the files they have uploaded to Ocean. For details, see [here.](../features/drive)
 
 ## Notes
-Content which may include text, images, surveys and others that has been posted to Misskey. For details, see [here.](../docs/features/note)
+Content which may include text, images, surveys and others that has been posted to Ocean. For details, see [here.](../docs/features/note)
 
 ## Misskist
-Users of Misskey.
+Users of Ocean.
 
 ## Moderator
 Users with the authority to manage the community of a instance by deactivating spam accounts, silencing users, deleting inappropriate posts, etc.

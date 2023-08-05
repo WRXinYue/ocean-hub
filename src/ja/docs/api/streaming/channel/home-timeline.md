@@ -11,7 +11,7 @@ description: "ホームタイムラインのノートが流れるチャンネル
 ## イベント
 ### `note`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://Note'
+	$ref: 'ocean://Note'
 }"/>
 
 ホームタイムラインに新しいノートが追加されたときに発生します。

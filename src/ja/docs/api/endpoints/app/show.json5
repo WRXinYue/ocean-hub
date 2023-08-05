@@ -10,7 +10,7 @@
 		properties: {
 			appId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 		},
 		required: [
@@ -22,7 +22,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'App',
-		$ref: 'misskey://App',
+		$ref: 'ocean://App',
 	},
 	errors: {
 		'dce83913-2dc6-4093-8a7b-71dbb11718a3': {

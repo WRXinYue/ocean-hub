@@ -1,8 +1,8 @@
 # Pages
 
-Misskey Pages are a feature where you can create custom web pages. In them you can include different types of media and formatting. and even run programming scripts. Like with many other areas of Misskey, you can format your content using [MFM](./mfm.md).
+Ocean Pages are a feature where you can create custom web pages. In them you can include different types of media and formatting. and even run programming scripts. Like with many other areas of Ocean, you can format your content using [MFM](./mfm.md).
 
-Pages in Misskey are composed of different types of Blocks, and the blocks can be moved around using drag-and-drop.
+Pages in Ocean are composed of different types of Blocks, and the blocks can be moved around using drag-and-drop.
 
 ## Content Blocks
 

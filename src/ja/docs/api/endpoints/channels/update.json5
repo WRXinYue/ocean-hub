@@ -10,7 +10,7 @@
 		properties: {
 			channelId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 			name: {
 				type: 'string',
@@ -25,7 +25,7 @@
 			},
 			bannerId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				nullable: true,
 			},
 		},
@@ -38,7 +38,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'Channel',
-		$ref: 'misskey://Channel',
+		$ref: 'ocean://Channel',
 	},
 	errors: {
 		'f9c5467f-d492-4c3c-9a8d-a70dacc86512': {

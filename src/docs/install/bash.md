@@ -1,11 +1,11 @@
-# Misskey install shell script v3.0.0
-Install Misskey with one shell script!  
+# Ocean install shell script v3.0.0
+Install Ocean with one shell script!  
 
-You can install misskey on an Ubuntu server just by answering some questions.  
+You can install ocean on an Ubuntu server just by answering some questions.  
 
 There is also an update script.
 
-[For v12](https://github.com/joinmisskey/bash-install/blob/a096e874f93d493aa68975a31be9ce12d644e767/README.en.md)  
+[For v12](https://github.com/joinocean/bash-install/blob/a096e874f93d493aa68975a31be9ce12d644e767/README.en.md)  
 [**日本語版はこちら**](./README.md)
 
 ## License
@@ -39,25 +39,25 @@ sudo apt update; sudo apt full-upgrade -y; sudo reboot
 ```
 
 ### 3. Start the installation
-Reconnect SSH and let's start installing Misskey. 
+Reconnect SSH and let's start installing Ocean. 
 
 ```
-wget https://raw.githubusercontent.com/joinmisskey/bash-install/main/ubuntu.sh -O ubuntu.sh; sudo bash ubuntu.sh
+wget https://raw.githubusercontent.com/joinocean/bash-install/main/ubuntu.sh -O ubuntu.sh; sudo bash ubuntu.sh
 ```
 
 ### 4. To update
 There is also an update script.
 
 The update script does not update the environment.  
-Please refer to CHANGELOG (Japanese) and [GitHub release list (English)](https://github.com/joinmisskey/bash-install/releases) and perform migration operations accordingly.
+Please refer to CHANGELOG (Japanese) and [GitHub release list (English)](https://github.com/joinocean/bash-install/releases) and perform migration operations accordingly.
 
 First, download the script.
 
 ```
-wget https://raw.githubusercontent.com/joinmisskey/bash-install/main/update.ubuntu.sh -O update.sh
+wget https://raw.githubusercontent.com/joinocean/bash-install/main/update.ubuntu.sh -O update.sh
 ```
 
-Run it when you want to update Misskey.
+Run it when you want to update Ocean.
 
 ```
 sudo bash update.sh
@@ -90,12 +90,12 @@ Suggestions for features are also welcome.
 ## Systemd or Docker?
 v1から、インストールメソッドにsystemdとDockerとを選べるようにしました。
 
-Dockerと言っても、**MisskeyだけをDockerで実行**し、RedisやPostgresなどはホストで直接実行します。  
+Dockerと言っても、**OceanだけをDockerで実行**し、RedisやPostgresなどはホストで直接実行します。  
 [docker-composeですべての機能を動かす方法については、mamemonongaさんが作成したこちらの記事がおすすめです。](https://gist.github.com/mamemomonga/5549bb69cad8e5618e5527593d4890e0)
 
-Docker Hubイメージを使う設定であれば、Misskeyのビルドが不要になるため、**一番お勧めです**。  
-ただし、マイグレーションは必要なので、アップデート時にMisskeyを使えない時間がゼロになるわけではありません。  
-また、Misskeyのビルド環境を準備しない(git pullしない)ので、フォークを動かしたくなった時に設定が面倒になります。
+Docker Hubイメージを使う設定であれば、Oceanのビルドが不要になるため、**一番お勧めです**。  
+ただし、マイグレーションは必要なので、アップデート時にOceanを使えない時間がゼロになるわけではありません。  
+また、Oceanのビルド環境を準備しない(git pullしない)ので、フォークを動かしたくなった時に設定が面倒になります。
 
 ローカルでDockerをビルドする方式は、パフォーマンス面で非推奨です。
 
@@ -108,9 +108,9 @@ systemdは、Docker Hubにイメージを上げるまでもないものの、フ
 3. Dockerビルド
 
 ## nginxを使うかどうか
-サーバー1台でMisskeyを構築する場合は、nginxの使用をお勧めします。
+サーバー1台でOceanを構築する場合は、nginxの使用をお勧めします。
 
-ロードバランサーを設置する場合にはnginxをインストールせず、[Misskeyのnginx設定](https://github.com/misskey-dev/misskey/blob/develop/docs/examples/misskey.nginx)を参考にロードバランサーを設定するのがよいと思います。
+ロードバランサーを設置する場合にはnginxをインストールせず、[Oceanのnginx設定](https://github.com/ocean-dev/ocean/blob/develop/docs/examples/ocean.nginx)を参考にロードバランサーを設定するのがよいと思います。
 
 ## Add more swaps!
 スワップを設定している場合、メモリが合計で3GB以上でなければスクリプトが動作しないようになっています。
@@ -126,14 +126,14 @@ systemdは、Docker Hubにイメージを上げるまでもないものの、フ
 インストールスクリプトは、2つの.envファイルを作成します。  
 アップデートの際に使用します。
 
-### /root/.misskey.env
-misskeyを実行するユーザーを覚えておくために必要です。
+### /root/.ocean.env
+oceanを実行するユーザーを覚えておくために必要です。
 
-### /home/(misskeyユーザー)/.misskey.env
+### /home/(oceanユーザー)/.ocean.env
 systemdの場合に生成されます。  
 主にディレクトリを覚えておくのに使用します。
 
-### /home/(misskeyユーザー)/.misskey-docker.env
+### /home/(oceanユーザー)/.ocean-docker.env
 Dockerの場合に生成されます。  
 実行されているコンテナとイメージの番号を保存しています。  
 コンテナの番号はアップデートの際に更新されます。古いイメージは削除されます。
@@ -143,11 +143,11 @@ Dockerの場合に生成されます。
 
 "example.com"を自分のドメインに置き換えて読んでください。
 
-### Misskeyディレクトリ
-Misskeyのソースは`/home/ユーザー/ディレクトリ`としてcloneされます。  
-（ユーザー、ディレクトリの初期値はともにmisskeyです。）
+### Oceanディレクトリ
+Oceanのソースは`/home/ユーザー/ディレクトリ`としてcloneされます。  
+（ユーザー、ディレクトリの初期値はともにoceanです。）
 
-Misskeyディレクトリへは、以下のように移動するとよいでしょう。
+Oceanディレクトリへは、以下のように移動するとよいでしょう。
 
 ```
 sudo -iu ユーザー
@@ -177,9 +177,9 @@ journalctl -t example.com
 設定ファイルは`/etc/systemd/system/example.com.service`として保存されています。
 
 ### Docker
-DockerはMisskeyユーザーでrootless実行されています。
+DockerはOceanユーザーでrootless実行されています。
 
-sudo でMisskeyユーザーに入るときは、`XDG_RUNTIME_DIR`と`DOCKER_HOST`を変更する必要があります。
+sudo でOceanユーザーに入るときは、`XDG_RUNTIME_DIR`と`DOCKER_HOST`を変更する必要があります。
 
 ```
 sudo -iu ユーザー
@@ -189,11 +189,11 @@ export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 # プロセス一覧を表示
 docker ps
 
-# ビルド (リポジトリ: local/misskey:latest)
-docker build -t local/misskey:latest ./misskey
+# ビルド (リポジトリ: local/ocean:latest)
+docker build -t local/ocean:latest ./ocean
 
 # docker run
-docker run -d -p 3000:3000 --add-host=docker_host:10.0.0.1 -v /home/misskey/misskey/files:/misskey/files -v "/home/misskey/misskey/.config/default.yml":/misskey/.config/default.yml:ro --restart unless-stopped -t "local/misskey:latest"
+docker run -d -p 3000:3000 --add-host=docker_host:10.0.0.1 -v /home/ocean/ocean/files:/ocean/files -v "/home/ocean/ocean/.config/default.yml":/ocean/.config/default.yml:ro --restart unless-stopped -t "local/ocean:latest"
 
 # ログを表示
 docker logs --tail 50 -f コンテナID
@@ -209,7 +209,7 @@ sudo -u ユーザー XDG_RUNTIME_DIR=/run/user/$(id -u ユーザー) DOCKER_HOST
 nginxの設定は`/etc/nginx/conf.d/example.com.conf`として保存されています。
 
 ### Redis
-requirepassとbindを`/etc/redis/misskey.conf`で設定しています。
+requirepassとbindを`/etc/redis/ocean.conf`で設定しています。
 
 ## Q. アップデート後に502でアクセスできない
 Dockerでは、起動後にマイグレーションをするため、すぐにアクセスできません。  
@@ -217,7 +217,7 @@ Dockerでは、起動後にマイグレーションをするため、すぐに�
 
 systemdの場合では、pnpm installに失敗している可能性があります。  
 
-Misskeyディレクトリで次の内容を実行し、もう一度アップデートを実行してみてください。
+Oceanディレクトリで次の内容を実行し、もう一度アップデートを実行してみてください。
 
 ```
 pnpm run clean-all
@@ -225,6 +225,6 @@ pnpm run clean-all
 
 journalctlでログを確認すると、たいていre2が云々という記述が見当たります。
 
-## Q. 同じサーバーにもう1つMisskeyを建てたい
-スクリプトは同じサーバーに追加でMisskeyをインストールすることは想定していません。  
+## Q. 同じサーバーにもう1つOceanを建てたい
+スクリプトは同じサーバーに追加でOceanをインストールすることは想定していません。  
 幾つかの設定が上書きされるか、途中でエラーになってしまうでしょう。

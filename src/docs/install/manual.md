@@ -1,8 +1,8 @@
-Misskey Setup and Installation Guide
+Ocean Setup and Installation Guide
 ================================================================
 
-We thank you for your interest in setting up your Misskey server!
-This guide describes how to install and setup Misskey.
+We thank you for your interest in setting up your Ocean server!
+This guide describes how to install and setup Ocean.
 
 ----------------------------------------------------------------
 
@@ -27,30 +27,30 @@ corepack must be enabled.
 sudo corepack enable
 ```
 
-*2.* Create Misskey user
+*2.* Create Ocean user
 ----------------------------------------------------------------
-Running misskey as root is not a good idea so we create a user for that.
+Running ocean as root is not a good idea so we create a user for that.
 In debian for exemple :
 
 ```sh
-adduser --disabled-password --disabled-login misskey
+adduser --disabled-password --disabled-login ocean
 ```
 
-*3.* Install Misskey
+*3.* Install Ocean
 ----------------------------------------------------------------
-1. Connect to the `misskey` user
+1. Connect to the `ocean` user
 
-	`sudo -iu misskey`
+	`sudo -iu ocean`
 
-2. Clone the Misskey repository
+2. Clone the Ocean repository
 
-	`git clone --recursive https://github.com/misskey-dev/misskey.git`
+	`git clone --recursive https://github.com/ocean-dev/ocean.git`
 
 3. Navigate to the repository
 
-	`cd misskey`
+	`cd ocean`
 
-4. Check out the [latest release](https://github.com/misskey-dev/misskey/releases/latest)
+4. Check out the [latest release](https://github.com/ocean-dev/ocean/releases/latest)
 
 	`git checkout master`
 
@@ -58,11 +58,11 @@ adduser --disabled-password --disabled-login misskey
 
     `git submodule update --init`
 
-5. Install Misskey's dependencies
+5. Install Ocean's dependencies
 
 	`pnpm install --frozen-lockfile`
 
-*4.* Configure Misskey
+*4.* Configure Ocean
 ----------------------------------------------------------------
 1. Copy the `.config/example.yml` and rename it to `default.yml`.
 
@@ -70,10 +70,10 @@ adduser --disabled-password --disabled-login misskey
 
 2. Edit `default.yml`
 
-*5.* Build Misskey
+*5.* Build Ocean
 ----------------------------------------------------------------
 
-Build misskey with the following:
+Build ocean with the following:
 
 `NODE_ENV=production pnpm run build`
 
@@ -84,15 +84,15 @@ If you're on Debian, you will need to install the `build-essential`, `python` pa
 1. Create the appropriate PostgreSQL users with respective passwords,
 	and empty database as named in the configuration file.
 	Make sure the database connection also works correctly when run from the
-	user that will later run Misskey, or it could cause problems later.
+	user that will later run Ocean, or it could cause problems later.
 	The encoding of the database should be UTF-8.
 
 	```
 	sudo -u postgres psql
-	create database misskey with encoding = 'UTF8';
-	create user misskey with encrypted password '{YOUR_PASSWORD}';
-	grant all privileges on database misskey to misskey;
-	alter database misskey owner to misskey;
+	create database ocean with encoding = 'UTF8';
+	create user ocean with encrypted password '{YOUR_PASSWORD}';
+	grant all privileges on database ocean to ocean;
+	alter database ocean owner to ocean;
 	\q
 	```
 
@@ -101,7 +101,7 @@ If you're on Debian, you will need to install the `build-essential`, `python` pa
 
 *7.* That is it.
 ----------------------------------------------------------------
-Well done! Now, you have an environment that run to Misskey.
+Well done! Now, you have an environment that run to Ocean.
 
 ### Launch normally
 Just `NODE_ENV=production pnpm run start`. GLHF!
@@ -110,25 +110,25 @@ Just `NODE_ENV=production pnpm run start`. GLHF!
 
 1. Create a systemd service here
 
-	`/etc/systemd/system/misskey.service`
+	`/etc/systemd/system/ocean.service`
 
 2. Edit it, and paste this and save:
 
 	::: details
 	```
 	[Unit]
-	Description=Misskey daemon
+	Description=Ocean daemon
 
 	[Service]
 	Type=simple
-	User=misskey
+	User=ocean
 	ExecStart=/usr/bin/npm start
-	WorkingDirectory=/home/misskey/misskey
+	WorkingDirectory=/home/ocean/ocean
 	Environment="NODE_ENV=production"
 	TimeoutSec=60
 	StandardOutput=journal
 	StandardError=journal
-	SyslogIdentifier=misskey
+	SyslogIdentifier=ocean
 	Restart=always
 
 	[Install]
@@ -136,33 +136,33 @@ Just `NODE_ENV=production pnpm run start`. GLHF!
 	```
 	:::
 
-3. Reload systemd and enable the misskey service.
+3. Reload systemd and enable the ocean service.
 
-	`sudo systemctl daemon-reload; sudo systemctl enable misskey`
+	`sudo systemctl daemon-reload; sudo systemctl enable ocean`
 
-4. Start the misskey service.
+4. Start the ocean service.
 
-	`sudo systemctl start misskey`
+	`sudo systemctl start ocean`
 
-You can check if the service is running with `systemctl status misskey`.
+You can check if the service is running with `systemctl status ocean`.
 
 ### Launch with OpenRC
 
-1. Copy the following text to `/etc/init.d/misskey`:
+1. Copy the following text to `/etc/init.d/ocean`:
 
 	::: details
 	```sh
 	#!/sbin/openrc-run
 
-	name=misskey
-	description="Misskey daemon"
+	name=ocean
+	description="Ocean daemon"
 
 	command="/usr/bin/npm"
 	command_args="start"
-	command_user="misskey"
+	command_user="ocean"
 
 	supervisor="supervise-daemon"
-	supervise_daemon_args=" -d /home/misskey/misskey -e NODE_ENV=\"production\""
+	supervise_daemon_args=" -d /home/ocean/ocean -e NODE_ENV=\"production\""
 
 	pidfile="/run/${RC_SVCNAME}.pid"
 
@@ -178,22 +178,22 @@ You can check if the service is running with `systemctl status misskey`.
 
 2. Set the service to start on boot
 
-	`rc-update add misskey`
+	`rc-update add ocean`
 
-3. Start the Misskey service
+3. Start the Ocean service
 
-	`rc-service misskey start`
+	`rc-service ocean start`
 
-You can check if the service is running with `rc-service misskey status`.
+You can check if the service is running with `rc-service ocean status`.
 
-### How to update your Misskey server to the latest version
+### How to update your Ocean server to the latest version
 1. `git checkout master`
 2. `git pull`
 3. `git submodule update --init`
 4. `NODE_ENV=production pnpm install --frozen-lockfile`
 5. `NODE_ENV=production pnpm run build`
 6. `pnpm run migrate`
-7. Restart your Misskey process to apply changes
+7. Restart your Ocean process to apply changes
 8. Enjoy
 
 If you encounter any problems with updating, please try the following:

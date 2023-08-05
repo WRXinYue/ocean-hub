@@ -12,18 +12,18 @@ Mute and block can be used together.
 Please consider reporting any users who violate the Terms of Service to the moderators.
 :::
 
-In Misskey Web, you can see the list of users you have muted or blocked by going to Settings > Mute & Block.
+In Ocean Web, you can see the list of users you have muted or blocked by going to Settings > Mute & Block.
 
 ## Muting
 
-If you mute a user, the following content about that user will no longer appear in Misskey:
+If you mute a user, the following content about that user will no longer appear in Ocean:
 
 - the user's posts (and replies and Renotes to those posts) in the timeline and post search results
 - notifications from that user
-- message history with the user in Misskey chat
+- message history with the user in Ocean chat
 - etc.
 
-To mute a user in Misskey Web, open the menu on the user's profile page and press the "Mute" button.
+To mute a user in Ocean Web, open the menu on the user's profile page and press the "Mute" button.
 
 ::: tip
 They will not be notified that you have muted them, and they will not know that you have muted them.
@@ -44,7 +44,7 @@ Also,
 - if the user is already following you when you block them, they will unfollow you
 - if the user has you in their user lists when you block them, you will be removed from those lists
 
-To block a user on Misskey Web, open the menu on the user's profile page and press the "Block" button.
+To block a user on Ocean Web, open the menu on the user's profile page and press the "Block" button.
 
 ::: warning
 You will not be notified that you have been blocked by someone, but you will know indirectly that you have been blocked because you will not be able to take any of the above actions, such as following someone.

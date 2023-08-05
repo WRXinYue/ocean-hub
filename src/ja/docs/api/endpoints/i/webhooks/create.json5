@@ -24,7 +24,7 @@
 				type: 'string',
 				minLength: 1,
 				maxLength: 1024,
-				description: 'シークレット。HTTPリクエストのX-Misskey-Hook-Secretの値に設定されます。',
+				description: 'シークレット。HTTPリクエストのX-Ocean-Hook-Secretの値に設定されます。',
 			},
 			on: {
 				type: 'array',

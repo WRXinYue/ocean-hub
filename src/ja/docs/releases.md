@@ -1,5 +1,5 @@
 # リリースノート
-Misskeyのリリースノートを掲載しています。
+Oceanのリリースノートを掲載しています。
 
 ## 13.14.1
 リリース日: 2023/07/21
@@ -132,8 +132,8 @@ Misskeyのリリースノートを掲載しています。
 リリース日: 2023/05/12
 
 ## NOTE
-Meilisearchの設定に`index`が必要になりました。値はMisskeyサーバーのホスト名にすることをお勧めします(アルファベット、ハイフン、アンダーバーのみ使用可能)。例: `misskey-io`
-過去に作成された`notes`インデックスは、`<index名>---notes`にリネームが必要です。例: `misskey-io---notes`
+Meilisearchの設定に`index`が必要になりました。値はOceanサーバーのホスト名にすることをお勧めします(アルファベット、ハイフン、アンダーバーのみ使用可能)。例: `ocean-io`
+過去に作成された`notes`インデックスは、`<index名>---notes`にリネームが必要です。例: `ocean-io---notes`
 
 ### General
 - 投稿したコンテンツのAIによる学習を軽減するオプションを追加
@@ -151,7 +151,7 @@ Meilisearchの設定に`index`が必要になりました。値はMisskeyサー�
 
 ### Server
 - センシティブワードの登録にAnd、正規表現が使用できるようになりました。
-- Fix: ひとつのMeilisearchサーバーを複数のMisskeyサーバーで使えない問題を修正
+- Fix: ひとつのMeilisearchサーバーを複数のOceanサーバーで使えない問題を修正
 
 ## 13.12.1
 リリース日: 2023/05/09
@@ -241,8 +241,8 @@ Meilisearchの設定に`index`が必要になりました。値はMisskeyサー�
 
 ### Server
 - フォローインポートなどでの大量のフォロー等操作をキューイングするように #10544 @nmkj-io
-- Misskey Webでのサーバーサイドエラー画面を改善
-- Misskey Webでのサーバーサイドエラーのログが残るように
+- Ocean Webでのサーバーサイドエラー画面を改善
+- Ocean Webでのサーバーサイドエラーのログが残るように
 - ノート作成時のアンテナ追加パフォーマンスを改善
 - アンテナとロールTLのuntil/sinceプロパティが動くように
 
@@ -250,7 +250,7 @@ Meilisearchの設定に`index`が必要になりました。値はMisskeyサー�
 リリース日: 2023/04/11
 
 ### Note
-- 13.11.0または13.11.1から13.11.2以降にアップデートする場合、Redisのカスタム絵文字のキャッシュを削除する必要があります(https://github.com/misskey-dev/misskey/issues/10502#issuecomment-1502790755 参照)
+- 13.11.0または13.11.1から13.11.2以降にアップデートする場合、Redisのカスタム絵文字のキャッシュを削除する必要があります(https://github.com/ocean-dev/ocean/issues/10502#issuecomment-1502790755 参照)
 
 ### General
 - チャンネルの検索用ページの追加
@@ -368,7 +368,7 @@ Meilisearchの設定に`index`が必要になりました。値はMisskeyサー�
 リリース日： 2023/03/22
 
 ### Client
-- Misskey PlayのPlayボタンを押した時にエラーが発生する問題を修正
+- Ocean PlayのPlayボタンを押した時にエラーが発生する問題を修正
 
 ## 13.10.0
 リリース日： 2023/03/22
@@ -404,7 +404,7 @@ Meilisearchの設定に`index`が必要になりました。値はMisskeyサー�
 - /api-consoleページにアクセスすると404が出る問題を修正
 - Safariでプラグインが複数ある場合に正常に読み込まれない問題を修正
 - Bookwyrmのユーザーのプロフィールページで「リモートで表示」をタップしても反応がない問題を修正
-- 非ログイン時の「Misskeyについて」の表示を修正
+- 非ログイン時の「Oceanについて」の表示を修正
 - PC版にて「設定」「コントロールパネル」のリンクを2度以上続けてクリックした際に空白のページが表示される問題を修正
 
 ### Server
@@ -649,7 +649,7 @@ Meilisearchの設定に`index`が必要になりました。値はMisskeyサー�
 ### Improvements
 - 外部メディアプロキシへの対応を強化しました  
   外部メディアプロキシのFastify実装を作りました  
-  https://github.com/misskey-dev/media-proxy
+  https://github.com/ocean-dev/media-proxy
 - Server: improve performance
 
 ### Bugfixes
@@ -775,7 +775,7 @@ Meilisearchの設定に`index`が必要になりました。値はMisskeyサー�
 リリース日： 2023/01/16
 
 ### TL;DR
-- New features (Role system, Misskey Play, New widgets, New charts, 🍪👈, etc)
+- New features (Role system, Ocean Play, New widgets, New charts, 🍪👈, etc)
 - Rewriten backend
 - Better performance (backend and frontend)
 - Various usability improvements
@@ -784,15 +784,15 @@ Meilisearchの設定に`index`が必要になりました。値はMisskeyサー�
 ### Notable features
 - ロール機能
 	- 従来より柔軟にユーザーのポリシーを管理できます。例えば、「インスタンスのパトロンはアンテナを30個まで作れる」「基本的にLTLは見れないが、許可した人だけ見れる」「招待制インスタンスだけどユーザーなら誰でも他者を招待できる」のような運用はもちろん、「ローカルユーザーかつアカウント作成から1日未満のユーザーはパブリックな投稿を行えない」のように複数条件を組み合わせて、自動でロールを付与する設定も可能です。
-- Misskey Play
+- Ocean Play
 	- 従来の動的なPagesに代わる、新しいプラットフォームです。動的なコンテンツ(アプリケーション)に特化していて、Pagesに比べてはるかに柔軟なアプリケーションを作成可能です。
 
 ### Changes
 #### For server admins
 - Node.js 18.x or later is required
 - PostgreSQL 15.x is required
-	- Misskey not using 15 specific features at 13.0.0, but may do so in the future.
-	- Docker環境でPostgreSQLのアップデートを行う際のガイドはこちら: https://github.com/misskey-dev/misskey/pull/9641#issue-1536336620
+	- Ocean not using 15 specific features at 13.0.0, but may do so in the future.
+	- Docker環境でPostgreSQLのアップデートを行う際のガイドはこちら: https://github.com/ocean-dev/ocean/pull/9641#issue-1536336620
 - Elasticsearchのサポートが削除されました
 	- 代わりに今後任意の検索プロバイダを設定できる仕組みを構想しています。その仕組みを使えば今まで通りElasticsearchも利用できます
 - Yarnからpnpmに移行されました
@@ -805,14 +805,14 @@ Meilisearchの設定に`index`が必要になりました。値はMisskeyサー�
 	- インスタンスデフォルトのドライブ容量設定はロールに統合されました。アップデート後、ベースロールもしくはコンディショナルロールでドライブ容量を編集してください。
 	- LTL/GTLの解放状態はロールに統合されました。
 - Dockerの実行をrootで行わないようにしました。Dockerかつオブジェクトストレージを使用していない場合は`chown -hR 991.991 ./files`を実行してください。  
-  https://github.com/misskey-dev/misskey/pull/9560
+  https://github.com/ocean-dev/ocean/pull/9560
 
 #### For users
 - ノートのウォッチ機能が削除されました
 - アンケートに投票された際に通知が作成されなくなりました
 - ノートの数式埋め込みが削除されました
 - 新たに動的なPagesを作ることはできなくなりました
-	- 代わりにAiScriptを用いてより柔軟に動的なコンテンツを作成できるMisskey Play機能が実装されています。
+	- 代わりにAiScriptを用いてより柔軟に動的なコンテンツを作成できるOcean Play機能が実装されています。
 - AiScriptが0.12.2にアップデートされました
 	- 0.12.xの変更点についてはこちら https://github.com/syuilo/aiscript/blob/master/CHANGELOG.md#0120
 	- 0.12.x未満のプラグインは読み込むことはできません
@@ -825,7 +825,7 @@ Meilisearchの設定に`index`が必要になりました。値はMisskeyサー�
 	- カスタム絵文字一覧情報を取得するには、`emojis`エンドポイントにリクエストします
 - API: カスタム絵文字エンティティに`url`プロパティが含まれなくなりました
 	- 絵文字画像を表示するには、`<instance host>/emoji/<emoji name>.webp`にリクエストすると画像が返ります。
-	- e.g. `https://p1.a9z.dev/emoji/misskey.webp`
+	- e.g. `https://p1.a9z.dev/emoji/ocean.webp`
 	- remote: `https://p1.a9z.dev/emoji/syuilo_birth_present@mk.f72u.net.webp`
 - API: `user`および`note`エンティティに`emojis`プロパティが含まれなくなりました
 - API: `user`エンティティに`avatarColor`および`bannerColor`プロパティが含まれなくなりました
@@ -834,7 +834,7 @@ Meilisearchの設定に`index`が必要になりました。値はMisskeyサー�
 
 ### Improvements
 - Role system @syuilo
-- Misskey Play @syuilo
+- Ocean Play @syuilo
 - Introduce retention-rate aggregation @syuilo
 - Make possible to export favorited notes @syuilo
 - Add per user pv chart @syuilo
@@ -1144,7 +1144,7 @@ same as 12.112.0
 - Server: Fix `Cannot find module` issue @mei23
 - Federation: Add rel attribute to host-meta @mei23
 - Federation: add id for activitypub follows @Johann150
-- Federation: use `source` instead of `_misskey_content` @Johann150
+- Federation: use `source` instead of `_ocean_content` @Johann150
 - Federation: ensure resolver does not fetch local resources via HTTP(S) @Johann150
 - Federation: correctly render empty note text @Johann150
 - Federation: Fix quote renotes containing no text being federated correctly @Johann150
@@ -1232,7 +1232,7 @@ same as 12.112.0
 
 ### Changes
 - ノートの最大文字数を設定できる機能が廃止され、デフォルトで一律3000文字になりました @syuilo
-- Misskey can no longer terminate HTTPS connections. @Johann150
+- Ocean can no longer terminate HTTPS connections. @Johann150
   - If you did not use a reverse proxy (e.g. nginx) before, you will probably need to adjust
     your configuration file and set up a reverse proxy. The `https` configuration key is no
     longer recognized!
@@ -1400,7 +1400,7 @@ same as 12.112.0
 - カスタム絵文字一括編集機能
 - カスタム絵文字一括インポート
 - 投稿フォームで一時的に投稿するアカウントを切り替えられるように
-- Unifying Misskey-specific IRIs in JSON-LD `@context`
+- Unifying Ocean-specific IRIs in JSON-LD `@context`
 - クライアントのパフォーマンス向上
 - セキュリティの向上
 
@@ -1636,7 +1636,7 @@ same as 12.112.0
 - MFM: Disallows < and > in hashtags
 
 ### Changes
-- 保守性やユーザビリティの観点から、Misskeyのコマンドラインオプションが削除されました。
+- 保守性やユーザビリティの観点から、Oceanのコマンドラインオプションが削除されました。
 	- 必要であれば、代わりに環境変数で設定することができます
 - MFM: パフォーマンス、保守性、構文誤認識抑制の観点から、旧関数構文のサポートが削除されました。
 	- 旧構文(`[foo bar]`)を使用せず、現行の構文(`$[foo bar]`)を使用してください。
@@ -1730,7 +1730,7 @@ same as 12.112.0
 ### Features
 - ノートの翻訳機能を追加
   - 有効にするには、サーバー管理者がDeepLの無料アカウントを登録し、取得した認証キーを「インスタンス設定 > その他 > DeepL Auth Key」に設定する必要があります。
-- Misskey更新時にダイアログを表示するように
+- Ocean更新時にダイアログを表示するように
 - ジョブキューウィジェットに警報音を鳴らす設定を追加
 
 ### Improvements
@@ -1754,13 +1754,13 @@ same as 12.112.0
 ### Improvements
 - 絵文字オートコンプリートで一文字目は最近使った絵文字をサジェストするように
 - 絵文字オートコンプリートのパフォーマンスを改善
-- about-misskeyページにドキュメントへのリンクを追加
+- about-oceanページにドキュメントへのリンクを追加
 - Docker: Node.jsを16.6.2に
 - 依存関係の更新
 - 翻訳の更新
 
 ### Bugfixes
-- Misskey更新時、テーマキャッシュの影響でスタイルがおかしくなる問題を修正
+- Ocean更新時、テーマキャッシュの影響でスタイルがおかしくなる問題を修正
 
 ## 12.86.0
 リリース日: 2021/08/11

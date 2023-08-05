@@ -10,7 +10,7 @@
 		properties: {
 			clipId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: 'クリップのid。',
 			},
 			name: {
@@ -41,7 +41,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'Clip',
-		$ref: 'misskey://Clip',
+		$ref: 'ocean://Clip',
 	},
 	errors: {
 		'b4d92d70-b216-46fa-9a3f-a8c811699257': {

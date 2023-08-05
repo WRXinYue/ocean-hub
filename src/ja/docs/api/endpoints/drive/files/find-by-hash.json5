@@ -26,7 +26,7 @@
 			optional: false,
 			nullable: false,
 			ref: 'DriveFile',
-			$ref: 'misskey://DriveFile',
+			$ref: 'ocean://DriveFile',
 		},
 	},
 	errors: {},

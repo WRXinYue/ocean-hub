@@ -12,7 +12,7 @@
 				properties: {
 					notificationId: {
 						type: 'string',
-						format: 'misskey:id',
+						format: 'ocean:id',
 						description: '既読にする通知のid。',
 					},
 				},
@@ -27,7 +27,7 @@
 						type: 'array',
 						items: {
 							type: 'string',
-							format: 'misskey:id',
+							format: 'ocean:id',
 							description: '既読にする通知のidの配列。',
 						},
 						maxItems: 100,

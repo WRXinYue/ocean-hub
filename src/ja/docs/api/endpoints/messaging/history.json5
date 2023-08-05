@@ -30,7 +30,7 @@
 			optional: false,
 			nullable: false,
 			ref: 'MessagingMessage',
-			$ref: 'misskey://MessagingMessage',
+			$ref: 'ocean://MessagingMessage',
 		},
 	},
 	errors: {},

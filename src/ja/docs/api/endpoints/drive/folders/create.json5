@@ -16,7 +16,7 @@
 			},
 			parentId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				nullable: true,
 				description: '親フォルダーのid。null（デフォルト）であればルート階層にフォルダが作成されます。',
 			},
@@ -28,7 +28,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'DriveFolder',
-		$ref: 'misskey://DriveFolder',
+		$ref: 'ocean://DriveFolder',
 	},
 	errors: {
 		'53326628-a00d-40a6-a3cd-8975105c0f95': {

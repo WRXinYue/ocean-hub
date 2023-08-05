@@ -42,8 +42,8 @@ A blinking light indicates unread content.In cases where this light won't go awa
 ## The renote button is blocked out
 Followers-only notes cannot be renoted.
 
-## Specific parts of the Misskey Web UI are not being displayed
-Problems like these can arise if you are using an Adblocker. For an optimized experience on Misskey, please turn it off.
+## Specific parts of the Ocean Web UI are not being displayed
+Problems like these can arise if you are using an Adblocker. For an optimized experience on Ocean, please turn it off.
 
-## Some parts of the Misskey Web UI are untranslated
-In most cases, this is simply a matter of the translation not having been done yet instead of being a bug.Please wait until the translation of this area has been completed. You can alternatively also [participate in translation](./misskey) yourself.
+## Some parts of the Ocean Web UI are untranslated
+In most cases, this is simply a matter of the translation not having been done yet instead of being a bug.Please wait until the translation of this area has been completed. You can alternatively also [participate in translation](./ocean) yourself.

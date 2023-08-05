@@ -10,7 +10,7 @@
 		properties: {
 			webhookId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: 'Webhookのid。',
 			},
 			name: {

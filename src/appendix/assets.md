@@ -1,9 +1,9 @@
 ---
-description: 'collection of Misskey logos, icons, and other assets.'
+description: 'collection of Ocean logos, icons, and other assets.'
 ---
 
 # Assets collection
-This is a collection of Misskey logos, icons, and other assets.
+This is a collection of Ocean logos, icons, and other assets.
 
 
 ::: tip
@@ -13,17 +13,17 @@ These assets are free to use under the **CC BY-NC-SA** license!🎉
 :::
 
 ::: tip
-All assets are managed in [misskey-dev/assets](https://github.com/misskey-dev/assets).
+All assets are managed in [ocean-dev/assets](https://github.com/ocean-dev/assets).
 :::
 
 ## Logo
-<a class="asset" href="https://raw.githubusercontent.com/misskey-dev/assets/main/misskey.svg" target="_blank" download>
-<img src="https://raw.githubusercontent.com/misskey-dev/assets/main/misskey.svg">
+<a class="asset" href="https://raw.githubusercontent.com/ocean-dev/assets/main/ocean.svg" target="_blank" download>
+<img src="https://raw.githubusercontent.com/ocean-dev/assets/main/ocean.svg">
 </a>
 
 ## Icon
-<a class="asset" href="https://raw.githubusercontent.com/misskey-dev/assets/main/icon.png" target="_blank" download>
-<img src="https://raw.githubusercontent.com/misskey-dev/assets/main/icon.png">
+<a class="asset" href="https://raw.githubusercontent.com/ocean-dev/assets/main/icon.png" target="_blank" download>
+<img src="https://raw.githubusercontent.com/ocean-dev/assets/main/icon.png">
 </a>
 
 <style>

@@ -1,12 +1,12 @@
 # Drive
 
-Drive is a feature that allows you to manage your files on Misskey.
+Drive is a feature that allows you to manage your files on Ocean.
 
 ::: tip
-Technically speaking, the drive can be seen as an interface where all the files are centrally managed on Misskey's system, which is also open to users.
+Technically speaking, the drive can be seen as an interface where all the files are centrally managed on Ocean's system, which is also open to users.
 :::
 
-You can upload any file directly on the Drive page on Misskey Web, and any images you have set as your avatar or files you have attached to your notes will also be uploaded to the Drive.
+You can upload any file directly on the Drive page on Ocean Web, and any images you have set as your avatar or files you have attached to your notes will also be uploaded to the Drive.
 
 Files uploaded to the drive can be downloaded at any time, or files can be reused by using 'attach files from drive' when creating notes.
 

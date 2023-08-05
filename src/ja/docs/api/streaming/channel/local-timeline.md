@@ -11,7 +11,7 @@ description: "ローカルタイムラインのノートが流れるチャンネ
 ## イベント
 ### `note`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://Note'
+	$ref: 'ocean://Note'
 }"/>
 
 ローカルタイムラインに新しいノートが追加されたときに発生します。

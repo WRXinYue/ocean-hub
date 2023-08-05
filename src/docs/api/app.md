@@ -59,11 +59,11 @@ console.log(i)
 
 ## 5. 実際にテストする
 ```javascript
-fetch("https://misskey.io/api/notes/create", {
+fetch("https://ocean.io/api/notes/create", {
     method: 'POST',
     body: JSON.stringify({
         i: "/* ここにiを入力 */",
-        text: "Hello Misskey API World with My Application!"
+        text: "Hello Ocean API World with My Application!"
     }),
     headers: {
         'Content-Type': 'application/json',

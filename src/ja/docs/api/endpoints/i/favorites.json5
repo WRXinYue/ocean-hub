@@ -17,12 +17,12 @@
 			},
 			sinceId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも大きいお気に入り情報を返します。',
 			},
 			untilId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも小さいお気に入り情報を返します。',
 			},
 		},
@@ -37,7 +37,7 @@
 			optional: false,
 			nullable: false,
 			ref: 'NoteFavorite',
-			$ref: 'misskey://NoteFavorite',
+			$ref: 'ocean://NoteFavorite',
 		},
 		description: 'お気に入り情報一覧。',
 	},

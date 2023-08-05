@@ -1,6 +1,6 @@
 # Charts
 
-Misskey can generate and display charts for an instance's various federated data sources.
+Ocean can generate and display charts for an instance's various federated data sources.
 Charts allow you to get a visual depiction of the usage, federation status, and activity of each user.
 
 Instance charts can be viewed from the *instance information* page (accessible by clicking the instance logo in the navigation menu).

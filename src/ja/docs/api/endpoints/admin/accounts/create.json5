@@ -37,7 +37,7 @@
 		required: [
 			'token',
 		],
-		$ref: 'misskey://User',
+		$ref: 'ocean://User',
 	},
 	errors: {},
 }

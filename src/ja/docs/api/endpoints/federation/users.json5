@@ -14,12 +14,12 @@
 			},
 			sinceId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも大きいユーザーを返します。'
 			},
 			untilId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: '指定すると、idがその値よりも小さいユーザーを返します。'
 			},
 			limit: {
@@ -43,7 +43,7 @@
 			optional: false,
 			nullable: false,
 			ref: 'UserDetailedNotMe',
-			$ref: 'misskey://UserDetailedNotMe',
+			$ref: 'ocean://UserDetailedNotMe',
 		},
 	},
 	errors: {},

@@ -16,11 +16,11 @@
 			},
 			sinceId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 			untilId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 		},
 		required: [],
@@ -34,7 +34,7 @@
 			optional: false,
 			nullable: false,
 			ref: 'GalleryPost',
-			$ref: 'misskey://GalleryPost',
+			$ref: 'ocean://GalleryPost',
 		},
 	},
 	errors: {},

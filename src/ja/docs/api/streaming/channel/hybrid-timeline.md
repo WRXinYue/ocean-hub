@@ -11,7 +11,7 @@ description: "ソーシャルタイムラインのノートが流れるチャン
 ## イベント
 ### `note`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://Note'
+	$ref: 'ocean://Note'
 }"/>
 
 ソーシャルタイムラインに新しいノートが追加されたときに発生します。

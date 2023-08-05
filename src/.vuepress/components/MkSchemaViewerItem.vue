@@ -7,7 +7,7 @@
     <section class="type">
       <div class="title">型</div>
       <div class="body">
-        <div v-if="schema.$ref && schema.$ref.startsWith('misskey://')">
+        <div v-if="schema.$ref && schema.$ref.startsWith('ocean://')">
           <RouterLink :to="refPath">{{ refName }}</RouterLink
           ><el-tag v-if="schema.nullable" class="ml-2" type="info">nullable</el-tag>
         </div>
@@ -73,7 +73,7 @@ export default {
   setup(props) {
     const locale = useRouteLocale()
     const refName = props.schema.$ref
-      ? props.schema.$ref.replace('#/components/schemas/', '').replace('misskey://', '')
+      ? props.schema.$ref.replace('#/components/schemas/', '').replace('ocean://', '')
       : null
     const expandRef = ref(false)
     const schemas = inject('schemas', {})

@@ -1,19 +1,19 @@
 # Webhook
 
 ::: tip
-This feature is available as of Misskey version 12.109.0.
+This feature is available as of Ocean version 12.109.0.
 :::
 
 ::: warning
 This is an experimental feature and may be unstable or subject to change in the future.
 :::
 
-Misskey provides a webhook which allows you to receive various events from Misskey in real time.
+Ocean provides a webhook which allows you to receive various events from Ocean in real time.
 
 You can manage your webhooks by going to Settings > Webhook.
 
 Once a webhook is registered, an HTTP request is sent to the specified URL each time the specified event occurs. The request method will be POST and contain JSON in its body.
-In addition, the request header will contain the secret that was set during registration with the name `X-Misskey-Hook-Secret`. You can use this secret to verify that the request is legitimate.
+In addition, the request header will contain the secret that was set during registration with the name `X-Ocean-Hook-Secret`. You can use this secret to verify that the request is legitimate.
 
 The payload wil contain the following properties.
 
@@ -63,7 +63,7 @@ Occurs when you follow someone.
 	type: 'object',
 	properties: {
 		user: {
-			$ref: 'misskey://User',
+			$ref: 'ocean://User',
 			description: 'User that is followed',
 		},
 	}
@@ -77,7 +77,7 @@ Occurs when you are followed by someone.
 	type: 'object',
 	properties: {
 		user: {
-			$ref: 'misskey://User',
+			$ref: 'ocean://User',
 			description: 'User that is following you',
 		},
 	}
@@ -91,7 +91,7 @@ Occurs when you unfollow someone.
 	type: 'object',
 	properties: {
 		user: {
-			$ref: 'misskey://User',
+			$ref: 'ocean://User',
 			description: 'The user being unfollowed',
 		},
 	}
@@ -105,7 +105,7 @@ Occurs when you post a note.
 	type: 'object',
 	properties: {
 		note: {
-			$ref: 'misskey://Note',
+			$ref: 'ocean://Note',
 			description: 'The composed note',
 		},
 	}
@@ -119,7 +119,7 @@ Occurs when someone has replied to your note.
 	type: 'object',
 	properties: {
 		note: {
-			$ref: 'misskey://Note',
+			$ref: 'ocean://Note',
 			description: 'The reply',
 		},
 	}
@@ -133,7 +133,7 @@ Occurs when your note is renoted.
 	type: 'object',
 	properties: {
 		note: {
-			$ref: 'misskey://Note',
+			$ref: 'ocean://Note',
 			description: 'Renote',
 		},
 	}
@@ -147,7 +147,7 @@ Occurs when someone has mentioned you.
 	type: 'object',
 	properties: {
 		note: {
-			$ref: 'misskey://Note',
+			$ref: 'ocean://Note',
 			description: 'The note that contains the mention',
 		},
 	}

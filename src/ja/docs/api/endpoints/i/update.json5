@@ -266,13 +266,13 @@
 			},
 			avatarId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				nullable: true,
 				description: 'ユーザーのアバター画像に対応する、ドライブのファイルのid。',
 			},
 			bannerId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				nullable: true,
 				description: 'ユーザーのバナー画像に対応する、ドライブのファイルのid。',
 			},
@@ -303,7 +303,7 @@
 			},
 			isExplorable: {
 				type: 'boolean',
-				description: 'trueにすると、ユーザーが他のユーザーにレコメンドされるようになります。Misskey Webでは「みつける」ページに使用されています。',
+				description: 'trueにすると、ユーザーが他のユーザーにレコメンドされるようになります。Ocean Webでは「みつける」ページに使用されています。',
 			},
 			hideOnlineStatus: {
 				type: 'boolean',
@@ -364,7 +364,7 @@
 				type: 'array',
 				items: {
 					type: 'string',
-					format: 'misskey:id',
+					format: 'ocean:id',
 				},
 				description: 'ピン留めするページのid。',
 			},
@@ -414,7 +414,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'MeDetailed',
-		$ref: 'misskey://MeDetailed',
+		$ref: 'ocean://MeDetailed',
 	},
 	errors: {
 		'539f3a45-f215-4f81-a9a8-31293640207f': {

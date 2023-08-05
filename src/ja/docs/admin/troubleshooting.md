@@ -2,7 +2,7 @@
 
 <small>2018年10月07日 / 2021年12月20日 最終更新 / 文責 aqz/tamaina</small>
 
-MisskeyInstallBattle参加者が増えましたが、それに伴い時期を追うごとに重軽傷者が増加しています。\
+OceanInstallBattle参加者が増えましたが、それに伴い時期を追うごとに重軽傷者が増加しています。\
 この記事ではそのような負傷者を減らすため、過去に事故が起きてしまった個所の傾向と対策をわかりやすく解説します。
 
 **まず最初に、[構築の手引き](/docs/install/manual.html)を熟読してください。**
@@ -15,7 +15,7 @@ Ubuntu向け解説はコピペばかりでつまらない！時間がかかる�
 ……あれ、コピペだけでできるなら、つまり完全自動化できるのでは？
 
 というわけで、**シェルスクリプトでほぼ全部やってくれるやつを作ってみました！**  
-[**詳細と使用方法はこちらから！** https://github.com/joinmisskey/bash-install#readme](https://github.com/joinmisskey/bash-install#readme)
+[**詳細と使用方法はこちらから！** https://github.com/joinocean/bash-install#readme](https://github.com/joinocean/bash-install#readme)
 
 ドメインの購入とCloudflareのセットアップ、サーバーの確保についてはご自身でご準備ください。
 
@@ -28,7 +28,7 @@ Ubuntu向け解説はコピペばかりでつまらない！時間がかかる�
 ***ImageMagickは不要です！***
 
 ## ビルドが失敗する
-Misskeyのビルドには、経験則上、最低でも2GBのメモリが必要となっています。\
+Oceanのビルドには、経験則上、最低でも2GBのメモリが必要となっています。\
 サーバーをスケールアップする手もありますが、お使いのPCでビルドしてサーバーにデプロイするという手もあります。
 
 ## なんだかうまくいかない
@@ -43,7 +43,7 @@ Misskeyのビルドには、経験則上、最低でも2GBのメモリが必要�
 
 ## バージョンアップ後に不具合が発生した
 - [構築の手引き](/docs/install/manual.html)およびリリースノートをよく読みましょう。
-- Misskeyのバージョンアップ時にはしっかり`pnpm install`や`pnpm run migrate`してください。それでも直らない場合、`pnpm run clean-all && pnpm install`を試し、`pnpm run build && pnpm run migrate && pnpm start`してみてください。
+- Oceanのバージョンアップ時にはしっかり`pnpm install`や`pnpm run migrate`してください。それでも直らない場合、`pnpm run clean-all && pnpm install`を試し、`pnpm run build && pnpm run migrate && pnpm start`してみてください。
 - これでもだめそうだったら、最初から[構築の手引き](/docs/install/manual.html)の手順に従ってやり直してみてください。
 
 ---
@@ -52,7 +52,7 @@ Misskeyのビルドには、経験則上、最低でも2GBのメモリが必要�
 [構築の手引き](/docs/install/manual.html)をよく読みましょう。
 
 `.config/default.yml`で設定を行います。
-[`.config/example.yml`](https://github.com/misskey-dev/misskey/blob/develop/.config/example.yml)をコピーし、コメントに従って記述します。
+[`.config/example.yml`](https://github.com/ocean-dev/ocean/blob/develop/.config/example.yml)をコピーし、コメントに従って記述します。
 
 （YAML形式では、`#`から行末まではコメントとして扱われます。）
 
@@ -60,7 +60,7 @@ Misskeyのビルドには、経験則上、最低でも2GBのメモリが必要�
 URLとポート番号のしくみは、少し分かりにくいと思います。
 
 ### URL, ポートとTLS証明書の設定（Port and TLS settings）part A: example.ymlの解説
-リビジョン番号[85a0f69](https://github.com/misskey-dev/misskey/blob/85a0f696bcea779b02749dae596fff94a1df2467/.config/example.yml)時点での[.config/example.yml](https://github.com/misskey-dev/misskey/blob/develop/.config/example.yml)に、「Port and TLS settings」として説明図付きで順に書かれていますので、それに沿って設定をしていきましょう。
+リビジョン番号[85a0f69](https://github.com/ocean-dev/ocean/blob/85a0f696bcea779b02749dae596fff94a1df2467/.config/example.yml)時点での[.config/example.yml](https://github.com/ocean-dev/ocean/blob/develop/.config/example.yml)に、「Port and TLS settings」として説明図付きで順に書かれていますので、それに沿って設定をしていきましょう。
 本文の解説を日本語訳しながらやっていきます。
 
 #### URLの設定
@@ -79,8 +79,8 @@ url: https://example.tld/
 #───┘ Port and TLS settings └───────────────────────────────────
 #### ポートと証明書の設定      ####################################
 #
-# Misskey supports two deployment options for public.
-# Misskeyは2つのサーバー開設方法をサポートしています。
+# Ocean supports two deployment options for public.
+# Oceanは2つのサーバー開設方法をサポートしています。
 #
 
 # Option 1: With Reverse Proxy
@@ -88,7 +88,7 @@ url: https://example.tld/
 #
 #                 +----- https://example.tld/ ------------+
 #   +------+      |+-------------+      +----------------+|
-#   | User | ---> || Proxy (443) | ---> | Misskey (3000) ||
+#   | User | ---> || Proxy (443) | ---> | Ocean (3000) ||
 #   +------+      |+-------------+      +----------------+|
 #                 +---------------------------------------+
 #
@@ -103,12 +103,12 @@ url: https://example.tld/
 #
 #                 +- https://example.tld/ -+
 #   +------+      |   +---------------+    |
-#   | User | ---> |   | Misskey (443) |    |
+#   | User | ---> |   | Ocean (443) |    |
 #   +------+      |   +---------------+    |
 #                 +------------------------+
 #
-#   You need to run Misskey as root.
-#   この方法では、Misskeyをルート(の権限をもたせた状態)で実行する必要があります。
+#   You need to run Ocean as root.
+#   この方法では、Oceanをルート(の権限をもたせた状態)で実行する必要があります。
 #   You need to set Certificate in 'https' section.
 #   'https'セクション(後述)で証明書の設定を行う必要があります。
 ```
@@ -118,11 +118,11 @@ url: https://example.tld/
 ```yml
 # To use option 1, uncomment below line.
 # オプション1で設定する場合、以下の行をコメントアウトします　→ しました
-port: 3000    # A port that your Misskey server should listen.
+port: 3000    # A port that your Ocean server should listen.
 ```
 
 以上の3行は、リバースプロキシを挟むときの話です。
-この例では、Misskeyはポート3000で通信します。
+この例では、Oceanはポート3000で通信します。
 リバースプロキシでは、ローカル側の宛先にこのポート番号を指定します。
 
 ##### 方法2 リバースプロキシを挟まないとき
@@ -139,7 +139,7 @@ https:
 ```
 
 以上の8行は、リバースプロキシを挟まないときの話です。
-ポート443(https)で直接ユーザーと通信します（ポート443を利用するのでMisskeyのプロセスにはルート権限が必要です）。
+ポート443(https)で直接ユーザーと通信します（ポート443を利用するのでOceanのプロセスにはルート権限が必要です）。
 
 TLS証明書を別途取得し、取得した証明書のディレクトリを`https:`で設定します。
 ここ書かれているのは、Let's Encryptで`example.tld`に対する証明書を発行したときの例です。
@@ -184,7 +184,7 @@ https:
 redis-serverは起動していますか？
 何らかの接続数の上限に達していませんか？
 
-11.20.2より前のバージョンのMisskeyはredisのパスワードを解くことができません。以下の2点を確認してください。
+11.20.2より前のバージョンのOceanはredisのパスワードを解くことができません。以下の2点を確認してください。
 
 - redisにパスワードを設定しない。
 - `default.yml`の`redis:`の`pass:`の行をコメントアウトする。
@@ -220,7 +220,7 @@ S3 example (with CDN, custom domain)は、AWSのデフォルトのドメイン�
 endpointと公開ドメインが同じサービスの場合はS3 exampleのように`baseUrl`は明記しなくてよく、さらにregionの概念がないサービスの場合はregionの行は必要ありません。
 
 ### S3互換サービスでの設定
-Misskeyではオブジェクトストレージの接続に[aws-sdk](https://www.npmjs.com/package/aws-sdk)を利用しています。
+Oceanではオブジェクトストレージの接続に[aws-sdk](https://www.npmjs.com/package/aws-sdk)を利用しています。
 Amazon S3に互換性のあるオブジェクトストレージであれば利用できる可能性があります。
 
 各サービス/ソフトウェアのドキュメントをよく読み、設定してみてください。
@@ -230,10 +230,10 @@ Amazon S3に互換性のあるオブジェクトストレージであれば利�
 # まったく解決しなかった場合
 以下の順序を試してみてください。
 
-1. Misskeyのドキュメントをよく読む。
+1. Oceanのドキュメントをよく読む。
 2. Googleで検索してみる。
-3. [MisskeyリポジトリのIssues](https://github.com/misskey-dev/misskey/issues)を検索してみる（同じエラーに遭遇している場合や、Misskeyのバグの可能性もあります）。
-4. [Misskey Forum](https://forum.misskey.io/)を検索してみる。
+3. [OceanリポジトリのIssues](https://github.com/ocean-dev/ocean/issues)を検索してみる（同じエラーに遭遇している場合や、Oceanのバグの可能性もあります）。
+4. [Ocean Forum](https://forum.ocean.io/)を検索してみる。
 5. 検索してどうしても見つからなかったら、専門家に質問してみてください。
-   1. Forumや[MisskeyのDiscordサーバー](https://discord.gg/P4yYqYBjEp)もしくは[「鯖缶工場」](https://discord.gg/mJJGAHv)で聞いてみる
+   1. Forumや[OceanのDiscordサーバー](https://discord.gg/P4yYqYBjEp)もしくは[「鯖缶工場」](https://discord.gg/mJJGAHv)で聞いてみる
    2. 開発者（[aqz](https://p1.a9z.dev/@aqz)やしゅいろ）にリプライやダイレクト投稿を送信して聞いてみる

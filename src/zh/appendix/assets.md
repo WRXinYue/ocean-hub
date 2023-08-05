@@ -1,9 +1,9 @@
 ---
-description: 'collection of Misskey logos, icons, and other assets.'
+description: 'collection of Ocean logos, icons, and other assets.'
 ---
 
 # 资产集
-这部分包含了 Misskey 的标志，图标以及其他资产。
+这部分包含了 Ocean 的标志，图标以及其他资产。
 
 
 ::: tip
@@ -13,17 +13,17 @@ description: 'collection of Misskey logos, icons, and other assets.'
 :::
 
 ::: tip
-所有资产都在 [misskey-dev/assets](https://github.com/misskey-dev/assets) 中管理。
+所有资产都在 [ocean-dev/assets](https://github.com/ocean-dev/assets) 中管理。
 :::
 
 ## 标志 Logo
-<a class="asset" href="https://raw.githubusercontent.com/misskey-dev/assets/main/misskey.svg" target="_blank" download>
-<img src="https://raw.githubusercontent.com/misskey-dev/assets/main/misskey.svg">
+<a class="asset" href="https://raw.githubusercontent.com/ocean-dev/assets/main/ocean.svg" target="_blank" download>
+<img src="https://raw.githubusercontent.com/ocean-dev/assets/main/ocean.svg">
 </a>
 
 ## 图标 Icon
-<a class="asset" href="https://raw.githubusercontent.com/misskey-dev/assets/main/icon.png" target="_blank" download>
-<img src="https://raw.githubusercontent.com/misskey-dev/assets/main/icon.png">
+<a class="asset" href="https://raw.githubusercontent.com/ocean-dev/assets/main/icon.png" target="_blank" download>
+<img src="https://raw.githubusercontent.com/ocean-dev/assets/main/icon.png">
 </a>
 
 <style>

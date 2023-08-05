@@ -1,15 +1,15 @@
 ---
-description: 'MFM is a dedicated markup language that can be used in various places on Misskey.'
+description: 'MFM is a dedicated markup language that can be used in various places on Ocean.'
 ---
 
 # MFM
-MFM, which stands for Misskey Flavoured Markdown, is a dedicated markup language that can be used in various places on Misskey.
+MFM, which stands for Ocean Flavoured Markdown, is a dedicated markup language that can be used in various places on Ocean.
 
 ::: tip
 Some of the syntax is compatible with Markdown.
 :::
 
-## examples of where misskey is allowed
+## examples of where ocean is allowed
 - note body
 - content warnings
 - user name
@@ -35,7 +35,7 @@ For more information about hashtags, see [here](./hashtag).
 :::
 
 ```:no-line-numbers
-#misskey
+#ocean
 ```
 
 ### Custom Emoji
@@ -45,7 +45,7 @@ For more information about custom emoji, see [here](./custom-emoji).
 :::
 
 ```:no-line-numbers
-:misskey:
+:ocean:
 ```
 
 ### Links
@@ -63,10 +63,10 @@ For more information about custom emoji, see [here](./custom-emoji).
 ---
 
 ::: tip
-More available syntax can be found in the **MFM cheat sheet** provided by the Misskey web UI under `/mfm-cheat-sheet` on your instance.
+More available syntax can be found in the **MFM cheat sheet** provided by the Ocean web UI under `/mfm-cheat-sheet` on your instance.
 :::
 
 ## Information for Developers
 
 The parser implementation of MFM is available as a library, making it easier to embed MFM in your clients.
-- [misskey-dev/mfm.js](https://github.com/misskey-dev/mfm.js) - parser implementation in JavaScript
+- [ocean-dev/mfm.js](https://github.com/ocean-dev/mfm.js) - parser implementation in JavaScript

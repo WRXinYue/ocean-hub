@@ -10,7 +10,7 @@
 		properties: {
 			pageId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: 'ページのid。',
 			},
 		},

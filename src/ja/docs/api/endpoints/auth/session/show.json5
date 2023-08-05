@@ -34,7 +34,7 @@
 				optional: false,
 				nullable: false,
 				ref: 'App',
-				$ref: 'misskey://App',
+				$ref: 'ocean://App',
 				description: 'セッションを保持するアプリ。',
 			},
 			token: {

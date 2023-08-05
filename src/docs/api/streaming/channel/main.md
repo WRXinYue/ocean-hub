@@ -11,56 +11,56 @@ none
 ## Events
 ### `notification`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://Notification'
+	$ref: 'ocean://Notification'
 }"/>
 
 Occurs when you receive a notification.
 
 ### `mention`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://Note'
+	$ref: 'ocean://Note'
 }"/>
 
 Occurs when a message is sent.
 
 ### `reply`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://Note'
+	$ref: 'ocean://Note'
 }"/>
 
 Occurs when a reply is received.
 
 ### `renote`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://Note'
+	$ref: 'ocean://Note'
 }"/>
 
 Occurs when one of your notes is renoted.
 
 ### `follow`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://User'
+	$ref: 'ocean://User'
 }"/>
 
 Occurs when you follow another user.
 
 ### `followed`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://User'
+	$ref: 'ocean://User'
 }"/>
 
 Occurs when another user follows you.
 
 ### `unfollow`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://User'
+	$ref: 'ocean://User'
 }"/>
 
 Occurs when you unfollow another user.
 
 ### `messagingMessage`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://MessagingMessage'
+	$ref: 'ocean://MessagingMessage'
 }"/>
 
 Occurs when a chat message is received.

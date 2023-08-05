@@ -1,9 +1,9 @@
 ---
-description: 'MFMは、Misskeyの様々な場所で使用できる専用のマークアップ言語です。'
+description: 'MFMは、Oceanの様々な場所で使用できる専用のマークアップ言語です。'
 ---
 
 # MFM
-MFMは、Markup language For Misskeyの略で、Misskeyの様々な場所で使用できる専用のマークアップ言語です。
+MFMは、Markup language For Oceanの略で、Oceanの様々な場所で使用できる専用のマークアップ言語です。
 
 ::: tip
 一部の構文はMarkdownやHTMLと互換性があります。
@@ -36,7 +36,7 @@ MFMは、Markup language For Misskeyの略で、Misskeyの様々な場所で使�
 :::
 
 ```:no-line-numbers
-#misskey
+#ocean
 ```
 
 ### URL
@@ -58,7 +58,7 @@ https://example.com
 :::
 
 ```:no-line-numbers
-:misskey:
+:ocean:
 ```
 
 ### 太字
@@ -70,19 +70,19 @@ https://example.com
 ### 目立たなくする
 内容を小さく・薄く表示させることができます。
 ```:no-line-numbers
-<small>MisskeyでFediverseの世界が広がります</small>
+<small>OceanでFediverseの世界が広がります</small>
 ```
 
 ### 引用
 内容が引用であることを示すことができます。
 ```:no-line-numbers
-> MisskeyでFediverseの世界が広がります
+> OceanでFediverseの世界が広がります
 ```
 
 ### 中央寄せ
 内容を中央寄せで表示させることができます。
 ```:no-line-numbers
-<center>MisskeyでFediverseの世界が広がります</center>
+<center>OceanでFediverseの世界が広がります</center>
 ```
 
 ### コード(インライン)
@@ -105,24 +105,24 @@ https://example.com
 ### 反転
 内容を上下または左右に反転させます。
 ```:no-line-numbers
-$[flip MisskeyでFediverseの世界が広がります]
-$[flip.v MisskeyでFediverseの世界が広がります]
-$[flip.h,v MisskeyでFediverseの世界が広がります]
+$[flip OceanでFediverseの世界が広がります]
+$[flip.v OceanでFediverseの世界が広がります]
+$[flip.h,v OceanでFediverseの世界が広がります]
 ```
 
 ### フォント
 内容のフォントを指定することができます。
 ```:no-line-numbers
-$[font.serif MisskeyでFediverseの世界が広がります]
-$[font.monospace MisskeyでFediverseの世界が広がります]
-$[font.cursive MisskeyでFediverseの世界が広がります]
-$[font.fantasy MisskeyでFediverseの世界が広がります]
+$[font.serif OceanでFediverseの世界が広がります]
+$[font.monospace OceanでFediverseの世界が広がります]
+$[font.cursive OceanでFediverseの世界が広がります]
+$[font.fantasy OceanでFediverseの世界が広がります]
 ```
 
 ### ぼかし
 内容をぼかすことができます。ポインターを上に乗せるとはっきり見えるようになります。
 ```:no-line-numbers
-$[blur MisskeyでFediverseの世界が広がります]
+$[blur OceanでFediverseの世界が広がります]
 ```
 
 ### プレーン
@@ -133,4 +133,4 @@ $[blur MisskeyでFediverseの世界が広がります]
 
 ## 開発者向け情報
 MFMのパーサー実装はライブラリとして公開されており、簡単にクライアントにMFMを組み込むことが可能です。
-- [misskey-dev/mfm.js](https://github.com/misskey-dev/mfm.js) - JavaScriptパーサー実装
+- [ocean-dev/mfm.js](https://github.com/ocean-dev/mfm.js) - JavaScriptパーサー実装

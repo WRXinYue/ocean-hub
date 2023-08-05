@@ -10,7 +10,7 @@
 		properties: {
 			userId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 			limit: {
 				type: 'integer',
@@ -20,11 +20,11 @@
 			},
 			sinceId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 			untilId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 		},
 		required: [
@@ -40,7 +40,7 @@
 			optional: false,
 			nullable: false,
 			ref: 'Clip',
-			$ref: 'misskey://Clip',
+			$ref: 'ocean://Clip',
 		},
 	},
 	errors: {},

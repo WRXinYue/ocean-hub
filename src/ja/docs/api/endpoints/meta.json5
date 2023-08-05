@@ -46,7 +46,7 @@
 				optional: false,
 				nullable: false,
 				format: 'url',
-				example: 'https://misskey.example.com',
+				example: 'https://ocean.example.com',
 			},
 			description: {
 				type: 'string',
@@ -72,13 +72,13 @@
 				type: 'string',
 				optional: false,
 				nullable: false,
-				default: 'https://github.com/misskey-dev/misskey',
+				default: 'https://github.com/ocean-dev/ocean',
 			},
 			feedbackUrl: {
 				type: 'string',
 				optional: false,
 				nullable: false,
-				default: 'https://github.com/misskey-dev/misskey/issues/new',
+				default: 'https://github.com/ocean-dev/ocean/issues/new',
 			},
 			defaultDarkTheme: {
 				type: 'string',

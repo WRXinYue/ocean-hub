@@ -1,12 +1,12 @@
 # Nginxの設定
-1. `/etc/nginx/conf.d/misskey.conf`もしくは`/etc/nginx/sites-available/misskey.conf`を作成し、下の設定例をコピーします。\
-   （ファイル名はmisskeyでなくても構いません。）
+1. `/etc/nginx/conf.d/ocean.conf`もしくは`/etc/nginx/sites-available/ocean.conf`を作成し、下の設定例をコピーします。\
+   （ファイル名はoceanでなくても構いません。）
 2. 次のように編集します。
    1. example.tldを自分が用意したドメインに置き換えます。\
      `ssl_certificate`と`ssl_certificate_key`はLet's Encryptで取得した証明書のパスになるようにします。
 	 2. CloudflareなどのCDNを使う場合は、「If it's behind another reverse proxy or CDN, remove the following.」から4行を削除します。
-3. `/etc/nginx/sites-available/misskey.conf`を作成した場合は、`/etc/nginx/sites-enabled/misskey.conf`としてシンボリックリンクを作成します。\
-   `sudo ln -s /etc/nginx/sites-available/misskey.conf /etc/nginx/sites-enabled/misskey.conf`
+3. `/etc/nginx/sites-available/ocean.conf`を作成した場合は、`/etc/nginx/sites-enabled/ocean.conf`としてシンボリックリンクを作成します。\
+   `sudo ln -s /etc/nginx/sites-available/ocean.conf /etc/nginx/sites-enabled/ocean.conf`
 4. `sudo nginx -t` で設定ファイルが正常に読み込まれるか確認します。
 5. `sudo systemctl restart nginx` でnginxを再起動します。
 

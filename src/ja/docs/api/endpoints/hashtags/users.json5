@@ -64,7 +64,7 @@
 			optional: false,
 			nullable: false,
 			ref: 'UserDetailed',
-			$ref: 'misskey://UserDetailed',
+			$ref: 'ocean://UserDetailed',
 		},
 	},
 	errors: {},

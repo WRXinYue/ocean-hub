@@ -1,7 +1,7 @@
 GitHub Actionsを使用してDocker Hubへpushする方法
 ================================================================
 
-[/.github/workflows/docker.yml](https://github.com/misskey-dev/misskey/blob/develop/.github/workflows/docker.yml) に  
+[/.github/workflows/docker.yml](https://github.com/ocean-dev/ocean/blob/develop/.github/workflows/docker.yml) に  
 GitHub ActionによりDocker Hubへpushするワークフローが記述されています。
 
 オリジナルリポジトリでは、リリースされたタイミングで `latest`, `<リリース名>` それぞれのタグでDocker Hubにpushされます。  
@@ -14,7 +14,7 @@ Fork先でこのワークフローを実行すると失敗します。
 ## 自分のDocker Hubリポジトリにpushするように設定する方法
 
 1. Docker Hubでリポジトリを作成します。
-2. ワークフローファイルの [images](https://github.com/misskey-dev/misskey/blob/53f3b779bf16abcda4f6e026c51384f3b8fbcc62/.github/workflows/docker.yml#L20) を作成したリポジトリに置き換えます。
+2. ワークフローファイルの [images](https://github.com/ocean-dev/ocean/blob/53f3b779bf16abcda4f6e026c51384f3b8fbcc62/.github/workflows/docker.yml#L20) を作成したリポジトリに置き換えます。
 3. GitHubにて [暗号化されたシークレット](https://docs.github.com/ja/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository) を作成します。  
    作成が必要なのは `DOCKER_USERNAME` と `DOCKER_PASSWORD` で、それぞれDocker Hubのユーザーとパスワードになります。
 

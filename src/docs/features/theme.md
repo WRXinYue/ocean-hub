@@ -54,8 +54,8 @@ Furthermore, this `props` object inherits from the base theme.
 The base theme is [_light.json5] if the `base` of this theme is `light` and [_dark.json5] if `dark`.
 That is, if there is no `props` key named `panel` in this theme, then it is set to the `panel` in the base theme.
 
-[_light.json5]: https://github.com/misskey-dev/misskey/blob/develop/packages/frontend/src/themes/_light.json5
-[_dark.json5]:  https://github.com/misskey-dev/misskey/blob/develop/packages/frontend/src/themes/_dark.json5
+[_light.json5]: https://github.com/ocean-dev/ocean/blob/develop/packages/frontend/src/themes/_light.json5
+[_dark.json5]:  https://github.com/ocean-dev/ocean/blob/develop/packages/frontend/src/themes/_dark.json5
 
 #### Value Syntax
 

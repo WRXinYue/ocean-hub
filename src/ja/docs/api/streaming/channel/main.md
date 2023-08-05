@@ -11,56 +11,56 @@ description: "基本的な情報が流れるチャンネルです。"
 ## イベント
 ### `notification`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://Notification'
+	$ref: 'ocean://Notification'
 }"/>
 
 通知を受け取ったときに発生します。
 
 ### `mention`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://Note'
+	$ref: 'ocean://Note'
 }"/>
 
 メンションされたときに発生します。
 
 ### `reply`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://Note'
+	$ref: 'ocean://Note'
 }"/>
 
 返信されたときに発生します。
 
 ### `renote`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://Note'
+	$ref: 'ocean://Note'
 }"/>
 
 Renoteされたときに発生します。
 
 ### `follow`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://User'
+	$ref: 'ocean://User'
 }"/>
 
 自分が他のユーザーをフォローしたときに発生します。
 
 ### `followed`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://User'
+	$ref: 'ocean://User'
 }"/>
 
 他のユーザーが自分をフォローしたときに発生します。
 
 ### `unfollow`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://User'
+	$ref: 'ocean://User'
 }"/>
 
 自分が他のユーザーをフォロー解除したときに発生します。
 
 ### `messagingMessage`
 <MkSchemaViewer :schema="{
-	$ref: 'misskey://MessagingMessage'
+	$ref: 'ocean://MessagingMessage'
 }"/>
 
 メッセージを受け取ったときに発生します。

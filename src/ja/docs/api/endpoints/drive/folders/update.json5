@@ -10,7 +10,7 @@
 		properties: {
 			folderId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				description: 'フォルダーのid。',
 			},
 			name: {
@@ -20,7 +20,7 @@
 			},
 			parentId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				nullable: true,
 				description: '移動先の親フォルダーのid。',
 			},
@@ -34,7 +34,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'DriveFolder',
-		$ref: 'misskey://DriveFolder',
+		$ref: 'ocean://DriveFolder',
 	},
 	errors: {
 		'f7974dac-2c0d-4a27-926e-23583b28e98e': {

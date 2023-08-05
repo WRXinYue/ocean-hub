@@ -14,7 +14,7 @@
 			},
 			folderId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 				nullable: true,
 				default: null,
 				description: '格納先の親フォルダーのid。',

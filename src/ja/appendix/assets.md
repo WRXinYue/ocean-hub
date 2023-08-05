@@ -1,9 +1,9 @@
 ---
-description: 'Misskeyのロゴ、アイコンなどのアセットのコレクションです。'
+description: 'Oceanのロゴ、アイコンなどのアセットのコレクションです。'
 ---
 
 # アセット集
-Misskeyのロゴ、アイコンなどのアセットのコレクションです。
+Oceanのロゴ、アイコンなどのアセットのコレクションです。
 
 ::: tip
 アセットは、**CC BY-NC-SA**のライセンスの下で自由にお使いいただけます🎉
@@ -12,17 +12,17 @@ Misskeyのロゴ、アイコンなどのアセットのコレクションです�
 :::
 
 ::: tip
-全てのアセットは、[misskey-dev/assets](https://github.com/misskey-dev/assets)で管理されています。
+全てのアセットは、[ocean-dev/assets](https://github.com/ocean-dev/assets)で管理されています。
 :::
 
 ## ロゴ
-<a class="asset" href="https://raw.githubusercontent.com/misskey-dev/assets/main/misskey.svg" target="_blank" download>
-<img src="https://raw.githubusercontent.com/misskey-dev/assets/main/misskey.svg">
+<a class="asset" href="https://raw.githubusercontent.com/ocean-dev/assets/main/ocean.svg" target="_blank" download>
+<img src="https://raw.githubusercontent.com/ocean-dev/assets/main/ocean.svg">
 </a>
 
 ## アイコン
-<a class="asset" href="https://raw.githubusercontent.com/misskey-dev/assets/main/icon.png" target="_blank" download>
-<img src="https://raw.githubusercontent.com/misskey-dev/assets/main/icon.png">
+<a class="asset" href="https://raw.githubusercontent.com/ocean-dev/assets/main/icon.png" target="_blank" download>
+<img src="https://raw.githubusercontent.com/ocean-dev/assets/main/icon.png">
 </a>
 
 <style>

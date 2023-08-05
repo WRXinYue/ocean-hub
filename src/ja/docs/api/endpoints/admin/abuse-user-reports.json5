@@ -16,11 +16,11 @@
 			},
 			sinceId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 			untilId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 			state: {
 				type: 'string',
@@ -108,21 +108,21 @@
 					nullable: false,
 					optional: false,
 					ref: 'User',
-					$ref: 'misskey://User',
+					$ref: 'ocean://User',
 				},
 				targetUser: {
 					type: 'object',
 					nullable: false,
 					optional: false,
 					ref: 'User',
-					$ref: 'misskey://User',
+					$ref: 'ocean://User',
 				},
 				assignee: {
 					type: 'object',
 					nullable: true,
 					optional: true,
 					ref: 'User',
-					$ref: 'misskey://User',
+					$ref: 'ocean://User',
 				},
 			},
 			required: [

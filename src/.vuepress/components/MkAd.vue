@@ -11,8 +11,8 @@ export default {
   setup() {
     const ads = [
       {
-        link: 'https://github.com/misskey-dev',
-        img: 'https://raw.githubusercontent.com/misskey-dev/assets/main/i-want-you.png',
+        link: 'https://github.com/ocean-dev',
+        img: 'https://raw.githubusercontent.com/ocean-dev/assets/main/i-want-you.png',
       },
       {
         link: 'https://github.com/syuilo/ai',

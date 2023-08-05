@@ -1,13 +1,13 @@
 ---
-description: 'Misskey exposes an API that you can use to develop Misskey clients, Misskey-connected web services, bots, etc. ("Applications").'
+description: 'Ocean exposes an API that you can use to develop Ocean clients, Ocean-connected web services, bots, etc. ("Applications").'
 ---
 
-# Misskey API
-Misskey exposes an API that you can use to develop Misskey clients, Misskey-connected web services, bots, etc. ("Applications").
+# Ocean API
+Ocean exposes an API that you can use to develop Ocean clients, Ocean-connected web services, bots, etc. ("Applications").
 We also have a streaming API, so you can create applications with real-time capabilities.
 
 ::: tip
-By using the official Misskey SDK or third party libraries, you can use the API more conveniently, for example by simplifying some of the steps described in this document.
+By using the official Ocean SDK or third party libraries, you can use the API more conveniently, for example by simplifying some of the steps described in this document.
 See [here](TODO) for more information about libraries.
 :::
 
@@ -25,7 +25,7 @@ There is a one-to-many relationship between a user and the access token associat
 You can easily [obtain an access token for yourself](#Manually-issue-an-access-token), or you can [obtain an access token for an user who will be using your application](#Request-an-access-token-to-be-issued).
 
 ### Manually issue an access token
-You can issue your own access token in Misskey Web under 'Settings > API'.
+You can issue your own access token in Ocean Web under 'Settings > API'.
 
 ::: danger
 Please do not share your access token with anyone.
@@ -69,7 +69,7 @@ You can also set a few options as query parameters to the URL:
 
 ::: tip Example
 ```:no-line-numbers
-https://misskey.io/miauth/c1f6d42b-468b-4fd2-8274-e58abdedef6f?name=MyApp&callback=https%3A%2F%2Fmyapp.example.com%2Fcallback&permisson=write:notes,write:following,read:drive
+https://ocean.io/miauth/c1f6d42b-468b-4fd2-8274-e58abdedef6f?name=MyApp&callback=https%3A%2F%2Fmyapp.example.com%2Fcallback&permisson=write:notes,write:following,read:drive
 ```
 :::
 
@@ -116,11 +116,11 @@ The access token is included in the request body JSON at the parameter `i`.
 For more information on the API, see the [API Reference](./endpoints.html).
 
 ::: warning
-Misskey does not use REST.
+Ocean does not use REST.
 :::
 
-In addition to the HTTP API, Misskey also provides a streaming API. More information about the streaming API can be found [here](./streaming/).
+In addition to the HTTP API, Ocean also provides a streaming API. More information about the streaming API can be found [here](./streaming/).
 
 ::: tip
-Your Misskey instance also provides API documentation at `/api-doc`.
+Your Ocean instance also provides API documentation at `/api-doc`.
 :::

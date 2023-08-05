@@ -16,11 +16,11 @@
 			},
 			sinceId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 			untilId: {
 				type: 'string',
-				format: 'misskey:id',
+				format: 'ocean:id',
 			},
 			markAsRead: {
 				type: 'boolean',
@@ -32,7 +32,7 @@
 				properties: {
 					userId: {
 						type: 'string',
-						format: 'misskey:id',
+						format: 'ocean:id',
 					},
 				},
 				required: [
@@ -43,7 +43,7 @@
 				properties: {
 					groupId: {
 						type: 'string',
-						format: 'misskey:id',
+						format: 'ocean:id',
 					},
 				},
 				required: [
@@ -61,7 +61,7 @@
 			optional: false,
 			nullable: false,
 			ref: 'MessagingMessage',
-			$ref: 'misskey://MessagingMessage',
+			$ref: 'ocean://MessagingMessage',
 		},
 	},
 	errors: {

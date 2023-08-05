@@ -12,7 +12,7 @@
 				properties: {
 					pageId: {
 						type: 'string',
-						format: 'misskey:id',
+						format: 'ocean:id',
 						description: 'ページのid。',
 					},
 				},
@@ -43,7 +43,7 @@
 		optional: false,
 		nullable: false,
 		ref: 'Page',
-		$ref: 'misskey://Page',
+		$ref: 'ocean://Page',
 	},
 	errors: {
 		'222120c0-3ead-4528-811b-b96f233388d7': {

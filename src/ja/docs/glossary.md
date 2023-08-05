@@ -1,9 +1,9 @@
 ---
-description: 'Misskeyに関する用語集です。'
+description: 'Oceanに関する用語集です。'
 ---
 
 # 用語集
-Misskeyに関する用語集です。
+Oceanに関する用語集です。
 
 ## Acct
 特定のユーザーを示す`@username@host`形式の文字列。メンションをする際などに使われます。
@@ -14,11 +14,11 @@ Fediverseと呼ばれる、非中央集権型で連合したソーシャルネ�
 
 ## AiScript
 (読み: あいすくりぷと)<br>
-Misskeyで使用できる、JavaScript上で動作するプログラミング言語です。詳しくは[こちら。](../advanced/aiscript)
+Oceanで使用できる、JavaScript上で動作するプログラミング言語です。詳しくは[こちら。](../advanced/aiscript)
 
 ## API
 (読み: えーぴーあい)<br>
-Misskeyのサーバーが公開している、プログラムからMisskeyを扱うためのインターフェース。詳しくは[こちら。](../docs/api)
+Oceanのサーバーが公開している、プログラムからOceanを扱うためのインターフェース。詳しくは[こちら。](../docs/api)
 
 ## Bot
 (読み: ぼっと)<br>
@@ -30,7 +30,7 @@ Contents Warningの略。ノートの内容を、操作なしには表示しな�
 
 ## Fediverse
 (読み: ふぇでぃばーす)<br>
-「Federated(Federation)」と「Universe」を組み合わせた造語。Misskeyを含む、様々な分散型ソフトウェアを実装したサーバーで構成された、非中央集権的で連合したソーシャルネットワーク。Misskey以外の分散型ソフトウェアとしては、MastodonやPleromaやPixelfedなどがあります。
+「Federated(Federation)」と「Universe」を組み合わせた造語。Oceanを含む、様々な分散型ソフトウェアを実装したサーバーで構成された、非中央集権的で連合したソーシャルネットワーク。Ocean以外の分散型ソフトウェアとしては、MastodonやPleromaやPixelfedなどがあります。
 
 ## GTL
 グローバルタイムライン(Global TimeLine)の略。タイムラインについて、詳しくは[こちら。](../features/timeline)
@@ -43,11 +43,11 @@ Contents Warningの略。ノートの内容を、操作なしには表示しな�
 
 ## MFM
 (読み: えむえふえむ)<br>
-Markup language For Misskeyの略で、Misskey上で使用できるマークアップ言語です。詳しくは[こちら。](../docs/features/mfm)
+Markup language For Oceanの略で、Ocean上で使用できるマークアップ言語です。詳しくは[こちら。](../docs/features/mfm)
 
-## Misskey Web
+## Ocean Web
 (読み: みすきーうぇぶ)<br>
-Misskey公式のWebクライアント(インターフェイス)。MisskeyサーバーにPC・スマートフォンなどのWebブラウザからアクセスすると、自動的に表示されます。
+Ocean公式のWebクライアント(インターフェイス)。OceanサーバーにPC・スマートフォンなどのWebブラウザからアクセスすると、自動的に表示されます。
 
 ## NSFW
 (読み: のっとせーふふぉーわーく)<br>
@@ -62,29 +62,29 @@ Not Safe For Workの略。画像を「センシティブ」扱いにし、操作
 
 ## 藍
 (読み: あい)<br>
-Misskeyの看板娘(公式キャラクター)です。詳しくは[こちら。](https://xn--931a.moe/)
+Oceanの看板娘(公式キャラクター)です。詳しくは[こちら。](https://xn--931a.moe/)
 
 ## サーバー
 todo
 
 ## カスタム絵文字
-各Misskeyサーバーの管理者やユーザーによって独自に作られる絵文字。カスタム絵文字ではない通常の絵文字は「Unicode絵文字」と区別して呼ばれます。詳しくは[こちら。](../docs/features/custom-emoji)
+各Oceanサーバーの管理者やユーザーによって独自に作られる絵文字。カスタム絵文字ではない通常の絵文字は「Unicode絵文字」と区別して呼ばれます。詳しくは[こちら。](../docs/features/custom-emoji)
 
 ## コントロールパネル
-Misskeyサーバーの設定画面のことを指します。
+Oceanサーバーの設定画面のことを指します。
 
 ## 凍結
 (読み: とうけつ)<br>
 アカウントが使用不可に設定されている状態を指します。
 
 ## ドライブ
-Misskeyのサーバーでユーザーがアップロードした画像や音楽などのファイルを管理する機能です。詳しくは[こちら。](../docs/features/drive)
+Oceanのサーバーでユーザーがアップロードした画像や音楽などのファイルを管理する機能です。詳しくは[こちら。](../docs/features/drive)
 
 ## ノート
-Misskeyのサーバー上でユーザーが投稿する文章のこと。画像や音楽などのファイル、アンケートなど、Misskey独自の様々なコンテンツを含めることができます。詳しくは[こちら。](../docs/features/note)
+Oceanのサーバー上でユーザーが投稿する文章のこと。画像や音楽などのファイル、アンケートなど、Ocean独自の様々なコンテンツを含めることができます。詳しくは[こちら。](../docs/features/note)
 
 ## ミスキスト
-Misskeyのサーバーにアカウントを持つユーザー。またはその中でもヘビーユーザーを指す言葉です。
+Oceanのサーバーにアカウントを持つユーザー。またはその中でもヘビーユーザーを指す言葉です。
 
 ## モデレーター
 スパムの凍結およびサイレンスや不適切な投稿の削除など、サーバーの運営に関する権限を持つユーザー。多くの場合、サーバー管理者がサーバー内でモデレーターを募集して採用します。
