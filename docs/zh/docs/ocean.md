@@ -48,10 +48,6 @@ Ocean 支持多种语言（也称为 i18n，这是 Internationalization 的缩�
 
 "Misskist" 指的是使用 Ocean 的人。通过向你的熟人介绍 Ocean 来传播它，Misskist 的数量可能会增加，这也可以激励开发者。
 
-### 捐款
-
-[请在这里查看](./donate.md)
-
 ## 常见问题
 
 ### 这个项目的目标是什么？

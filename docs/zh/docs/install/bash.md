@@ -6,11 +6,6 @@
 下面的链接是**更新** Ocean 的脚本：
 
 [For v12](https://github.com/joinocean/bash-install/blob/a096e874f93d493aa68975a31be9ce12d644e767/README.en.md)  
-[**日本語版はこちら**](./README.md)
-
-## 使用许可
-[MIT License](./LICENSE)
-
 ## 需要准备...
 1. 一个域名
 2. ubuntu 系统的服务器（推荐18.04及以上的 LTS 版本）
