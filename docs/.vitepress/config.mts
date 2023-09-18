@@ -26,7 +26,6 @@ export default defineConfig({
 					},
 					{
 						text: '特性', items: [
-							{ text: '反应', link: '/zh/docs/features/reaction' },
 							{ text: '自定义表情', link: '/zh/docs/features/custom-emoji' },
 							{ text: '驾驶', link: '/zh/docs/features/drive' },
 							{ text: '用户界面', link: '/zh/docs/features/deck' },
@@ -38,7 +37,6 @@ export default defineConfig({
 							{ text: '静音和屏蔽', link: '/zh/docs/features/mute-and-block' },
 							{ text: '天线', link: '/zh/docs/features/antenna' },
 							{ text: '剪辑', link: '/zh/docs/features/clip' },
-							{ text: '收藏夹', link: '/zh/docs/features/favorite' },
 							{ text: '关注', link: '/zh/docs/features/follow' },
 							{ text: '页数', link: '/zh/docs/features/pages' },
 							{ text: '主题', link: '/zh/docs/features/theme' },
