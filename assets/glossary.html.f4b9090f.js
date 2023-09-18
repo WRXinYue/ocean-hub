@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-644f77ee","path":"/zh/docs/tech/glossary.html","title":"\u672F\u8BED\u8868","lang":"zh","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1691068601000,"contributors":[{"name":"WRXinYue","email":"3322543587@qq.com","commits":1}]},"filePathRelative":"zh/docs/tech/glossary.md"}');export{e as data};

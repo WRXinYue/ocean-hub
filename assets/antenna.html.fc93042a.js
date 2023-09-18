@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-4469411a","path":"/ja/docs/features/antenna.html","title":"\u30A2\u30F3\u30C6\u30CA","lang":"ja-JP","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1690364711000,"contributors":[{"name":"WRXinYue","email":"3322543587@qq.com","commits":1}]},"filePathRelative":"ja/docs/features/antenna.md"}');export{e as data};

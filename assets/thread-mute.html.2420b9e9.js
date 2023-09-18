@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-d4bdbb7a","path":"/zh/docs/features/thread-mute.html","title":"\u7EBF\u7A0B\u9759\u97F3","lang":"zh","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1691256768000,"contributors":[{"name":"WRXinYue","email":"3322543587@qq.com","commits":3}]},"filePathRelative":"zh/docs/features/thread-mute.md"}');export{e as data};
