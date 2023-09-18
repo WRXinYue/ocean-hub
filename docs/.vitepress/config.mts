@@ -26,9 +26,7 @@ export default defineConfig({
 					},
 					{
 						text: '特性', items: [
-							{ text: '笔记', link: '/zh/docs/features/note' },
 							{ text: '反应', link: '/zh/docs/features/reaction' },
-							{ text: 'MFM', link: '/zh/docs/features/mfm' },
 							{ text: '自定义表情', link: '/zh/docs/features/custom-emoji' },
 							{ text: '驾驶', link: '/zh/docs/features/drive' },
 							{ text: '用户界面', link: '/zh/docs/features/deck' },
@@ -53,19 +51,6 @@ export default defineConfig({
 							{ text: '协议概述', link: '/zh/docs/tech/any-sync' },
 							{ text: '网络配置', link: '/zh/docs/tech/anytype-heart' },
 							{ text: '项目概览', link: '/zh/docs/tech/overview' },
-						]
-					},
-					{
-						text: '管理员', items: [
-							{ text: '创建实例', link: '/zh/docs/install' },
-							{ text: '自定义表情', link: '/zh/docs/admin/emoji' },
-							{ text: '设置CDN', link: '/zh/docs/admin/cdn' },
-							{ text: '配置 Nginx', link: '/zh/docs/admin/nginx' },
-							{ text: '推送', link: '/zh/docs/admin/push-docker-hub' },
-							{ text: '常见问题', link: '/zh/docs/admin/troubleshooting' },
-							{ text: 'Disabling the LTL/STL/GTL', link: '/zh/docs/tips/disable-timelines' },
-							{ text: '更改默认反应', link: '/zh/docs/admin/default-reaction' },
-							{ text: '静默', link: '/zh/docs/features/silence' },
 						]
 					},
 				],
