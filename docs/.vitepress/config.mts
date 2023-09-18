@@ -21,7 +21,6 @@ export default defineConfig({
 							{ text: '发行说明', link: '/zh/docs/releases' },
 							{ text: '关于 Ocean Hub', link: '/zh/docs/ocean-hub' },
 							{ text: '常见问题', link: '/zh/docs/faq' },
-							{ text: '术语表', link: '/zh/docs/glossary' },
 							{ text: '故障排除', link: '/zh/docs/troubleshooting' },
 						]
 					},
@@ -29,14 +28,12 @@ export default defineConfig({
 						text: '特性', items: [
 							{ text: '笔记', link: '/zh/docs/features/note' },
 							{ text: '反应', link: '/zh/docs/features/reaction' },
-							{ text: '时间线', link: '/zh/docs/features/timeline' },
 							{ text: 'MFM', link: '/zh/docs/features/mfm' },
 							{ text: '自定义表情', link: '/zh/docs/features/custom-emoji' },
 							{ text: '驾驶', link: '/zh/docs/features/drive' },
 							{ text: '用户界面', link: '/zh/docs/features/deck' },
 							{ text: '图表', link: '/zh/docs/features/charts' },
 							{ text: '在线状态', link: '/zh/docs/features/online-status' },
-							{ text: '共享表单', link: '/zh/docs/features/share-form' },
 							{ text: '广告', link: '/zh/docs/features/ads' },
 							{ text: '线程静音', link: '/zh/docs/features/thread-mute' },
 							{ text: '单词静音', link: '/zh/docs/features/word-mute' },
@@ -47,7 +44,6 @@ export default defineConfig({
 							{ text: '关注', link: '/zh/docs/features/follow' },
 							{ text: '页数', link: '/zh/docs/features/pages' },
 							{ text: '主题', link: '/zh/docs/features/theme' },
-							{ text: '小工具', link: '/zh/docs/features/widgets' },
 						]
 					},
 					{
@@ -56,7 +52,6 @@ export default defineConfig({
 							{ text: '节点配置', link: '/zh/docs/tech/configuration' },
 							{ text: '协议概述', link: '/zh/docs/tech/any-sync' },
 							{ text: '网络配置', link: '/zh/docs/tech/anytype-heart' },
-							{ text: '术语表', link: '/zh/docs/tech/glossary' },
 							{ text: '项目概览', link: '/zh/docs/tech/overview' },
 						]
 					},

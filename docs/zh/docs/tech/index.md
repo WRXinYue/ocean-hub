@@ -80,7 +80,5 @@ description: "Channel where nots from the home timeline are streamed."
 
 ## 条件
 
-`any-sync` 网络是无需许可的。这意味着任何知道协调器节点的 IP 和端口的人都可以连接到它、创建新空间或下载现有的加密对象。空间内的数据始终是安全的，因为需要空间加密密钥才能阅读。节点既不存储这些加密密钥，也无法访问它们，也不能解密数据。欲了解更多信息，请参阅 [Any-Sync 概述协议](tech/any-sync)。
-
 中间件库 `anytype-heart` 以及 Anytype 客户端 `anytype-ts`、`anytype-swift` 和 `anytype-kotlin` 使用的是 [Any Source Available License 1.0](https://networks.any.coop/) 授权。
 
