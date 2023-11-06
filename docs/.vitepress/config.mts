@@ -14,6 +14,7 @@ export default defineConfig({
 				// https://vitepress.dev/reference/default-theme-config
 				nav: [
 					{ text: '主页', link: '/' },
+					{ text: '手册', link: '/zh/docs/manual' },
 					{
 						text: '帮助文档', items: [
 							{ text: '关于 Ocean Blog', link: '/zh/docs/ocean-blog' },
@@ -49,6 +50,7 @@ export default defineConfig({
 							{ text: '协议概述', link: '/zh/docs/tech/any-sync' },
 							{ text: '网络配置', link: '/zh/docs/tech/anytype-heart' },
 							{ text: '项目概览', link: '/zh/docs/tech/overview' },
+							{ text: '开发清单', link: '/zh/docs/tech/dev-list' },
 						]
 					},
 				],
